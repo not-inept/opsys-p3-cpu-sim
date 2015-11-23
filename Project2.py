@@ -2,20 +2,22 @@
 
 """
     Operating Systems
-    Project 2
+    Project 3
 
-    John Drogo
-    10/4/2015
-
+    Mason Cooper & John Drogo
+    10/24/2015
 """
 
 import sys
 import copy
 
+# Memory module provides tools necessary for contiguous memory management simulation
+from memory import Memory
+
 #Important constants
 t_cs = 13 #Context switching time.
 n = -1 #Max number of processes. Set to -1 to auto scale. Will be set to the number of processes loaded after input file is loaded.
-
+# critical whitespace
 class Process:
     id = 0
     bursttime = 0 #Time of a single burst.
