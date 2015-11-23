@@ -452,13 +452,8 @@ for algorithm in ["srt", "rr"]:
                                 cpu.processQueue.append(cpu.currentProcess)
                                 cpu.currentProcess.preemptedByProcess = cpu.processQueue[0]
 
-                                #If we haven't had a chance to record the next cpu tick do so now then flag the preempted process for preemption.
-                                if (cpu.currentProcess.id > cpu.processQueue[0].id):
-                                    cpu.currentProcess.timeremaining -= 1
-                                    cpu.processQueue[0].turnaround += 1
-
-                                cpu.processQueue[0].status = "preempting"
                                 cpu.loadNextProcess()
+                                cpu.processQueue[0].status = "preempting"
                                 cpu.contextTime = 0
                                 
                             else:
