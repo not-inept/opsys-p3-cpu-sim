@@ -16,7 +16,7 @@ from memory import Memory
 
 #Important constants
 t_cs = 13 #Context switching time.
-t_slice = 10
+t_slice = 80
 n = -1 #Max number of processes. Set to -1 to auto scale. Will be set to the number of processes loaded after input file is loaded.
 
 # critical whitespace
@@ -167,6 +167,8 @@ class CPU:
                     cpu.processQueue.remove(self.currentProcess)
                     cpu.processQueue = [self.currentProcess] + cpu.processQueue
 
+        printStatusMessage("Process {0} added to system".format(finishedProcess.id), cpu.processQueue)
+
         if (self.isReady()):
             self.loadNextProcess()
 
@@ -176,7 +178,8 @@ class IOSystem:
         #Only print I/O messages for processes that take I/O.
         if (process.iotime):
             process.status = "performingio"
-            printStatusMessage("P"+str(process.id)+" performing I/O", cpu.processQueue)
+            printStatusMessage(
+str(process.id)+" performing I/O", cpu.processQueue)
 
 
 
@@ -264,39 +267,32 @@ for algorithm in ["srt", "rr"]:
 
         cpu.iosys = iosys
         iosys.cpu = cpu
-
         cpu.algorithm = algorithm
 
-        #Consider the processes in order, only after we added them to the queues.
-            #So we don't mess up fcfs.
-        processes = copy.deepcopy(origprocesses)
-        for process in processes:
-            cpu.processQueue.append(process)
-
-        #Initial sort.
-        if (algorithm == "srt"):
-            cpu.processQueue.sort(key=lambda x: x.timeremaining)
-
-        elif (algorithm == "pwa"):
-            cpu.processQueue.sort(key=lambda x: (x.priority, x.id))
-
-        #Initial load.
-        cpu.loadNextProcess()
-        #DEGBUG2 print "BEGINNING WITH PROCESS: {0}".format(cpu.currentProcess.id)
-
-        #Consider the processes in order.
-        processes.sort(key=lambda x: x.id)
-
-        #waittimes.write("Wait times for: {0}\n".format(cpu.algorithm.upper()))
 
         #Start the simulation.
         currentTime = 0
         printStatusMessage("Simulator started for "+cpu.algorithm.upper(), cpu.processQueue)
-        
+
+
+        #Consider the processes in order, only after we added them to the queues. So we don't mess up fcfs.
+        processes = copy.deepcopy(origprocesses)
         for process in processes:
             if (process.starttime == 0):
-                process.status == "waiting"
-                printStatusMessage("Process {0} added to system", cpu.processQueue)
+                process.status = "waiting"
+                cpu.addProcessToQueue(process)
+
+        #Initial sort.
+        if (algorithm == "srt"):
+            cpu.processQueue.sort(key=lambda x: x.timeremaining)
+        elif (algorithm == "pwa"):
+            cpu.processQueue.sort(key=lambda x: (x.priority, x.id))
+
+        #Initial load.
+        cpu.loadNextProcess() #DEGBUG2 print "BEGINNING WITH PROCESS: {0}".format(cpu.currentProcess.id)
+
+        #Consider the processes in order.
+        processes.sort(key=lambda x: x.id) #waittimes.write("Wait times for: {0}\n".format(cpu.algorithm.upper()))
 
         while True:
             currentTime += 1
@@ -305,8 +301,8 @@ for algorithm in ["srt", "rr"]:
             #Add process to queue if it is time.
             for process in processes:
                 if (process.starttime == currentTime):
-                    process.status == "waiting"
-                    printStatusMessage("Process {0} added to system", cpu.processQueue)
+                    process.status = "waiting"
+                    cpu.addProcessToQueue(process)
             
 
             for process in processes:
@@ -318,21 +314,23 @@ for algorithm in ["srt", "rr"]:
                     if (process.currentIOTime >= process.iotime):
                         process.currentIOTime = 0
 
-                        #Reset the process for the next burst.
-                        process.status = "waiting"
-                        process.currentwait = 0
-                        process.timeremaining = process.bursttime
-                        cpu.addProcessToQueue(process)
-
                         #Only print I/O messages for processes that take I/O.
                         if (process.iotime):
                             if (process.status == "preempting"):
                                 #The process should "skip" the queue if it is preempting or was preempted.
                                 filteredCPUQueue = [ x for x in cpu.processQueue if x.status not in ["preempting", "preempted"] ]
-                                printStatusMessage("P" + str(process.id)+" completed I/O", filteredCPUQueue)
+                                printStatusMessage(
+str(process.id)+" completed I/O", filteredCPUQueue)
                             
                             else: #Processes can only terminate on a CPU burst, never straight out of I/O.
-                                printStatusMessage("P" + str(process.id)+" completed I/O", cpu.processQueue)
+                                printStatusMessage(
+str(process.id)+" completed I/O", cpu.processQueue)
+
+                        #Reset the process for the next burst.
+                        process.status = "waiting"
+                        process.currentwait = 0
+                        process.timeremaining = process.bursttime
+                        cpu.addProcessToQueue(process)
 
                 #We are the process in the cpu, should only happen with a status of loadingcpu or cpu.
                 elif (process.status == "loadingcpu" or process.status == "cpu"):
@@ -359,7 +357,8 @@ for algorithm in ["srt", "rr"]:
                             
                             cpu.processQueue.remove(cpu.currentProcess)
                             cpu.currentProcess.status = "cpu"
-                            printStatusMessage("P"+str(cpu.currentProcess.id)+" started using the CPU", cpu.processQueue)
+                            printStatusMessage(
+str(cpu.currentProcess.id)+" started using the CPU", cpu.processQueue)
 
 
                     #Actually perform the burst for a time step.
@@ -375,13 +374,15 @@ for algorithm in ["srt", "rr"]:
 
                             #Only report burst completions if the process isn't about to terminate.
                             if (cpu.currentProcess.bursts):
-                                printStatusMessage("P"+str(cpu.currentProcess.id)+" completed its CPU burst", cpu.processQueue)
+                                printStatusMessage(
+str(cpu.currentProcess.id)+" completed its CPU burst", cpu.processQueue)
                                 iosys.startedIO(process)
 
                             else:
                                 #Process is done.
                                 cpu.currentProcess.status = "terminated"
-                                printStatusMessage("P"+str(cpu.currentProcess.id)+" terminated", cpu.processQueue)
+                                printStatusMessage(
+str(cpu.currentProcess.id)+" terminated", cpu.processQueue)
                                 terminatedProcesses += 1
 
                             cpu.currentProcess = None
@@ -394,24 +395,25 @@ for algorithm in ["srt", "rr"]:
                             assert(cpu.processTime)
 
                             #Outputting for the srt preemption is different from the round robin queue output. (First process is included.
-                            printStatusMessage("P" + str(process.id)+" preempted due to time slice expiration", cpu.processQueue)
+                            printStatusMessage(
+str(process.id)+" preempted due to time slice expiration", cpu.processQueue)
 
                             #Load the next process if we have one, otherwise ignore the context switch.
                             if (len([x for x in cpu.processQueue if x.status != "future"])):
 
                                 #Add the current process back into the processor queue.
-                                self.currentProcess.status = "preempted"
-                                self.processQueue.append(self.currentProcess)
-                                self.currentProcess.preemptedByProcess = self.processQueue[0]
+                                cpu.currentProcess.status = "preempted"
+                                cpu.processQueue.append(cpu.currentProcess)
+                                cpu.currentProcess.preemptedByProcess = cpu.processQueue[0]
 
                                 #If we haven't had a chance to record the next cpu tick do so now then flag the preempted process for preemption.
-                                if (self.currentProcess.id > self.processQueue[0].id):
-                                    self.currentProcess.timeremaining -= 1
-                                    self.processQueue[0].turnaround += 1
+                                if (cpu.currentProcess.id > cpu.processQueue[0].id):
+                                    cpu.currentProcess.timeremaining -= 1
+                                    cpu.processQueue[0].turnaround += 1
 
-                                self.processQueue[0] = "preempting"
-                                self.loadNextProcess()
-                                self.contextTime = 0
+                                cpu.processQueue[0].status = "preempting"
+                                cpu.loadNextProcess()
+                                cpu.contextTime = 0
                                 
                             else:
                                 cpu.processTime = 0;
@@ -450,7 +452,8 @@ for algorithm in ["srt", "rr"]:
                     #Ignore preempting process when printing the cpu queue.
                         #We should be able to just ignore the start of the queue. (Context switch.)
                     if (cpu.algorithm != "rr"):
-                        printStatusMessage("P" + str(process.id)+" preempted by P" + str(process.preemptedByProcess.id), cpu.processQueue[1:])
+                        printStatusMessage(
+str(process.id)+" preempted by P" + str(process.preemptedByProcess.id), cpu.processQueue[1:])
                     process.status = "waiting"
 
 
@@ -469,4 +472,4 @@ for algorithm in ["srt", "rr"]:
             print "\n"
             #waittimes.write("\n\n\n")
 
-    outputfile.close()
+outputfile.close()
