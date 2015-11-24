@@ -4,13 +4,13 @@ start=$(date +%S)
 
 cd test
 count=0
-for filename in *INPUT.txt;
+for filename in *[!T].txt;
 do
     count=$(bc<<<"$count+1")
     echo "--------"
     echo "Running: $filename"
-    python ../BananaComqautPeachApplePinenut.py ${filename} > ${filename}"OUTPUT.txt"
-    mv -f simout.txt ${filename}"SIMOUT.txt"
+    python ../BananaComqautPeachApplePinenut.py ${filename} > ${filename:0:${#filename}-3}"OUTPUT.txt"
+    mv -f simout.txt ${filename:0:${#filename}-3}"SIMOUT.txt"
     echo "--------"
     echo
 done

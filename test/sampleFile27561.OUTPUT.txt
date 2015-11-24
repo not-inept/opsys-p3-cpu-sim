@@ -1,0 +1,47 @@
+time 0ms: Simulator started for SRT and First Fit
+time 36ms: Process S added to system [Q S]
+time 36ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSS.........
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 48ms: S started using the CPU [Q]
+time 50ms: Process R added to system [Q R S]
+time 50ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRR...............
+................................
+................................
+................................
+================================
+
+time 50ms: S preempted by PR [Q S]
+time 63ms: R started using the CPU [Q S]
+time 64ms: Process M added to system [Q M R S]
+time 64ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+
+time 64ms: R preempted by PM [Q R S]
+time 77ms: M started using the CPU [Q R S]
+time 118ms: A unable to be added; lack of memory [Q R S]
+time 118ms: Starting defragmentation (suspending all processes) [Q R S]

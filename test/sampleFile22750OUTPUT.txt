@@ -1,0 +1,101 @@
+time 0ms: Simulator started for SRT and First Fit
+time 94ms: Process X added to system [Q X]
+time 94ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXX...............
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 106ms: X started using the CPU [Q]
+time 146ms: Process B added to system [Q B]
+time 146ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXBBBB...........
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 185ms: Process R added to system [Q R X B]
+time 185ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXBBBBRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR.
+................................
+................................
+................................
+................................
+================================
+
+time 185ms: X preempted by PR [Q X B]
+time 197ms: Process E added to system [Q E R X B]
+time 197ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXBBBBRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRE
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+................................
+................................
+================================
+
+time 197ms: R preempted by PE [Q R X B]
+time 210ms: E started using the CPU [Q R X B]
+time 231ms: Process G added to system [Q G R X B]
+time 231ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXBBBBRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRE
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+GGGGGGG.........................
+................................
+================================
+
+time 255ms: Process D added to system [Q G R X D B]
+time 255ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXBBBBRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRE
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+GGGGGGGDDD......................
+................................
+================================
+
+time 321ms: E completed its CPU burst [Q G R X D B]
+time 321ms: E performing I/O [Q G R X D B]
+time 334ms: G started using the CPU [Q R X D B]
+time 363ms: Process H added to system [Q R X D B H]
+time 363ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXBBBBRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRE
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+GGGGGGGDDDHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHH..............
+================================
+
+time 430ms: O unable to be added; lack of memory [Q R X D B H]
+time 430ms: Starting defragmentation (suspending all processes) [Q R X D B H]
