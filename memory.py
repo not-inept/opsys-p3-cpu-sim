@@ -34,13 +34,21 @@ class Memory:
 			m = self.representation()
 			found = False
 			for i in range(size, m.count(".")+1):
-				rg = "^[.]{"+str(i)+"}$|[A-Z][.]{"+str(i)+"}[A-Z]|^[.]{"+str(i)+"}[A-Z]|[A-Z][.]{"+str(i)+"}$"
-				place = re.search(rg, m)
-				#Wohoo we have a match! :D
-				if (place):
-					found = True
-					start = place.start()
-					break
+				who = "^[.]{"+str(i)+"}$"
+				be="^[.]{"+str(i)+"}[A-Z]"
+
+				#Don't forget to add an extra character for these (ignore start character).
+				mid="[A-Z][.]{"+str(i)+"}[A-Z]"
+				end="[A-Z][.]{"+str(i)+"}$"
+
+				for rg in [ who, mid, be, end ]:
+					place = re.search(rg, m)
+					#Wohoo we have a match! :D
+					if (place):
+						found = True
+						start = place.start()+1 if rg in [mid, end] else 0
+						break
+
 			if (not found):
 				return False
 		else: # handle first fit/default
