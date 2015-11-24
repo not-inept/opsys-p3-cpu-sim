@@ -1,10 +1,10 @@
 #! /usr/bin/python2
-
 """
     Operating Systems
     Project 3
 
     Mason Cooper & John Drogo
+    (coopem4 & drogoj)
     11/23/2015
 """
 
@@ -294,7 +294,7 @@ for algorithm in ["srt", "rr"]:
                     printStatusMessage("Starting defragmentation (suspending all processes)", cpu.processQueue)
                     print "time "+str(currentTime)+"ms: Simulated Memory:\n"+str(mem)
                     #printStatusMessage("Simulated Memory:\n"+str(mem))
-                    cpu.memCooldown = mem.defragment()
+                    cpu.memCooldown, units_defragged = mem.defragment()
                     cpu.status = "defragging"
                     assert(0) #This probably shouldn't happen before we actualy run items.
                 
@@ -330,7 +330,7 @@ for algorithm in ["srt", "rr"]:
                             printStatusMessage("{0} unable to be added; lack of memory".format(process.id), cpu.processQueue)
                             #printStatusMessage("Starting defragmentation (suspending all processes)", cpu.processQueue)
                             print "time "+str(currentTime)+"ms: Simulated Memory:\n"+str(mem)
-                            cpu.memCooldown = mem.defragment()
+                            cpu.memCooldown, units_defragged = mem.defragment()
                             #sys.stderr.write("MEMDEFRAGMENTCOOLDOWN: "+str(cpu.memCooldown)+"\n")
                             cpu.status = "defragging"
                             cpu.tryaddingProcess = process
