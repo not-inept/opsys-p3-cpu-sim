@@ -180,8 +180,7 @@ class IOSystem:
         #Only print I/O messages for processes that take I/O.
         if (process.iotime):
             process.status = "performingio"
-            printStatusMessage(
-str(process.id)+" performing I/O", cpu.processQueue)
+            printStatusMessage("Process '"+str(process.id)+"' performing I/O", cpu.processQueue)
 
 
 
@@ -261,11 +260,11 @@ n = len(origprocesses)
 outputfile = open("simout.txt", "w")
 #waittimes = open("#waittimes.txt", "w")
 
-mem_algorithms = {"nf": "Next Fit", "bf": "Best Fit", "ff": "First Fit"}
+mem_algorithms = {"nf": "Next-Fit", "bf": "Best-Fit", "ff": "First-Fit"}
 
 
-for algorithm in ["srt", "rr"]:
-    for mem_algorithm in ["ff", "bf", "nf"]:
+for algorithm in ["rr", "srt"]:
+    for mem_algorithm in ["ff", "nf", "bf"]:
 
         #Generate a new cpu and io subsystem.
         cpu = CPU()
@@ -290,22 +289,25 @@ for algorithm in ["srt", "rr"]:
             if (process.starttime == 0):
                 process.status = "waiting"
                 if (not mem.allocate(process.id, process.memsize)):
-                    printStatusMessage("{0} unable to be added; lack of memory".format(process.id), cpu.processQueue)
+                    printStatusMessage("Process '{0}' unable to be added; lack of memory".format(process.id), cpu.processQueue)
                     printStatusMessage("Starting defragmentation (suspending all processes)", cpu.processQueue)
                     print "time "+str(currentTime)+"ms: Simulated Memory:\n"+str(mem)
                     #printStatusMessage("Simulated Memory:\n"+str(mem))
-                    cpu.memCooldown, units_defragged = mem.defragment()
+                    cpu.memCooldown, cpu.units_defragged = mem.defragment()
                     cpu.status = "defragging"
                     assert(0) #This probably shouldn't happen before we actualy run items.
                 
                 else:
                     cpu.processQueue.append(process) #Append instead of cpu.addProcessToQueue to avoid unnecessary preemption at time 0.
-                    printStatusMessage("Process {0} added to system".format(process.id), cpu.processQueue)
+                    printStatusMessage("Process '{0}' added to system".format(process.id), cpu.processQueue)
                     print "time "+str(currentTime)+"ms: Simulated Memory:\n"+str(mem)
 
         #Initial sort.
         if (algorithm == "srt"):
             cpu.processQueue.sort(key=lambda x: x.timeremaining)
+            processes.sort(key=lambda x: (x.timeremaining, x.id))
+            #Consider the processes in order for srt.
+            #processes.sort(key=lambda x: x.id) #waittimes.write("Wait times for: {0}\n".format(cpu.algorithm.upper()))
 
         elif (algorithm == "pwa"):
             cpu.processQueue.sort(key=lambda x: (x.priority, x.id))
@@ -313,8 +315,6 @@ for algorithm in ["srt", "rr"]:
         #Initial load.
         cpu.loadNextProcess() #DEGBUG2 print "BEGINNING WITH PROCESS: {0}".format(cpu.currentProcess.id)
 
-        #Consider the processes in order.
-        processes.sort(key=lambda x: x.id) #waittimes.write("Wait times for: {0}\n".format(cpu.algorithm.upper()))
 
         #Process main loop.
         while True:
@@ -327,19 +327,18 @@ for algorithm in ["srt", "rr"]:
                     if (process.starttime == currentTime):
                         process.status = "waiting"
                         if (not mem.allocate(process.id, process.memsize)):
-                            printStatusMessage("{0} unable to be added; lack of memory".format(process.id), cpu.processQueue)
-                            #printStatusMessage("Starting defragmentation (suspending all processes)", cpu.processQueue)
+                            printStatusMessage("Process '{0}' unable to be added; lack of memory".format(process.id), cpu.processQueue)
+                            printStatusMessage("Starting defragmentation (suspending all processes)", cpu.processQueue)
                             print "time "+str(currentTime)+"ms: Simulated Memory:\n"+str(mem)
-                            cpu.memCooldown, units_defragged = mem.defragment()
+                            cpu.memCooldown, cpu.units_defragged = mem.defragment()
                             #sys.stderr.write("MEMDEFRAGMENTCOOLDOWN: "+str(cpu.memCooldown)+"\n")
                             cpu.status = "defragging"
                             cpu.tryaddingProcess = process
                             break
-                            #assert(0) #Not implemented.
                         
                         else:
                             cpu.addProcessToQueue(process)
-                            printStatusMessage("Process {0} added to system".format(process.id), cpu.processQueue)
+                            printStatusMessage("Process '{0}' added to system".format(process.id), cpu.processQueue)
 
                         print "time "+str(currentTime)+"ms: Simulated Memory:\n"+str(mem)
 
@@ -353,20 +352,20 @@ for algorithm in ["srt", "rr"]:
                     if (process.currentIOTime >= process.iotime):
                         process.currentIOTime = 0
                         #Only print I/O messages for processes that take I/O.
-                        if (process.iotime):
-                            if (process.status == "preempting"):
-                                #The process should "skip" the queue if it is preempting or was preempted.
-                                filteredCPUQueue = [ x for x in cpu.processQueue if x.status not in ["preempting", "preempted"] ]
-                                printStatusMessage(str(process.id)+" completed I/O", filteredCPUQueue)
-                            
-                            else: #Processes can only terminate on a CPU burst, never straight out of I/O.
-                                printStatusMessage(str(process.id)+" completed I/O", cpu.processQueue)
 
                         #Reset the process for the next burst.
                         process.status = "waiting"
                         process.currentwait = 0
                         process.timeremaining = process.bursttime
                         cpu.addProcessToQueue(process)
+                        if (process.iotime):
+                            if (process.status == "preempting"):
+                                #The process should "skip" the queue if it is preempting or was preempted.
+                                filteredCPUQueue = [ x for x in cpu.processQueue if x.status not in ["preempting", "preempted"] ]
+                                printStatusMessage("Process '"+str(process.id)+"' completed I/O", filteredCPUQueue)
+                            
+                            else: #Processes can only terminate on a CPU burst, never straight out of I/O.
+                                printStatusMessage("Process '"+str(process.id)+"' completed I/O", cpu.processQueue)
 
                 elif (process.status == "waiting"): #Wait time.
                     process.wait += 1
@@ -413,7 +412,7 @@ for algorithm in ["srt", "rr"]:
                                 
                                 cpu.processQueue.remove(cpu.currentProcess)
                                 cpu.currentProcess.status = "cpu"
-                                printStatusMessage(str(cpu.currentProcess.id)+" started using the CPU", cpu.processQueue)
+                                printStatusMessage("Process '"+str(cpu.currentProcess.id)+"' started using the CPU", cpu.processQueue)
 
                         #Actually perform the burst for a time step.
                         else:
@@ -428,14 +427,16 @@ for algorithm in ["srt", "rr"]:
 
                                 #Only report burst completions if the process isn't about to terminate.
                                 if (cpu.currentProcess.bursts):
-                                    printStatusMessage(str(cpu.currentProcess.id)+" completed its CPU burst", cpu.processQueue)
+                                    printStatusMessage("Process '"+str(cpu.currentProcess.id)+"' completed its CPU burst", cpu.processQueue)
                                     iosys.startedIO(process)
 
+                                #Process is done.
                                 else:
-                                    #Process is done.
                                     cpu.currentProcess.status = "terminated"
                                     mem.deallocate(cpu.currentProcess.id)
-                                    printStatusMessage(str(cpu.currentProcess.id)+" terminated", cpu.processQueue)
+                                    printStatusMessage("Process '"+str(cpu.currentProcess.id)+"' terminated", cpu.processQueue)
+                                    printStatusMessage("Process '{0}' exits the system (deallocated {1} memory units)".format(cpu.currentProcess.id, cpu.currentProcess.memsize))
+                                    printStatusMessage("Simulated Memory:\n{0}".format(mem))
                                     terminatedProcesses += 1
 
                                 cpu.currentProcess = None
@@ -448,7 +449,6 @@ for algorithm in ["srt", "rr"]:
                                 assert(cpu.processTime)
 
                                 #Outputting for the srt preemption is different from the round robin queue output. (First process is included.
-                                printStatusMessage(str(process.id)+" preempted due to time slice expiration", cpu.processQueue)
 
                                 #Load the next process if we have one, otherwise ignore the context switch.
                                 if (len([x for x in cpu.processQueue if x.status != "future"])):
@@ -461,9 +461,14 @@ for algorithm in ["srt", "rr"]:
                                     cpu.loadNextProcess()
                                     cpu.processQueue[0].status = "preempting"
                                     cpu.contextTime = 0
+                                    printStatusMessage("Process '"+str(process.id)+"' preempted due to time slice expiration", cpu.processQueue)
                                     
-                                else:
+                                else: #We are the only thing in the queue.
                                     cpu.processTime = 0;
+                                    assert(len(cpu.processQueue) == 0)
+                                    printStatusMessage("Process '"+str(process.id)+"' preempted due to time slice expiration", [cpu.currentProcess])
+                                    printStatusMessage("Process '{0}' started using the CPU".format(cpu.currentProcess.id), cpu.processQueue)
+                                
 
 
             #Clear the preemption flags.
@@ -477,31 +482,35 @@ for algorithm in ["srt", "rr"]:
                     #Ignore preempting process when printing the cpu queue.
                         #We should be able to just ignore the start of the queue. (Context switch.)
                     if (cpu.algorithm != "rr"):
-                        printStatusMessage(str(process.id)+" preempted by " + str(process.preemptedByProcess.id), cpu.processQueue[1:])
+                        printStatusMessage("Process '"+str(process.id)+"' preempted by Process '" + str(process.preemptedByProcess.id) + "'", cpu.processQueue[1:])
                     process.status = "waiting"
 
+
+            #Defragmentation complete.
             if (cpu.status == "defragging"):
                 if (cpu.memCooldown > 0):
                     cpu.memCooldown -= 1
                     #sys.stderr.write("MEMCOOLDOWN: "+str(cpu.memCooldown)+"\n")
                 else:
                     assert(cpu.memCooldown == 0)
+                    printStatusMessage("Completed defragmentation (moved "+str(cpu.units_defragged)+" memory units)\nSimulated Memory:\n"+str(mem))
+                    process=cpu.tryaddingProcess
                     if (cpu.tryaddingProcess):
                         if (not mem.allocate(process.id, process.memsize)):
-                            printStatusMessage("{0} unable to be added; lack of memory and defragmentation failed".format(process.id), cpu.processQueue)
+                            printStatusMessage("Process '{0}' unable to be added; lack of memory and defragmentation failed".format(process.id), cpu.processQueue)
                             cpu.tryaddingProcess.status = "terminated"
-                            cpu.tryaddingProcess = None
                     
                         else:
                             cpu.addProcessToQueue(process)
-                            printStatusMessage("Process {0} added to system".format(process.id), cpu.processQueue)
+                            printStatusMessage("Process '{0}' added to system".format(process.id), cpu.processQueue)
                             print "time "+str(currentTime)+"ms: Simulated Memory:\n"+str(mem)
 
+                        cpu.tryaddingProcess = None
                     cpu.status = "normal"
 
             #When all processes have finished.
             if (len([ x for x in processes if x.status == "terminated"]) == n):
-                print "time {0}ms: Simulator for {1} ended [Q]".format(currentTime, cpu.algorithm.upper())
+                print "time {0}ms: Simulator for {1} ended [Q]".format(currentTime, cpu.algorithm.upper()+" "+mem_algorithms[mem_algorithm])
                 break
 
             if (cpu.isReady()):
