@@ -82,8 +82,10 @@ class Memory:
 		for p in self.partitions:
 			if p.start_unit != current_unit:
 				p.start_unit = current_unit
-				current_unit = current_unit+p.start_unit
+				current_unit += p.size
 				units_moved += p.size
+			else:
+				current_unit += p.size
 		time_elapsed = units_moved*self.t_memmove
 		return time_elapsed, units_moved # return time elapsed
 
@@ -186,3 +188,24 @@ if __name__ == "__main__":
 	time_elapsed, units_moved = test_def.defragment()
 	print "defrag done, time elapsed: ", time_elapsed, " and units moved: ", units_moved
 	print(test_def)
+
+	print("\nDefrag #2:")
+	test_def2 = Memory("ff")
+	test_def2.allocate("X", 81)
+	test_def2.allocate("B", 4)
+	test_def2.allocate("R", 42)
+	test_def2.allocate("E", 65)
+	test_def2.allocate("G", 7)
+	test_def2.allocate("D", 3)
+	test_def2.allocate("H", 40)
+	time_elapsed, units_moved = test_def2.defragment()
+	print "defrag done, time elapsed: ", time_elapsed, " and units moved: ", units_moved
+	test_def2.allocate("O", 46)
+	print(test_def2)
+
+
+
+
+
+
+
