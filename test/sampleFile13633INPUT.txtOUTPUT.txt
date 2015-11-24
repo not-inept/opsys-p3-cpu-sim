@@ -1,0 +1,88 @@
+time 0ms: Simulator started for SRT and First Fit
+time 94ms: Process T added to system [Q T]
+time 94ms: Simulated Memory:
+================================
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT..
+................................
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 106ms: T started using the CPU [Q]
+time 195ms: Process D added to system [Q D]
+time 195ms: Simulated Memory:
+================================
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDD.........................
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 200ms: Process X added to system [Q X D]
+time 200ms: Simulated Memory:
+================================
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+................................
+................................
+................................
+................................
+================================
+
+time 208ms: Process M added to system [Q M X D]
+time 208ms: Simulated Memory:
+================================
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMM...
+................................
+................................
+................................
+================================
+
+time 233ms: T completed its CPU burst [Q M X D]
+time 233ms: T performing I/O [Q M X D]
+time 246ms: M started using the CPU [Q X D]
+time 308ms: M completed its CPU burst [Q X D]
+time 308ms: M performing I/O [Q X D]
+time 309ms: Process Y added to system [Q X Y D]
+time 309ms: Simulated Memory:
+================================
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMYYY
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYY..
+................................
+................................
+================================
+
+time 321ms: X started using the CPU [Q Y D]
+time 417ms: Process S added to system [Q Y S D]
+time 417ms: Simulated Memory:
+================================
+TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMYYY
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYSS
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSS..........
+================================
+
+time 606ms: Q unable to be added; lack of memory [Q Y S D]
+time 606ms: Starting defragmentation (suspending all processes) [Q Y S D]

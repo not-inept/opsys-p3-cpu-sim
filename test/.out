@@ -1,0 +1,947 @@
+time 0ms: Simulator started for SRT and First Fit
+time 0ms: Process A added to system [Q A]
+time 0ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAA........
+................................
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 0ms: Process B added to system [Q A B]
+time 0ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBB........................
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 13ms: A started using the CPU [Q B]
+time 180ms: Process C added to system [Q B C]
+time 180ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCC........
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 180ms: Process D added to system [Q D B C]
+time 180ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDD....
+................................
+................................
+................................
+................................
+================================
+
+time 181ms: A completed its CPU burst [Q D B C]
+time 181ms: A performing I/O [Q D B C]
+time 194ms: D started using the CPU [Q B C]
+time 291ms: D completed its CPU burst [Q B C]
+time 291ms: D performing I/O [Q B C]
+time 304ms: B started using the CPU [Q C]
+time 468ms: A completed I/O [Q C]
+time 468ms: B preempted by PA [Q B C]
+time 481ms: A started using the CPU [Q B C]
+time 649ms: A completed its CPU burst [Q B C]
+time 649ms: A performing I/O [Q B C]
+time 662ms: B started using the CPU [Q C]
+time 883ms: B terminated [Q C]
+time 896ms: C started using the CPU [Q]
+time 936ms: A completed I/O [Q]
+time 936ms: C preempted by PA [Q C]
+time 949ms: A started using the CPU [Q C]
+time 1117ms: A completed its CPU burst [Q C]
+time 1117ms: A performing I/O [Q C]
+time 1130ms: C started using the CPU [Q]
+time 1404ms: A completed I/O [Q]
+time 1404ms: C preempted by PA [Q C]
+time 1417ms: A started using the CPU [Q C]
+time 1585ms: A completed its CPU burst [Q C]
+time 1585ms: A performing I/O [Q C]
+time 1598ms: C started using the CPU [Q]
+time 1872ms: A completed I/O [Q]
+time 1872ms: C preempted by PA [Q C]
+time 1885ms: A started using the CPU [Q C]
+time 2053ms: A terminated [Q C]
+time 2066ms: C started using the CPU [Q]
+time 2790ms: D completed I/O [Q]
+time 2790ms: C preempted by PD [Q C]
+time 2803ms: D started using the CPU [Q C]
+time 2900ms: D completed its CPU burst [Q C]
+time 2900ms: D performing I/O [Q C]
+time 2913ms: C started using the CPU [Q]
+time 3371ms: C completed its CPU burst [Q]
+time 3371ms: C performing I/O [Q]
+time 4193ms: C completed I/O [Q]
+time 4206ms: C started using the CPU [Q]
+time 5399ms: D completed I/O [Q]
+time 5399ms: C preempted by PD [Q C]
+time 5412ms: D started using the CPU [Q C]
+time 5509ms: D completed its CPU burst [Q C]
+time 5509ms: D performing I/O [Q C]
+time 5522ms: C started using the CPU [Q]
+time 6099ms: C terminated [Q]
+time 8008ms: D completed I/O [Q]
+time 8021ms: D started using the CPU [Q]
+time 8118ms: D completed its CPU burst [Q]
+time 8118ms: D performing I/O [Q]
+time 10617ms: D completed I/O [Q]
+time 10630ms: D started using the CPU [Q]
+time 10727ms: D terminated [Q]
+time 10727ms: Simulator for SRT ended [Q]
+
+
+time 0ms: Simulator started for SRT and Best Fit
+not implemented
+time 0ms: Process A added to system [Q A]
+time 0ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAA........
+................................
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+not implemented
+time 0ms: Process B added to system [Q A B]
+time 0ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBB........................
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 13ms: A started using the CPU [Q B]
+not implemented
+time 180ms: Process C added to system [Q B C]
+time 180ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCC........
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+not implemented
+time 180ms: Process D added to system [Q D B C]
+time 180ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDD....
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 181ms: A completed its CPU burst [Q D B C]
+time 181ms: A performing I/O [Q D B C]
+time 194ms: D started using the CPU [Q B C]
+time 291ms: D completed its CPU burst [Q B C]
+time 291ms: D performing I/O [Q B C]
+time 304ms: B started using the CPU [Q C]
+time 468ms: A completed I/O [Q C]
+time 468ms: B preempted by PA [Q B C]
+time 481ms: A started using the CPU [Q B C]
+time 649ms: A completed its CPU burst [Q B C]
+time 649ms: A performing I/O [Q B C]
+time 662ms: B started using the CPU [Q C]
+time 883ms: B terminated [Q C]
+time 896ms: C started using the CPU [Q]
+time 936ms: A completed I/O [Q]
+time 936ms: C preempted by PA [Q C]
+time 949ms: A started using the CPU [Q C]
+time 1117ms: A completed its CPU burst [Q C]
+time 1117ms: A performing I/O [Q C]
+time 1130ms: C started using the CPU [Q]
+time 1404ms: A completed I/O [Q]
+time 1404ms: C preempted by PA [Q C]
+time 1417ms: A started using the CPU [Q C]
+time 1585ms: A completed its CPU burst [Q C]
+time 1585ms: A performing I/O [Q C]
+time 1598ms: C started using the CPU [Q]
+time 1872ms: A completed I/O [Q]
+time 1872ms: C preempted by PA [Q C]
+time 1885ms: A started using the CPU [Q C]
+time 2053ms: A terminated [Q C]
+time 2066ms: C started using the CPU [Q]
+time 2790ms: D completed I/O [Q]
+time 2790ms: C preempted by PD [Q C]
+time 2803ms: D started using the CPU [Q C]
+time 2900ms: D completed its CPU burst [Q C]
+time 2900ms: D performing I/O [Q C]
+time 2913ms: C started using the CPU [Q]
+time 3371ms: C completed its CPU burst [Q]
+time 3371ms: C performing I/O [Q]
+time 4193ms: C completed I/O [Q]
+time 4206ms: C started using the CPU [Q]
+time 5399ms: D completed I/O [Q]
+time 5399ms: C preempted by PD [Q C]
+time 5412ms: D started using the CPU [Q C]
+time 5509ms: D completed its CPU burst [Q C]
+time 5509ms: D performing I/O [Q C]
+time 5522ms: C started using the CPU [Q]
+time 6099ms: C terminated [Q]
+time 8008ms: D completed I/O [Q]
+time 8021ms: D started using the CPU [Q]
+time 8118ms: D completed its CPU burst [Q]
+time 8118ms: D performing I/O [Q]
+time 10617ms: D completed I/O [Q]
+time 10630ms: D started using the CPU [Q]
+time 10727ms: D terminated [Q]
+time 10727ms: Simulator for SRT ended [Q]
+
+
+time 0ms: Simulator started for SRT and Next Fit
+not implemented
+time 0ms: Process A added to system [Q A]
+time 0ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAA........
+................................
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+not implemented
+time 0ms: Process B added to system [Q A B]
+time 0ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBB........................
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 13ms: A started using the CPU [Q B]
+not implemented
+time 180ms: Process C added to system [Q B C]
+time 180ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCC........
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+not implemented
+time 180ms: Process D added to system [Q D B C]
+time 180ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDD....
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 181ms: A completed its CPU burst [Q D B C]
+time 181ms: A performing I/O [Q D B C]
+time 194ms: D started using the CPU [Q B C]
+time 291ms: D completed its CPU burst [Q B C]
+time 291ms: D performing I/O [Q B C]
+time 304ms: B started using the CPU [Q C]
+time 468ms: A completed I/O [Q C]
+time 468ms: B preempted by PA [Q B C]
+time 481ms: A started using the CPU [Q B C]
+time 649ms: A completed its CPU burst [Q B C]
+time 649ms: A performing I/O [Q B C]
+time 662ms: B started using the CPU [Q C]
+time 883ms: B terminated [Q C]
+time 896ms: C started using the CPU [Q]
+time 936ms: A completed I/O [Q]
+time 936ms: C preempted by PA [Q C]
+time 949ms: A started using the CPU [Q C]
+time 1117ms: A completed its CPU burst [Q C]
+time 1117ms: A performing I/O [Q C]
+time 1130ms: C started using the CPU [Q]
+time 1404ms: A completed I/O [Q]
+time 1404ms: C preempted by PA [Q C]
+time 1417ms: A started using the CPU [Q C]
+time 1585ms: A completed its CPU burst [Q C]
+time 1585ms: A performing I/O [Q C]
+time 1598ms: C started using the CPU [Q]
+time 1872ms: A completed I/O [Q]
+time 1872ms: C preempted by PA [Q C]
+time 1885ms: A started using the CPU [Q C]
+time 2053ms: A terminated [Q C]
+time 2066ms: C started using the CPU [Q]
+time 2790ms: D completed I/O [Q]
+time 2790ms: C preempted by PD [Q C]
+time 2803ms: D started using the CPU [Q C]
+time 2900ms: D completed its CPU burst [Q C]
+time 2900ms: D performing I/O [Q C]
+time 2913ms: C started using the CPU [Q]
+time 3371ms: C completed its CPU burst [Q]
+time 3371ms: C performing I/O [Q]
+time 4193ms: C completed I/O [Q]
+time 4206ms: C started using the CPU [Q]
+time 5399ms: D completed I/O [Q]
+time 5399ms: C preempted by PD [Q C]
+time 5412ms: D started using the CPU [Q C]
+time 5509ms: D completed its CPU burst [Q C]
+time 5509ms: D performing I/O [Q C]
+time 5522ms: C started using the CPU [Q]
+time 6099ms: C terminated [Q]
+time 8008ms: D completed I/O [Q]
+time 8021ms: D started using the CPU [Q]
+time 8118ms: D completed its CPU burst [Q]
+time 8118ms: D performing I/O [Q]
+time 10617ms: D completed I/O [Q]
+time 10630ms: D started using the CPU [Q]
+time 10727ms: D terminated [Q]
+time 10727ms: Simulator for SRT ended [Q]
+
+
+time 0ms: Simulator started for RR (t_slice 80) and First Fit
+time 0ms: Process A added to system [Q A]
+time 0ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAA........
+................................
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 0ms: Process B added to system [Q A B]
+time 0ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBB........................
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 13ms: A started using the CPU [Q B]
+time 93ms: A preempted due to time slice expiration [Q B]
+time 106ms: B started using the CPU [Q A]
+time 180ms: Process C added to system [Q A C]
+time 180ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCC........
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 180ms: Process D added to system [Q A C D]
+time 180ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDD....
+................................
+................................
+................................
+................................
+================================
+
+time 186ms: B preempted due to time slice expiration [Q A C D]
+time 199ms: A started using the CPU [Q C D B]
+time 279ms: A preempted due to time slice expiration [Q C D B]
+time 292ms: C started using the CPU [Q D B A]
+time 372ms: C preempted due to time slice expiration [Q D B A]
+time 385ms: D started using the CPU [Q B A C]
+time 465ms: D preempted due to time slice expiration [Q B A C]
+time 478ms: B started using the CPU [Q A C D]
+time 558ms: B preempted due to time slice expiration [Q A C D]
+time 571ms: A started using the CPU [Q C D B]
+time 579ms: A completed its CPU burst [Q C D B]
+time 579ms: A performing I/O [Q C D B]
+time 592ms: C started using the CPU [Q D B]
+time 672ms: C preempted due to time slice expiration [Q D B]
+time 685ms: D started using the CPU [Q B C]
+time 702ms: D completed its CPU burst [Q B C]
+time 702ms: D performing I/O [Q B C]
+time 715ms: B started using the CPU [Q C]
+time 795ms: B preempted due to time slice expiration [Q C]
+time 808ms: C started using the CPU [Q B]
+time 866ms: A completed I/O [Q B]
+time 888ms: C preempted due to time slice expiration [Q B A]
+time 901ms: B started using the CPU [Q A C]
+time 981ms: B preempted due to time slice expiration [Q A C]
+time 994ms: A started using the CPU [Q C B]
+time 1074ms: A preempted due to time slice expiration [Q C B]
+time 1087ms: C started using the CPU [Q B A]
+time 1167ms: C preempted due to time slice expiration [Q B A]
+time 1180ms: B started using the CPU [Q A C]
+time 1245ms: B terminated [Q A C]
+time 1258ms: A started using the CPU [Q C]
+time 1338ms: A preempted due to time slice expiration [Q C]
+time 1351ms: C started using the CPU [Q A]
+time 1431ms: C preempted due to time slice expiration [Q A]
+time 1444ms: A started using the CPU [Q C]
+time 1452ms: A completed its CPU burst [Q C]
+time 1452ms: A performing I/O [Q C]
+time 1465ms: C started using the CPU [Q]
+time 1545ms: C preempted due to time slice expiration [Q]
+time 1625ms: C preempted due to time slice expiration [Q]
+time 1705ms: C preempted due to time slice expiration [Q]
+time 1739ms: A completed I/O [Q]
+time 1785ms: C preempted due to time slice expiration [Q A]
+time 1798ms: A started using the CPU [Q C]
+time 1878ms: A preempted due to time slice expiration [Q C]
+time 1891ms: C started using the CPU [Q A]
+time 1971ms: C preempted due to time slice expiration [Q A]
+time 1984ms: A started using the CPU [Q C]
+time 2064ms: A preempted due to time slice expiration [Q C]
+time 2077ms: C started using the CPU [Q A]
+time 2157ms: C preempted due to time slice expiration [Q A]
+time 2170ms: A started using the CPU [Q C]
+time 2178ms: A completed its CPU burst [Q C]
+time 2178ms: A performing I/O [Q C]
+time 2191ms: C started using the CPU [Q]
+time 2271ms: C preempted due to time slice expiration [Q]
+time 2351ms: C preempted due to time slice expiration [Q]
+time 2431ms: C preempted due to time slice expiration [Q]
+time 2465ms: A completed I/O [Q]
+time 2511ms: C preempted due to time slice expiration [Q A]
+time 2524ms: A started using the CPU [Q C]
+time 2604ms: A preempted due to time slice expiration [Q C]
+time 2617ms: C started using the CPU [Q A]
+time 2697ms: C preempted due to time slice expiration [Q A]
+time 2710ms: A started using the CPU [Q C]
+time 2790ms: A preempted due to time slice expiration [Q C]
+time 2803ms: C started using the CPU [Q A]
+time 2883ms: C preempted due to time slice expiration [Q A]
+time 2896ms: A started using the CPU [Q C]
+time 2904ms: A completed its CPU burst [Q C]
+time 2904ms: A performing I/O [Q C]
+time 2917ms: C started using the CPU [Q]
+time 2997ms: C preempted due to time slice expiration [Q]
+time 3077ms: C preempted due to time slice expiration [Q]
+time 3157ms: C preempted due to time slice expiration [Q]
+time 3191ms: A completed I/O [Q]
+time 3201ms: D completed I/O [Q A]
+time 3237ms: C preempted due to time slice expiration [Q A D]
+time 3250ms: A started using the CPU [Q D C]
+time 3330ms: A preempted due to time slice expiration [Q D C]
+time 3343ms: D started using the CPU [Q C A]
+time 3423ms: D preempted due to time slice expiration [Q C A]
+time 3436ms: C started using the CPU [Q A D]
+time 3516ms: C preempted due to time slice expiration [Q A D]
+time 3529ms: A started using the CPU [Q D C]
+time 3609ms: A preempted due to time slice expiration [Q D C]
+time 3622ms: D started using the CPU [Q C A]
+time 3639ms: D completed its CPU burst [Q C A]
+time 3639ms: D performing I/O [Q C A]
+time 3652ms: C started using the CPU [Q A]
+time 3662ms: C completed its CPU burst [Q A]
+time 3662ms: C performing I/O [Q A]
+time 3675ms: A started using the CPU [Q]
+time 3683ms: A terminated [Q]
+time 4484ms: C completed I/O [Q]
+time 4497ms: C started using the CPU [Q]
+time 4577ms: C preempted due to time slice expiration [Q]
+time 4657ms: C preempted due to time slice expiration [Q]
+time 4737ms: C preempted due to time slice expiration [Q]
+time 4817ms: C preempted due to time slice expiration [Q]
+time 4897ms: C preempted due to time slice expiration [Q]
+time 4977ms: C preempted due to time slice expiration [Q]
+time 5057ms: C preempted due to time slice expiration [Q]
+time 5137ms: C preempted due to time slice expiration [Q]
+time 5217ms: C preempted due to time slice expiration [Q]
+time 5297ms: C preempted due to time slice expiration [Q]
+time 5377ms: C preempted due to time slice expiration [Q]
+time 5457ms: C preempted due to time slice expiration [Q]
+time 5537ms: C preempted due to time slice expiration [Q]
+time 5617ms: C preempted due to time slice expiration [Q]
+time 5697ms: C preempted due to time slice expiration [Q]
+time 5777ms: C preempted due to time slice expiration [Q]
+time 5857ms: C preempted due to time slice expiration [Q]
+time 5937ms: C preempted due to time slice expiration [Q]
+time 6017ms: C preempted due to time slice expiration [Q]
+time 6097ms: C preempted due to time slice expiration [Q]
+time 6138ms: D completed I/O [Q]
+time 6177ms: C preempted due to time slice expiration [Q D]
+time 6190ms: D started using the CPU [Q C]
+time 6270ms: D preempted due to time slice expiration [Q C]
+time 6283ms: C started using the CPU [Q D]
+time 6363ms: C preempted due to time slice expiration [Q D]
+time 6376ms: D started using the CPU [Q C]
+time 6393ms: D completed its CPU burst [Q C]
+time 6393ms: D performing I/O [Q C]
+time 6406ms: C started using the CPU [Q]
+time 6416ms: C terminated [Q]
+time 8892ms: D completed I/O [Q]
+time 8905ms: D started using the CPU [Q]
+time 8985ms: D preempted due to time slice expiration [Q]
+time 9002ms: D completed its CPU burst [Q]
+time 9002ms: D performing I/O [Q]
+time 11501ms: D completed I/O [Q]
+time 11514ms: D started using the CPU [Q]
+time 11594ms: D preempted due to time slice expiration [Q]
+time 11611ms: D terminated [Q]
+time 11611ms: Simulator for RR ended [Q]
+
+
+time 0ms: Simulator started for RR (t_slice 80) and Best Fit
+not implemented
+time 0ms: Process A added to system [Q A]
+time 0ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAA........
+................................
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+not implemented
+time 0ms: Process B added to system [Q A B]
+time 0ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBB........................
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 13ms: A started using the CPU [Q B]
+time 93ms: A preempted due to time slice expiration [Q B]
+time 106ms: B started using the CPU [Q A]
+not implemented
+time 180ms: Process C added to system [Q A C]
+time 180ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCC........
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+not implemented
+time 180ms: Process D added to system [Q A C D]
+time 180ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDD....
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 186ms: B preempted due to time slice expiration [Q A C D]
+time 199ms: A started using the CPU [Q C D B]
+time 279ms: A preempted due to time slice expiration [Q C D B]
+time 292ms: C started using the CPU [Q D B A]
+time 372ms: C preempted due to time slice expiration [Q D B A]
+time 385ms: D started using the CPU [Q B A C]
+time 465ms: D preempted due to time slice expiration [Q B A C]
+time 478ms: B started using the CPU [Q A C D]
+time 558ms: B preempted due to time slice expiration [Q A C D]
+time 571ms: A started using the CPU [Q C D B]
+time 579ms: A completed its CPU burst [Q C D B]
+time 579ms: A performing I/O [Q C D B]
+time 592ms: C started using the CPU [Q D B]
+time 672ms: C preempted due to time slice expiration [Q D B]
+time 685ms: D started using the CPU [Q B C]
+time 702ms: D completed its CPU burst [Q B C]
+time 702ms: D performing I/O [Q B C]
+time 715ms: B started using the CPU [Q C]
+time 795ms: B preempted due to time slice expiration [Q C]
+time 808ms: C started using the CPU [Q B]
+time 866ms: A completed I/O [Q B]
+time 888ms: C preempted due to time slice expiration [Q B A]
+time 901ms: B started using the CPU [Q A C]
+time 981ms: B preempted due to time slice expiration [Q A C]
+time 994ms: A started using the CPU [Q C B]
+time 1074ms: A preempted due to time slice expiration [Q C B]
+time 1087ms: C started using the CPU [Q B A]
+time 1167ms: C preempted due to time slice expiration [Q B A]
+time 1180ms: B started using the CPU [Q A C]
+time 1245ms: B terminated [Q A C]
+time 1258ms: A started using the CPU [Q C]
+time 1338ms: A preempted due to time slice expiration [Q C]
+time 1351ms: C started using the CPU [Q A]
+time 1431ms: C preempted due to time slice expiration [Q A]
+time 1444ms: A started using the CPU [Q C]
+time 1452ms: A completed its CPU burst [Q C]
+time 1452ms: A performing I/O [Q C]
+time 1465ms: C started using the CPU [Q]
+time 1545ms: C preempted due to time slice expiration [Q]
+time 1625ms: C preempted due to time slice expiration [Q]
+time 1705ms: C preempted due to time slice expiration [Q]
+time 1739ms: A completed I/O [Q]
+time 1785ms: C preempted due to time slice expiration [Q A]
+time 1798ms: A started using the CPU [Q C]
+time 1878ms: A preempted due to time slice expiration [Q C]
+time 1891ms: C started using the CPU [Q A]
+time 1971ms: C preempted due to time slice expiration [Q A]
+time 1984ms: A started using the CPU [Q C]
+time 2064ms: A preempted due to time slice expiration [Q C]
+time 2077ms: C started using the CPU [Q A]
+time 2157ms: C preempted due to time slice expiration [Q A]
+time 2170ms: A started using the CPU [Q C]
+time 2178ms: A completed its CPU burst [Q C]
+time 2178ms: A performing I/O [Q C]
+time 2191ms: C started using the CPU [Q]
+time 2271ms: C preempted due to time slice expiration [Q]
+time 2351ms: C preempted due to time slice expiration [Q]
+time 2431ms: C preempted due to time slice expiration [Q]
+time 2465ms: A completed I/O [Q]
+time 2511ms: C preempted due to time slice expiration [Q A]
+time 2524ms: A started using the CPU [Q C]
+time 2604ms: A preempted due to time slice expiration [Q C]
+time 2617ms: C started using the CPU [Q A]
+time 2697ms: C preempted due to time slice expiration [Q A]
+time 2710ms: A started using the CPU [Q C]
+time 2790ms: A preempted due to time slice expiration [Q C]
+time 2803ms: C started using the CPU [Q A]
+time 2883ms: C preempted due to time slice expiration [Q A]
+time 2896ms: A started using the CPU [Q C]
+time 2904ms: A completed its CPU burst [Q C]
+time 2904ms: A performing I/O [Q C]
+time 2917ms: C started using the CPU [Q]
+time 2997ms: C preempted due to time slice expiration [Q]
+time 3077ms: C preempted due to time slice expiration [Q]
+time 3157ms: C preempted due to time slice expiration [Q]
+time 3191ms: A completed I/O [Q]
+time 3201ms: D completed I/O [Q A]
+time 3237ms: C preempted due to time slice expiration [Q A D]
+time 3250ms: A started using the CPU [Q D C]
+time 3330ms: A preempted due to time slice expiration [Q D C]
+time 3343ms: D started using the CPU [Q C A]
+time 3423ms: D preempted due to time slice expiration [Q C A]
+time 3436ms: C started using the CPU [Q A D]
+time 3516ms: C preempted due to time slice expiration [Q A D]
+time 3529ms: A started using the CPU [Q D C]
+time 3609ms: A preempted due to time slice expiration [Q D C]
+time 3622ms: D started using the CPU [Q C A]
+time 3639ms: D completed its CPU burst [Q C A]
+time 3639ms: D performing I/O [Q C A]
+time 3652ms: C started using the CPU [Q A]
+time 3662ms: C completed its CPU burst [Q A]
+time 3662ms: C performing I/O [Q A]
+time 3675ms: A started using the CPU [Q]
+time 3683ms: A terminated [Q]
+time 4484ms: C completed I/O [Q]
+time 4497ms: C started using the CPU [Q]
+time 4577ms: C preempted due to time slice expiration [Q]
+time 4657ms: C preempted due to time slice expiration [Q]
+time 4737ms: C preempted due to time slice expiration [Q]
+time 4817ms: C preempted due to time slice expiration [Q]
+time 4897ms: C preempted due to time slice expiration [Q]
+time 4977ms: C preempted due to time slice expiration [Q]
+time 5057ms: C preempted due to time slice expiration [Q]
+time 5137ms: C preempted due to time slice expiration [Q]
+time 5217ms: C preempted due to time slice expiration [Q]
+time 5297ms: C preempted due to time slice expiration [Q]
+time 5377ms: C preempted due to time slice expiration [Q]
+time 5457ms: C preempted due to time slice expiration [Q]
+time 5537ms: C preempted due to time slice expiration [Q]
+time 5617ms: C preempted due to time slice expiration [Q]
+time 5697ms: C preempted due to time slice expiration [Q]
+time 5777ms: C preempted due to time slice expiration [Q]
+time 5857ms: C preempted due to time slice expiration [Q]
+time 5937ms: C preempted due to time slice expiration [Q]
+time 6017ms: C preempted due to time slice expiration [Q]
+time 6097ms: C preempted due to time slice expiration [Q]
+time 6138ms: D completed I/O [Q]
+time 6177ms: C preempted due to time slice expiration [Q D]
+time 6190ms: D started using the CPU [Q C]
+time 6270ms: D preempted due to time slice expiration [Q C]
+time 6283ms: C started using the CPU [Q D]
+time 6363ms: C preempted due to time slice expiration [Q D]
+time 6376ms: D started using the CPU [Q C]
+time 6393ms: D completed its CPU burst [Q C]
+time 6393ms: D performing I/O [Q C]
+time 6406ms: C started using the CPU [Q]
+time 6416ms: C terminated [Q]
+time 8892ms: D completed I/O [Q]
+time 8905ms: D started using the CPU [Q]
+time 8985ms: D preempted due to time slice expiration [Q]
+time 9002ms: D completed its CPU burst [Q]
+time 9002ms: D performing I/O [Q]
+time 11501ms: D completed I/O [Q]
+time 11514ms: D started using the CPU [Q]
+time 11594ms: D preempted due to time slice expiration [Q]
+time 11611ms: D terminated [Q]
+time 11611ms: Simulator for RR ended [Q]
+
+
+time 0ms: Simulator started for RR (t_slice 80) and Next Fit
+not implemented
+time 0ms: Process A added to system [Q A]
+time 0ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAA........
+................................
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+not implemented
+time 0ms: Process B added to system [Q A B]
+time 0ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBB........................
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 13ms: A started using the CPU [Q B]
+time 93ms: A preempted due to time slice expiration [Q B]
+time 106ms: B started using the CPU [Q A]
+not implemented
+time 180ms: Process C added to system [Q A C]
+time 180ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCC........
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+not implemented
+time 180ms: Process D added to system [Q A C D]
+time 180ms: Simulated Memory:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAABBBBBBBB
+BBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDD....
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+
+time 186ms: B preempted due to time slice expiration [Q A C D]
+time 199ms: A started using the CPU [Q C D B]
+time 279ms: A preempted due to time slice expiration [Q C D B]
+time 292ms: C started using the CPU [Q D B A]
+time 372ms: C preempted due to time slice expiration [Q D B A]
+time 385ms: D started using the CPU [Q B A C]
+time 465ms: D preempted due to time slice expiration [Q B A C]
+time 478ms: B started using the CPU [Q A C D]
+time 558ms: B preempted due to time slice expiration [Q A C D]
+time 571ms: A started using the CPU [Q C D B]
+time 579ms: A completed its CPU burst [Q C D B]
+time 579ms: A performing I/O [Q C D B]
+time 592ms: C started using the CPU [Q D B]
+time 672ms: C preempted due to time slice expiration [Q D B]
+time 685ms: D started using the CPU [Q B C]
+time 702ms: D completed its CPU burst [Q B C]
+time 702ms: D performing I/O [Q B C]
+time 715ms: B started using the CPU [Q C]
+time 795ms: B preempted due to time slice expiration [Q C]
+time 808ms: C started using the CPU [Q B]
+time 866ms: A completed I/O [Q B]
+time 888ms: C preempted due to time slice expiration [Q B A]
+time 901ms: B started using the CPU [Q A C]
+time 981ms: B preempted due to time slice expiration [Q A C]
+time 994ms: A started using the CPU [Q C B]
+time 1074ms: A preempted due to time slice expiration [Q C B]
+time 1087ms: C started using the CPU [Q B A]
+time 1167ms: C preempted due to time slice expiration [Q B A]
+time 1180ms: B started using the CPU [Q A C]
+time 1245ms: B terminated [Q A C]
+time 1258ms: A started using the CPU [Q C]
+time 1338ms: A preempted due to time slice expiration [Q C]
+time 1351ms: C started using the CPU [Q A]
+time 1431ms: C preempted due to time slice expiration [Q A]
+time 1444ms: A started using the CPU [Q C]
+time 1452ms: A completed its CPU burst [Q C]
+time 1452ms: A performing I/O [Q C]
+time 1465ms: C started using the CPU [Q]
+time 1545ms: C preempted due to time slice expiration [Q]
+time 1625ms: C preempted due to time slice expiration [Q]
+time 1705ms: C preempted due to time slice expiration [Q]
+time 1739ms: A completed I/O [Q]
+time 1785ms: C preempted due to time slice expiration [Q A]
+time 1798ms: A started using the CPU [Q C]
+time 1878ms: A preempted due to time slice expiration [Q C]
+time 1891ms: C started using the CPU [Q A]
+time 1971ms: C preempted due to time slice expiration [Q A]
+time 1984ms: A started using the CPU [Q C]
+time 2064ms: A preempted due to time slice expiration [Q C]
+time 2077ms: C started using the CPU [Q A]
+time 2157ms: C preempted due to time slice expiration [Q A]
+time 2170ms: A started using the CPU [Q C]
+time 2178ms: A completed its CPU burst [Q C]
+time 2178ms: A performing I/O [Q C]
+time 2191ms: C started using the CPU [Q]
+time 2271ms: C preempted due to time slice expiration [Q]
+time 2351ms: C preempted due to time slice expiration [Q]
+time 2431ms: C preempted due to time slice expiration [Q]
+time 2465ms: A completed I/O [Q]
+time 2511ms: C preempted due to time slice expiration [Q A]
+time 2524ms: A started using the CPU [Q C]
+time 2604ms: A preempted due to time slice expiration [Q C]
+time 2617ms: C started using the CPU [Q A]
+time 2697ms: C preempted due to time slice expiration [Q A]
+time 2710ms: A started using the CPU [Q C]
+time 2790ms: A preempted due to time slice expiration [Q C]
+time 2803ms: C started using the CPU [Q A]
+time 2883ms: C preempted due to time slice expiration [Q A]
+time 2896ms: A started using the CPU [Q C]
+time 2904ms: A completed its CPU burst [Q C]
+time 2904ms: A performing I/O [Q C]
+time 2917ms: C started using the CPU [Q]
+time 2997ms: C preempted due to time slice expiration [Q]
+time 3077ms: C preempted due to time slice expiration [Q]
+time 3157ms: C preempted due to time slice expiration [Q]
+time 3191ms: A completed I/O [Q]
+time 3201ms: D completed I/O [Q A]
+time 3237ms: C preempted due to time slice expiration [Q A D]
+time 3250ms: A started using the CPU [Q D C]
+time 3330ms: A preempted due to time slice expiration [Q D C]
+time 3343ms: D started using the CPU [Q C A]
+time 3423ms: D preempted due to time slice expiration [Q C A]
+time 3436ms: C started using the CPU [Q A D]
+time 3516ms: C preempted due to time slice expiration [Q A D]
+time 3529ms: A started using the CPU [Q D C]
+time 3609ms: A preempted due to time slice expiration [Q D C]
+time 3622ms: D started using the CPU [Q C A]
+time 3639ms: D completed its CPU burst [Q C A]
+time 3639ms: D performing I/O [Q C A]
+time 3652ms: C started using the CPU [Q A]
+time 3662ms: C completed its CPU burst [Q A]
+time 3662ms: C performing I/O [Q A]
+time 3675ms: A started using the CPU [Q]
+time 3683ms: A terminated [Q]
+time 4484ms: C completed I/O [Q]
+time 4497ms: C started using the CPU [Q]
+time 4577ms: C preempted due to time slice expiration [Q]
+time 4657ms: C preempted due to time slice expiration [Q]
+time 4737ms: C preempted due to time slice expiration [Q]
+time 4817ms: C preempted due to time slice expiration [Q]
+time 4897ms: C preempted due to time slice expiration [Q]
+time 4977ms: C preempted due to time slice expiration [Q]
+time 5057ms: C preempted due to time slice expiration [Q]
+time 5137ms: C preempted due to time slice expiration [Q]
+time 5217ms: C preempted due to time slice expiration [Q]
+time 5297ms: C preempted due to time slice expiration [Q]
+time 5377ms: C preempted due to time slice expiration [Q]
+time 5457ms: C preempted due to time slice expiration [Q]
+time 5537ms: C preempted due to time slice expiration [Q]
+time 5617ms: C preempted due to time slice expiration [Q]
+time 5697ms: C preempted due to time slice expiration [Q]
+time 5777ms: C preempted due to time slice expiration [Q]
+time 5857ms: C preempted due to time slice expiration [Q]
+time 5937ms: C preempted due to time slice expiration [Q]
+time 6017ms: C preempted due to time slice expiration [Q]
+time 6097ms: C preempted due to time slice expiration [Q]
+time 6138ms: D completed I/O [Q]
+time 6177ms: C preempted due to time slice expiration [Q D]
+time 6190ms: D started using the CPU [Q C]
+time 6270ms: D preempted due to time slice expiration [Q C]
+time 6283ms: C started using the CPU [Q D]
+time 6363ms: C preempted due to time slice expiration [Q D]
+time 6376ms: D started using the CPU [Q C]
+time 6393ms: D completed its CPU burst [Q C]
+time 6393ms: D performing I/O [Q C]
+time 6406ms: C started using the CPU [Q]
+time 6416ms: C terminated [Q]
+time 8892ms: D completed I/O [Q]
+time 8905ms: D started using the CPU [Q]
+time 8985ms: D preempted due to time slice expiration [Q]
+time 9002ms: D completed its CPU burst [Q]
+time 9002ms: D performing I/O [Q]
+time 11501ms: D completed I/O [Q]
+time 11514ms: D started using the CPU [Q]
+time 11594ms: D preempted due to time slice expiration [Q]
+time 11611ms: D terminated [Q]
+time 11611ms: Simulator for RR ended [Q]
