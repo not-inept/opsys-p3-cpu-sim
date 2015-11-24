@@ -298,13 +298,14 @@ for algorithm in ["srt", "rr"]:
                     assert(0) #This probably shouldn't happen before we actualy run items.
                 
                 else:
-                    cpu.addProcessToQueue(process)
+                    cpu.processQueue.append(process) #Append instead of cpu.addProcessToQueue to avoid unnecessary preemption at time 0.
                     printStatusMessage("Process {0} added to system".format(process.id), cpu.processQueue)
                     print "time "+str(currentTime)+"ms: Simulated Memory:\n"+str(mem)
 
         #Initial sort.
         if (algorithm == "srt"):
             cpu.processQueue.sort(key=lambda x: x.timeremaining)
+
         elif (algorithm == "pwa"):
             cpu.processQueue.sort(key=lambda x: (x.priority, x.id))
 

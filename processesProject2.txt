@@ -1,0 +1,10 @@
+# example simulator input file for project 3
+# This is based on the project 2 output, assuming memory doesn't need defragmentation SRT should match.
+#
+# <proc-num>|<arrival-time>|<burst-time>|<num-burst>|<io-time>|<memory>
+#
+A|0|168|5|287|24
+B|0|385|1|0|16
+D|0|97|5|2499|36
+C|0|1770|2|822|48
+
