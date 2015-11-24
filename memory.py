@@ -30,7 +30,6 @@ class Memory:
 				return False
 			start = found
 			self.alloc_start = start+size
-
 		elif self.type == "bf": # handle best fit
 			m = self.representation()
 			found = False
@@ -42,11 +41,8 @@ class Memory:
 					found = True
 					start = place.start()
 					break
-
 			if (not found):
 				return False
-
-
 		else: # handle first fit/default
 			for i in range(len(self.partitions)):
 				p = self.partitions[i]
@@ -81,16 +77,15 @@ class Memory:
 		return False
 
 	def defragment(self):
-		time_elapsed = 0
-		self.partitions.sort(key=lambda p: p.start_unit)
-		prevend = 0
-		for process in self.partitions:
-			oldstart = process.start_unit
-			process.start_unit = prevend
-			dots = abs(process.start_unit-oldstart) #no idea what to do for this
-			time_elapsed += dots
-			prevend = process.start_unit+process.size
-		return time_elapsed
+		units_moved = 0
+		current_unit = 0
+		for p in self.partitions:
+			if p.start_unit != current_unit:
+				p.start_unit = current_unit
+				current_unit = current_unit+p.start_unit
+				units_moved += p.size
+		time_elapsed = units_moved*self.t_memmove
+		return time_elapsed, units_moved # return time elapsed
 
 	# assumes partitions is sorted by start_unit, and start_unit is unique
 	def representation(self):
@@ -103,8 +98,8 @@ class Memory:
 			else:
 				representation.append(p.process*p.size)
 			current_unit = p.start_unit+p.size
-		if current_unit < self.size:
-			representation.append("."*(self.size-current_unit))
+		if len("".join(representation)) < self.size:
+			representation.append("."*(self.size-len("".join(representation))))
 		return "".join(representation)
 
 	def __str__(self):
@@ -136,31 +131,58 @@ class Memory:
 		self.t_memmove = t_memmove
 
 if __name__ == "__main__":
-	# first fit tests
-	print("Testing first fit:\n")
-	test_mem = Memory("ff")
-	test_mem.allocate("A", 22)
-	test_mem.allocate("B", 15)
-	test_mem.allocate("C", 15)
-	print test_mem
-	test_mem.deallocate("B")
-	test_mem.allocate("D", 15)
-	print test_mem
+	# # first fit tests
+	# print("Testing first fit:\n")
+	# test_mem = Memory("ff")
+	# test_mem.allocate("A", 22)
+	# test_mem.allocate("B", 15)
+	# test_mem.allocate("C", 15)
+	# print test_mem
+	# test_mem.deallocate("B")
+	# test_mem.allocate("D", 15)
+	# print test_mem
 
-	print("\nTesting next fit:\n")
- 	test_mem2 = Memory("nf", 32)
- 	print test_mem2.alloc_start
+	# print("\nTesting next fit:\n")
+	# 	test_mem2 = Memory("nf", 32)
+ 	# 	print test_mem2.alloc_start
 
-	test_mem2.allocate("A", 22)
-	print test_mem2.alloc_start
+	# test_mem2.allocate("A", 22)
+	# print test_mem2.alloc_start
 
-	print test_mem2.allocate("B", 2)
-	print test_mem2.allocate("C", 15)
-	print test_mem2.alloc_start
-	print test_mem2
-	print test_mem2.allocate("D", 15)
-	test_mem2.deallocate("A")
-	print test_mem2.alloc_start
-	test_mem2.allocate("E", 2)
-	print test_mem2.alloc_start
-	print test_mem2
+	# print test_mem2.allocate("B", 2)
+	# print test_mem2.allocate("C", 15)
+	# print test_mem2.alloc_start
+	# print test_mem2
+	# print test_mem2.allocate("D", 15)
+	# test_mem2.deallocate("A")
+	# print test_mem2.alloc_start
+	# test_mem2.allocate("E", 2)
+	# print test_mem2.alloc_start
+	# print test_mem2
+
+	# test defrag, following example 3
+	print("\nDefragmentation test:\n")
+	test_def = Memory("ff")
+	# allocate nodes
+	test_def.allocate("H", 16)
+	test_def.allocate("X", 14)
+	test_def.allocate("J", 59)
+	test_def.allocate("Y", 2)
+	test_def.allocate("K", 35)
+	test_def.allocate("L", 24)
+	test_def.allocate("N", 8)
+	test_def.allocate("Z", 2)
+	test_def.allocate("M", 17)
+	test_def.allocate("W", 20)
+	test_def.allocate("S", 24)
+	# remove dummy nodes
+	test_def.deallocate("W")
+	test_def.deallocate("X")
+	test_def.deallocate("Y")
+	test_def.deallocate("Z")
+	# defragulate
+	print("starting defrag\n")
+	print(test_def)
+	time_elapsed, units_moved = test_def.defragment()
+	print "defrag done, time elapsed: ", time_elapsed, " and units moved: ", units_moved
+	print(test_def)
