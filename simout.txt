@@ -1,30 +1,30 @@
 Algorithm SRT
 -- average CPU burst time: 403.85 ms
--- average wait time: 165.00 ms
--- average turnaround time: 586.85 ms
--- total number of context switches: 18
+-- average wait time: 149.31 ms
+-- average turnaround time: 572.15 ms
+-- total number of context switches: 19
 Algorithm SRT
 -- average CPU burst time: 403.85 ms
--- average wait time: 165.00 ms
--- average turnaround time: 586.85 ms
--- total number of context switches: 18
+-- average wait time: 149.31 ms
+-- average turnaround time: 572.15 ms
+-- total number of context switches: 19
 Algorithm SRT
 -- average CPU burst time: 403.85 ms
--- average wait time: 165.00 ms
--- average turnaround time: 586.85 ms
--- total number of context switches: 18
+-- average wait time: 149.31 ms
+-- average turnaround time: 572.15 ms
+-- total number of context switches: 19
 Algorithm RR
 -- average CPU burst time: 403.85 ms
--- average wait time: 363.15 ms
--- average turnaround time: 815.00 ms
--- total number of context switches: 48
+-- average wait time: 367.69 ms
+-- average turnaround time: 816.54 ms
+-- total number of context switches: 45
 Algorithm RR
 -- average CPU burst time: 403.85 ms
--- average wait time: 363.15 ms
--- average turnaround time: 815.00 ms
--- total number of context switches: 48
+-- average wait time: 367.69 ms
+-- average turnaround time: 816.54 ms
+-- total number of context switches: 45
 Algorithm RR
 -- average CPU burst time: 403.85 ms
--- average wait time: 363.15 ms
--- average turnaround time: 815.00 ms
--- total number of context switches: 48
+-- average wait time: 367.69 ms
+-- average turnaround time: 816.54 ms
+-- total number of context switches: 45

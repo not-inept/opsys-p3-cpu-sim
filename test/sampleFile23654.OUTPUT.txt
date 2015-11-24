@@ -11,7 +11,6 @@ YYYYYYYYYYY.....................
 ................................
 ................................
 ================================
-
 time 61ms: Y started using the CPU [Q]
 time 93ms: Process K added to system [Q K Y]
 time 93ms: Simulated Memory:
@@ -25,8 +24,7 @@ KKKK............................
 ................................
 ................................
 ================================
-
-time 93ms: Y preempted by PK [Q Y]
+time 93ms: Y preempted by K [Q Y]
 time 98ms: Process J added to system [Q K Y J]
 time 98ms: Simulated Memory:
 ================================
@@ -39,7 +37,6 @@ KKKKJ...........................
 ................................
 ................................
 ================================
-
 time 106ms: K started using the CPU [Q Y J]
 time 257ms: Process P added to system [Q Y P J]
 time 257ms: Simulated Memory:
@@ -53,6 +50,417 @@ KKKKJPPPPPPPPPPPPPPPPPPPPPPPPPPP
 PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
 PPPPPPPPPPPPPPPPPPPPP...........
 ================================
-
 time 344ms: Z unable to be added; lack of memory [Q Y P J]
-time 344ms: Starting defragmentation (suspending all processes) [Q Y P J]
+time 344ms: Simulated Memory:
+================================
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKJPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPP...........
+================================
+time 344ms: Z unable to be added; lack of memory and defragmentation failed [Q Y P J]
+time 351ms: W unable to be added; lack of memory [Q Y P J]
+time 351ms: Simulated Memory:
+================================
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKJPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPP...........
+================================
+time 351ms: Z unable to be added; lack of memory and defragmentation failed [Q Y P J]
+time 372ms: K completed its CPU burst [Q Y P J]
+time 372ms: K performing I/O [Q Y P J]
+time 385ms: Y started using the CPU [Q P J]
+time 394ms: Process S added to system [Q S P J]
+time 394ms: Simulated Memory:
+================================
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKJPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPSSSSSSSS...
+================================
+time 558ms: Q unable to be added; lack of memory [Q S P J]
+time 558ms: Simulated Memory:
+================================
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKJPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPSSSSSSSS...
+================================
+time 558ms: Z unable to be added; lack of memory and defragmentation failed [Q S P J]
+time 610ms: U unable to be added; lack of memory [Q S P J]
+time 610ms: Simulated Memory:
+================================
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKJPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPSSSSSSSS...
+================================
+time 610ms: Z unable to be added; lack of memory and defragmentation failed [Q S P J]
+time 652ms: A unable to be added; lack of memory [Q S P J]
+time 652ms: Simulated Memory:
+================================
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+YYYYYYYYYYYKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKJPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPSSSSSSSS...
+================================
+time 652ms: Z unable to be added; lack of memory and defragmentation failed [Q S P J]
+time 885ms: Y terminated [Q S P J]
+time 898ms: S started using the CPU [Q P J]
+time 922ms: Process M added to system [Q P M J]
+time 922ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+M..........KKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKJPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPSSSSSSSS...
+================================
+time 934ms: F unable to be added; lack of memory [Q P M J]
+time 934ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+M..........KKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKJPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPSSSSSSSS...
+================================
+time 974ms: Z unable to be added; lack of memory and defragmentation failed [Q P M J]
+time 977ms: Process N added to system [Q P M J N]
+time 977ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKJPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPSSSSSSSSNN...........
+================================
+time 1094ms: D unable to be added; lack of memory [Q P M J N]
+time 1094ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKJPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPSSSSSSSSNN...........
+================================
+time 1094ms: Z unable to be added; lack of memory and defragmentation failed [Q P M J N]
+time 1126ms: G unable to be added; lack of memory [Q P M J N]
+time 1126ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKJPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPSSSSSSSSNN...........
+================================
+time 1126ms: Z unable to be added; lack of memory and defragmentation failed [Q P M J N]
+time 1150ms: O unable to be added; lack of memory [Q P M J N]
+time 1150ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKJPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPSSSSSSSSNN...........
+================================
+time 1150ms: Z unable to be added; lack of memory and defragmentation failed [Q P M J N]
+time 1217ms: Process I added to system [Q I P M J N]
+time 1217ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKJPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPSSSSSSSSNNIIIIIIIIII.
+================================
+time 1285ms: H unable to be added; lack of memory [Q I P M J N]
+time 1285ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKJPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPSSSSSSSSNNIIIIIIIIII.
+================================
+time 1285ms: Z unable to be added; lack of memory and defragmentation failed [Q I P M J N]
+time 1294ms: V unable to be added; lack of memory [Q I P M J N]
+time 1294ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKJPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPSSSSSSSSNNIIIIIIIIII.
+================================
+time 1294ms: Z unable to be added; lack of memory and defragmentation failed [Q I P M J N]
+time 1505ms: S completed its CPU burst [Q I P M J N]
+time 1505ms: S performing I/O [Q I P M J N]
+time 1508ms: L unable to be added; lack of memory [Q I P M J N]
+time 1508ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKJPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPSSSSSSSSNNIIIIIIIIII.
+================================
+time 1508ms: Z unable to be added; lack of memory and defragmentation failed [Q I P M J N]
+time 1519ms: I started using the CPU [Q P M J N]
+time 1708ms: E unable to be added; lack of memory [Q P M J N]
+time 1708ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKJPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPSSSSSSSSNNIIIIIIIIII.
+================================
+time 1708ms: Z unable to be added; lack of memory and defragmentation failed [Q P M J N]
+time 1860ms: C unable to be added; lack of memory [Q P M J N]
+time 1860ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKJPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPSSSSSSSSNNIIIIIIIIII.
+================================
+time 1860ms: Z unable to be added; lack of memory and defragmentation failed [Q P M J N]
+time 1872ms: I completed its CPU burst [Q P M J N]
+time 1872ms: I performing I/O [Q P M J N]
+time 1885ms: P started using the CPU [Q M J N]
+time 1897ms: T unable to be added; lack of memory [Q M J N]
+time 1897ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKJPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPSSSSSSSSNNIIIIIIIIII.
+================================
+time 1897ms: Z unable to be added; lack of memory and defragmentation failed [Q M J N]
+time 1969ms: X unable to be added; lack of memory [Q M J N]
+time 1969ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKJPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPSSSSSSSSNNIIIIIIIIII.
+================================
+time 1969ms: Z unable to be added; lack of memory and defragmentation failed [Q M J N]
+time 1978ms: R unable to be added; lack of memory [Q M J N]
+time 1978ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+KKKKKKKKKKKKKKKKKKKKKKKKKKJPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPSSSSSSSSNNIIIIIIIIII.
+================================
+time 1978ms: Z unable to be added; lack of memory and defragmentation failed [Q M J N]
+time 2296ms: I completed I/O [Q M J N]
+time 2577ms: P completed its CPU burst [Q I M J N]
+time 2577ms: P performing I/O [Q I M J N]
+time 2590ms: I started using the CPU [Q M J N]
+time 2780ms: P completed I/O [Q M J N]
+time 2941ms: I completed its CPU burst [Q P M J N]
+time 2941ms: I performing I/O [Q P M J N]
+time 2954ms: P started using the CPU [Q M J N]
+time 3365ms: I completed I/O [Q M J N]
+time 3643ms: P completed its CPU burst [Q I M J N]
+time 3643ms: P performing I/O [Q I M J N]
+time 3656ms: I started using the CPU [Q M J N]
+time 3846ms: P completed I/O [Q M J N]
+time 3919ms: K completed I/O [Q P M J N]
+time 4007ms: I completed its CPU burst [Q K P M J N]
+time 4007ms: I performing I/O [Q K P M J N]
+time 4020ms: K started using the CPU [Q P M J N]
+time 4284ms: K terminated [Q P M J N]
+time 4297ms: P started using the CPU [Q M J N]
+time 4431ms: I completed I/O [Q M J N]
+time 4431ms: P preempted by I [Q P M J N]
+time 4444ms: I started using the CPU [Q P M J N]
+time 4604ms: S completed I/O [Q P M J N]
+time 4795ms: I completed its CPU burst [Q P S M J N]
+time 4795ms: I performing I/O [Q P S M J N]
+time 4808ms: P started using the CPU [Q S M J N]
+time 5219ms: I completed I/O [Q S M J N]
+time 5363ms: P completed its CPU burst [Q I S M J N]
+time 5363ms: P performing I/O [Q I S M J N]
+time 5376ms: I started using the CPU [Q S M J N]
+time 5566ms: P completed I/O [Q S M J N]
+time 5727ms: I terminated [Q S P M J N]
+time 5740ms: S started using the CPU [Q P M J N]
+time 6301ms: S completed its CPU burst [Q P M J N]
+time 6301ms: S performing I/O [Q P M J N]
+time 6314ms: P started using the CPU [Q M J N]
+time 7003ms: P completed its CPU burst [Q M J N]
+time 7003ms: P performing I/O [Q M J N]
+time 7016ms: M started using the CPU [Q J N]
+time 7206ms: P completed I/O [Q J N]
+time 7755ms: M completed its CPU burst [Q P J N]
+time 7755ms: M performing I/O [Q P J N]
+time 7768ms: P started using the CPU [Q J N]
+time 8457ms: P completed its CPU burst [Q J N]
+time 8457ms: P performing I/O [Q J N]
+time 8470ms: J started using the CPU [Q N]
+time 8660ms: P completed I/O [Q N]
+time 9213ms: M completed I/O [Q P N]
+time 9276ms: J completed its CPU burst [Q P M N]
+time 9276ms: J performing I/O [Q P M N]
+time 9289ms: P started using the CPU [Q M N]
+time 9400ms: S completed I/O [Q M N]
+time 9400ms: P preempted by S [Q P M N]
+time 9413ms: S started using the CPU [Q P M N]
+time 9974ms: S completed its CPU burst [Q P M N]
+time 9974ms: S performing I/O [Q P M N]
+time 9987ms: P started using the CPU [Q M N]
+time 10565ms: P terminated [Q M N]
+time 10578ms: M started using the CPU [Q N]
+time 11317ms: M completed its CPU burst [Q N]
+time 11317ms: M performing I/O [Q N]
+time 11330ms: N started using the CPU [Q]
+time 11594ms: J completed I/O [Q]
+time 12263ms: N completed its CPU burst [Q J]
+time 12263ms: N performing I/O [Q J]
+time 12276ms: J started using the CPU [Q]
+time 12775ms: M completed I/O [Q]
+time 13073ms: S completed I/O [Q M]
+time 13082ms: J completed its CPU burst [Q S M]
+time 13082ms: J performing I/O [Q S M]
+time 13095ms: S started using the CPU [Q M]
+time 13656ms: S completed its CPU burst [Q M]
+time 13656ms: S performing I/O [Q M]
+time 13669ms: M started using the CPU [Q]
+time 14408ms: M completed its CPU burst [Q]
+time 14408ms: M performing I/O [Q]
+time 15400ms: J completed I/O [Q]
+time 15405ms: N completed I/O [Q J]
+time 15412ms: J started using the CPU [Q N]
+time 15866ms: M completed I/O [Q N]
+time 16218ms: J completed its CPU burst [Q M N]
+time 16218ms: J performing I/O [Q M N]
+time 16231ms: M started using the CPU [Q N]
+time 16755ms: S completed I/O [Q N]
+time 16970ms: M terminated [Q S N]
+time 16983ms: S started using the CPU [Q N]
+time 17544ms: S completed its CPU burst [Q N]
+time 17544ms: S performing I/O [Q N]
+time 17557ms: N started using the CPU [Q]
+time 18490ms: N completed its CPU burst [Q]
+time 18490ms: N performing I/O [Q]
+time 18536ms: J completed I/O [Q]
+time 18548ms: J started using the CPU [Q]
+time 19354ms: J completed its CPU burst [Q]
+time 19354ms: J performing I/O [Q]
+time 20643ms: S completed I/O [Q]
+time 20655ms: S started using the CPU [Q]
+time 21216ms: S completed its CPU burst [Q]
+time 21216ms: S performing I/O [Q]
+time 21632ms: N completed I/O [Q]
+time 21644ms: N started using the CPU [Q]
+time 21672ms: J completed I/O [Q]
+time 21672ms: N preempted by J [Q N]
+time 21685ms: J started using the CPU [Q N]
+time 22491ms: J completed its CPU burst [Q N]
+time 22491ms: J performing I/O [Q N]
+time 22504ms: N started using the CPU [Q]
+time 23409ms: N completed its CPU burst [Q]
+time 23409ms: N performing I/O [Q]
+time 24315ms: S completed I/O [Q]
+time 24327ms: S started using the CPU [Q]
+time 24809ms: J completed I/O [Q]
+time 24888ms: S completed its CPU burst [Q J]
+time 24888ms: S performing I/O [Q J]
+time 24901ms: J started using the CPU [Q]
+time 25707ms: J completed its CPU burst [Q]
+time 25707ms: J performing I/O [Q]
+time 26551ms: N completed I/O [Q]
+time 26563ms: N started using the CPU [Q]
+time 27496ms: N completed its CPU burst [Q]
+time 27496ms: N performing I/O [Q]
+time 27987ms: S completed I/O [Q]
+time 27999ms: S started using the CPU [Q]
+time 28025ms: J completed I/O [Q]
+time 28560ms: S completed its CPU burst [Q J]
+time 28560ms: S performing I/O [Q J]
+time 28573ms: J started using the CPU [Q]
+time 29379ms: J terminated [Q]
+time 30638ms: N completed I/O [Q]
+time 30650ms: N started using the CPU [Q]
+time 31583ms: N terminated [Q]
+time 31659ms: S completed I/O [Q]
+time 31671ms: S started using the CPU [Q]
+time 32232ms: S terminated [Q]

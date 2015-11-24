@@ -1,3 +1,5 @@
+import re
+
 # Memory Module
 class Partition:
 	process = "A"
@@ -28,8 +30,23 @@ class Memory:
 				return False
 			start = found
 			self.alloc_start = start+size
+
 		elif self.type == "bf": # handle best fit
-			print("Not implemented...")
+			m = self.representation()
+			found = False
+			for i in range(size, m.count(".")+1):
+				rg = "^[.]{"+str(i)+"}$|[A-Z][.]{"+str(i)+"}[A-Z]|^[.]{"+str(i)+"}[A-Z]|[A-Z][.]{"+str(i)+"}$"
+				place = re.search(rg, m)
+				#Wohoo we have a match! :D
+				if (place):
+					found = True
+					start = place.start()
+					break
+
+			if (not found):
+				return False
+
+
 		else: # handle first fit/default
 			for i in range(len(self.partitions)):
 				p = self.partitions[i]
@@ -63,8 +80,16 @@ class Memory:
 				return True
 		return False
 
-	def defragment(self, time):
+	def defragment(self):
 		time_elapsed = 0
+		self.partitions.sort(key=lambda p: p.start_unit)
+		prevend = 0
+		for process in self.partitions:
+			oldstart = process.start_unit
+			process.start_unit = prevend
+			dots = abs(process.start_unit-oldstart) #no idea what to do for this
+			time_elapsed += dots
+			prevend = process.start_unit+process.size
 		return time_elapsed
 
 	# assumes partitions is sorted by start_unit, and start_unit is unique
@@ -90,7 +115,7 @@ class Memory:
 			out_rep.append(rep[i*self.split:(i+1)*self.split]) # split into nice looking chunks
 		if self.size % self.split != 0:
 			out_rep.append(rep[(i+1)*self.split:]) #ensure even printing
-		return "="*self.split + "\n" + "\n".join(out_rep) + "\n" + "="*self.split + "\n"
+		return "="*self.split + "\n" + "\n".join(out_rep) + "\n" + "="*self.split
 
 	def __init__(self, type="ff", size=256, t_memmove=10, split=32):
 		# the type of allocation ("ff", "nf", "bf")

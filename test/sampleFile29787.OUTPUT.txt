@@ -11,7 +11,6 @@ XXXXXXXXXXXXXXXXXXXXXXX.........
 ................................
 ................................
 ================================
-
 time 89ms: X started using the CPU [Q]
 time 301ms: Process D added to system [Q D]
 time 301ms: Simulated Memory:
@@ -25,7 +24,6 @@ DDDDDDDDDDDD....................
 ................................
 ................................
 ================================
-
 time 369ms: Process A added to system [Q A D]
 time 369ms: Simulated Memory:
 ================================
@@ -38,7 +36,6 @@ AA..............................
 ................................
 ................................
 ================================
-
 time 400ms: X completed its CPU burst [Q A D]
 time 400ms: X performing I/O [Q A D]
 time 413ms: A started using the CPU [Q D]
@@ -54,8 +51,7 @@ BBBBBBBB........................
 ................................
 ................................
 ================================
-
-time 495ms: A preempted by PB [Q A D]
+time 495ms: A preempted by B [Q A D]
 time 508ms: B started using the CPU [Q A D]
 time 684ms: Process F added to system [Q A F D]
 time 684ms: Simulated Memory:
@@ -69,6 +65,528 @@ BBBBBBBBFFFFFFFFFFFFFFFFFFFFFFFF
 FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF..
 ................................
 ================================
-
 time 696ms: R unable to be added; lack of memory [Q A F D]
-time 696ms: Starting defragmentation (suspending all processes) [Q A F D]
+time 696ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXDDDDDDDDD
+DDDDDDDDDDDDAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF..
+................................
+================================
+time 696ms: Z unable to be added; lack of memory and defragmentation failed [Q A F D]
+time 714ms: B completed its CPU burst [Q A F D]
+time 714ms: B performing I/O [Q A F D]
+time 727ms: A started using the CPU [Q F D]
+time 785ms: L unable to be added; lack of memory [Q F D]
+time 785ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXDDDDDDDDD
+DDDDDDDDDDDDAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF..
+................................
+================================
+time 785ms: Z unable to be added; lack of memory and defragmentation failed [Q F D]
+time 823ms: Process K added to system [Q F D K]
+time 823ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXDDDDDDDDD
+DDDDDDDDDDDDAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFKK
+KKK.............................
+================================
+time 977ms: Process V added to system [Q F D K V]
+time 977ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXDDDDDDDDD
+DDDDDDDDDDDDAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFKK
+KKKVVVVVVVVVVVVVVVVVVVVVVVVVVV..
+================================
+time 981ms: T unable to be added; lack of memory [Q F D K V]
+time 981ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXDDDDDDDDD
+DDDDDDDDDDDDAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFKK
+KKKVVVVVVVVVVVVVVVVVVVVVVVVVVV..
+================================
+time 981ms: Z unable to be added; lack of memory and defragmentation failed [Q F D K V]
+time 998ms: Q unable to be added; lack of memory [Q F D K V]
+time 998ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXDDDDDDDDD
+DDDDDDDDDDDDAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFKK
+KKKVVVVVVVVVVVVVVVVVVVVVVVVVVV..
+================================
+time 998ms: Z unable to be added; lack of memory and defragmentation failed [Q F D K V]
+time 1033ms: A completed its CPU burst [Q F D K V]
+time 1033ms: A performing I/O [Q F D K V]
+time 1046ms: F started using the CPU [Q D K V]
+time 1156ms: Y unable to be added; lack of memory [Q D K V]
+time 1156ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXDDDDDDDDD
+DDDDDDDDDDDDAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFKK
+KKKVVVVVVVVVVVVVVVVVVVVVVVVVVV..
+================================
+time 1156ms: Z unable to be added; lack of memory and defragmentation failed [Q D K V]
+time 1288ms: Z unable to be added; lack of memory [Q D K V]
+time 1288ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXDDDDDDDDD
+DDDDDDDDDDDDAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFKK
+KKKVVVVVVVVVVVVVVVVVVVVVVVVVVV..
+================================
+time 1288ms: Z unable to be added; lack of memory and defragmentation failed [Q D K V]
+time 1293ms: M unable to be added; lack of memory [Q D K V]
+time 1293ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXDDDDDDDDD
+DDDDDDDDDDDDAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFKK
+KKKVVVVVVVVVVVVVVVVVVVVVVVVVVV..
+================================
+time 1293ms: Z unable to be added; lack of memory and defragmentation failed [Q D K V]
+time 1336ms: U unable to be added; lack of memory [Q D K V]
+time 1336ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXDDDDDDDDD
+DDDDDDDDDDDDAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFKK
+KKKVVVVVVVVVVVVVVVVVVVVVVVVVVV..
+================================
+time 1336ms: Z unable to be added; lack of memory and defragmentation failed [Q D K V]
+time 1450ms: F terminated [Q D K V]
+time 1463ms: D started using the CPU [Q K V]
+time 1473ms: C unable to be added; lack of memory [Q K V]
+time 1473ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXDDDDDDDDD
+DDDDDDDDDDDDAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBB........................
+..............................KK
+KKKVVVVVVVVVVVVVVVVVVVVVVVVVVV..
+================================
+time 1581ms: Z unable to be added; lack of memory and defragmentation failed [Q K V]
+time 1670ms: O unable to be added; lack of memory [Q K V]
+time 1670ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXDDDDDDDDD
+DDDDDDDDDDDDAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AABBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+BBBBBBBBKKKKKVVVVVVVVVVVVVVVVVVV
+VVVVVVVV........................
+................................
+================================
+time 1670ms: Z unable to be added; lack of memory and defragmentation failed [Q K V]
+time 1730ms: Process S added to system [Q S D K V]
+time 1730ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXX.........
+................................
+..............DDDDDDDDDDDDDDDDDD
+DDDAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAABBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK
+KKKKVVVVVVVVVVVVVVVVVVVVVVVVVVV.
+................................
+================================
+time 1730ms: D preempted by S [Q D K V]
+time 1743ms: S started using the CPU [Q D K V]
+time 1758ms: Process E added to system [Q D K E V]
+time 1758ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXEE.......
+................................
+..............DDDDDDDDDDDDDDDDDD
+DDDAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAABBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK
+KKKKVVVVVVVVVVVVVVVVVVVVVVVVVVV.
+................................
+================================
+time 1786ms: Process P added to system [Q D K E V P]
+time 1786ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXEEPPPPPPP
+PPPPPPPPPPPPPPP.................
+..............DDDDDDDDDDDDDDDDDD
+DDDAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAABBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK
+KKKKVVVVVVVVVVVVVVVVVVVVVVVVVVV.
+................................
+================================
+time 1832ms: Process H added to system [Q D K E V H P]
+time 1832ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXEEPPPPPPP
+PPPPPPPPPPPPPPPHHHHHHHHHHHHHHHHH
+HHHHHHHH......DDDDDDDDDDDDDDDDDD
+DDDAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAABBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK
+KKKKVVVVVVVVVVVVVVVVVVVVVVVVVVV.
+................................
+================================
+time 1856ms: Process W added to system [Q W D K E V H P]
+time 1856ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXEEPPPPPPP
+PPPPPPPPPPPPPPPHHHHHHHHHHHHHHHHH
+HHHHHHHH......DDDDDDDDDDDDDDDDDD
+DDDAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAABBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK
+KKKKVVVVVVVVVVVVVVVVVVVVVVVVVVVW
+WWWWWWWWWW......................
+================================
+time 1920ms: I unable to be added; lack of memory [Q W D K E V H P]
+time 1920ms: Simulated Memory:
+================================
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXEEPPPPPPP
+PPPPPPPPPPPPPPPHHHHHHHHHHHHHHHHH
+HHHHHHHH......DDDDDDDDDDDDDDDDDD
+DDDAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAABBBBBBB
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK
+KKKKVVVVVVVVVVVVVVVVVVVVVVVVVVVW
+WWWWWWWWWW......................
+================================
+time 2434ms: Z unable to be added; lack of memory and defragmentation failed [Q W D K E V H P]
+time 2519ms: S completed its CPU burst [Q W D K E V H P]
+time 2519ms: S performing I/O [Q W D K E V H P]
+time 2532ms: W started using the CPU [Q D K E V H P]
+time 2539ms: A completed I/O [Q D K E V H P]
+time 2689ms: W completed its CPU burst [Q A D K E V H P]
+time 2689ms: W performing I/O [Q A D K E V H P]
+time 2702ms: A started using the CPU [Q D K E V H P]
+time 3086ms: A completed its CPU burst [Q D K E V H P]
+time 3086ms: A performing I/O [Q D K E V H P]
+time 3099ms: D started using the CPU [Q K E V H P]
+time 3654ms: D completed its CPU burst [Q K E V H P]
+time 3654ms: D performing I/O [Q K E V H P]
+time 3667ms: K started using the CPU [Q E V H P]
+time 4508ms: K completed its CPU burst [Q E V H P]
+time 4508ms: K performing I/O [Q E V H P]
+time 4521ms: E started using the CPU [Q V H P]
+time 4592ms: A completed I/O [Q V H P]
+time 4592ms: E preempted by A [Q E V H P]
+time 4605ms: A started using the CPU [Q E V H P]
+time 4836ms: X completed I/O [Q E V H P]
+time 4943ms: B completed I/O [Q X E V H P]
+time 4989ms: A completed its CPU burst [Q B X E V H P]
+time 4989ms: A performing I/O [Q B X E V H P]
+time 5002ms: B started using the CPU [Q X E V H P]
+time 5207ms: B completed its CPU burst [Q X E V H P]
+time 5207ms: B performing I/O [Q X E V H P]
+time 5220ms: X started using the CPU [Q E V H P]
+time 5409ms: S completed I/O [Q E V H P]
+time 5531ms: X completed its CPU burst [Q S E V H P]
+time 5531ms: X performing I/O [Q S E V H P]
+time 5544ms: S started using the CPU [Q E V H P]
+time 5805ms: S completed its CPU burst [Q E V H P]
+time 5805ms: S performing I/O [Q E V H P]
+time 5818ms: E started using the CPU [Q V H P]
+time 6495ms: A completed I/O [Q V H P]
+time 6588ms: E completed its CPU burst [Q A V H P]
+time 6588ms: E performing I/O [Q A V H P]
+time 6601ms: A started using the CPU [Q V H P]
+time 6606ms: W completed I/O [Q V H P]
+time 6606ms: A preempted by W [Q A V H P]
+time 6619ms: W started using the CPU [Q A V H P]
+time 6776ms: W completed its CPU burst [Q A V H P]
+time 6776ms: W performing I/O [Q A V H P]
+time 6789ms: A started using the CPU [Q V H P]
+time 6929ms: D completed I/O [Q V H P]
+time 7168ms: A completed its CPU burst [Q D V H P]
+time 7168ms: A performing I/O [Q D V H P]
+time 7181ms: D started using the CPU [Q V H P]
+time 7892ms: D completed its CPU burst [Q V H P]
+time 7892ms: D performing I/O [Q V H P]
+time 7905ms: V started using the CPU [Q H P]
+time 8210ms: K completed I/O [Q H P]
+time 8674ms: A completed I/O [Q K H P]
+time 8695ms: S completed I/O [Q A K H P]
+time 8782ms: V completed its CPU burst [Q S A K H P]
+time 8782ms: V performing I/O [Q S A K H P]
+time 8795ms: S started using the CPU [Q A K H P]
+time 9056ms: S completed its CPU burst [Q A K H P]
+time 9056ms: S performing I/O [Q A K H P]
+time 9069ms: A started using the CPU [Q K H P]
+time 9330ms: E completed I/O [Q K H P]
+time 9436ms: B completed I/O [Q K E H P]
+time 9453ms: A completed its CPU burst [Q B K E H P]
+time 9453ms: A performing I/O [Q B K E H P]
+time 9466ms: B started using the CPU [Q K E H P]
+time 9671ms: B completed its CPU burst [Q K E H P]
+time 9671ms: B performing I/O [Q K E H P]
+time 9684ms: K started using the CPU [Q E H P]
+time 9967ms: X completed I/O [Q E H P]
+time 9967ms: K preempted by X [Q K E H P]
+time 9980ms: X started using the CPU [Q K E H P]
+time 10291ms: X completed its CPU burst [Q K E H P]
+time 10291ms: X performing I/O [Q K E H P]
+time 10304ms: K started using the CPU [Q E H P]
+time 10593ms: V completed I/O [Q E H P]
+time 10693ms: W completed I/O [Q E V H P]
+time 10693ms: K preempted by W [Q K E V H P]
+time 10706ms: W started using the CPU [Q K E V H P]
+time 10863ms: W completed its CPU burst [Q K E V H P]
+time 10863ms: W performing I/O [Q K E V H P]
+time 10876ms: K started using the CPU [Q E V H P]
+time 10959ms: A completed I/O [Q E V H P]
+time 11045ms: K completed its CPU burst [Q A E V H P]
+time 11045ms: K performing I/O [Q A E V H P]
+time 11058ms: A started using the CPU [Q E V H P]
+time 11167ms: D completed I/O [Q E V H P]
+time 11442ms: A completed its CPU burst [Q D E V H P]
+time 11442ms: A performing I/O [Q D E V H P]
+time 11455ms: D started using the CPU [Q E V H P]
+time 11946ms: S completed I/O [Q E V H P]
+time 12166ms: D completed its CPU burst [Q S E V H P]
+time 12166ms: D performing I/O [Q S E V H P]
+time 12179ms: S started using the CPU [Q E V H P]
+time 12440ms: S completed its CPU burst [Q E V H P]
+time 12440ms: S performing I/O [Q E V H P]
+time 12453ms: E started using the CPU [Q V H P]
+time 12948ms: A completed I/O [Q V H P]
+time 13294ms: E completed its CPU burst [Q A V H P]
+time 13294ms: E performing I/O [Q A V H P]
+time 13307ms: A started using the CPU [Q V H P]
+time 13691ms: A terminated [Q V H P]
+time 13704ms: V started using the CPU [Q H P]
+time 13900ms: B completed I/O [Q H P]
+time 13900ms: V preempted by B [Q V H P]
+time 13913ms: B started using the CPU [Q V H P]
+time 14118ms: B completed its CPU burst [Q V H P]
+time 14118ms: B performing I/O [Q V H P]
+time 14131ms: V started using the CPU [Q H P]
+time 14727ms: X completed I/O [Q H P]
+time 14747ms: K completed I/O [Q X H P]
+time 14780ms: W completed I/O [Q X K H P]
+time 14812ms: V completed its CPU burst [Q W X K H P]
+time 14812ms: V performing I/O [Q W X K H P]
+time 14825ms: W started using the CPU [Q X K H P]
+time 14982ms: W terminated [Q X K H P]
+time 14995ms: X started using the CPU [Q K H P]
+time 15306ms: X completed its CPU burst [Q K H P]
+time 15306ms: X performing I/O [Q K H P]
+time 15319ms: K started using the CPU [Q H P]
+time 15330ms: S completed I/O [Q H P]
+time 15330ms: K preempted by S [Q K H P]
+time 15343ms: S started using the CPU [Q K H P]
+time 15441ms: D completed I/O [Q K H P]
+time 15604ms: S completed its CPU burst [Q D K H P]
+time 15604ms: S performing I/O [Q D K H P]
+time 15617ms: D started using the CPU [Q K H P]
+time 16036ms: E completed I/O [Q K H P]
+time 16328ms: D completed its CPU burst [Q K E H P]
+time 16328ms: D performing I/O [Q K E H P]
+time 16341ms: K started using the CPU [Q E H P]
+time 16623ms: V completed I/O [Q E H P]
+time 17171ms: K terminated [Q E V H P]
+time 17184ms: E started using the CPU [Q V H P]
+time 18025ms: E completed its CPU burst [Q V H P]
+time 18025ms: E performing I/O [Q V H P]
+time 18038ms: V started using the CPU [Q H P]
+time 18347ms: B completed I/O [Q H P]
+time 18347ms: V preempted by B [Q V H P]
+time 18360ms: B started using the CPU [Q V H P]
+time 18494ms: S completed I/O [Q V H P]
+time 18565ms: B completed its CPU burst [Q S V H P]
+time 18565ms: B performing I/O [Q S V H P]
+time 18578ms: S started using the CPU [Q V H P]
+time 18839ms: S completed its CPU burst [Q V H P]
+time 18839ms: S performing I/O [Q V H P]
+time 18852ms: V started using the CPU [Q H P]
+time 19420ms: V completed its CPU burst [Q H P]
+time 19420ms: V performing I/O [Q H P]
+time 19433ms: H started using the CPU [Q P]
+time 19603ms: D completed I/O [Q P]
+time 19603ms: H preempted by D [Q H P]
+time 19616ms: D started using the CPU [Q H P]
+time 19742ms: X completed I/O [Q H P]
+time 19742ms: D preempted by X [Q D H P]
+time 19755ms: X started using the CPU [Q D H P]
+time 20066ms: X completed its CPU burst [Q D H P]
+time 20066ms: X performing I/O [Q D H P]
+time 20079ms: D started using the CPU [Q H P]
+time 20664ms: D completed its CPU burst [Q H P]
+time 20664ms: D performing I/O [Q H P]
+time 20677ms: H started using the CPU [Q P]
+time 20767ms: E completed I/O [Q P]
+time 21231ms: V completed I/O [Q E P]
+time 21430ms: H completed its CPU burst [Q E V P]
+time 21430ms: H performing I/O [Q E V P]
+time 21443ms: E started using the CPU [Q V P]
+time 21729ms: S completed I/O [Q V P]
+time 21729ms: E preempted by S [Q E V P]
+time 21742ms: S started using the CPU [Q E V P]
+time 22003ms: S terminated [Q E V P]
+time 22016ms: E started using the CPU [Q V P]
+time 22571ms: E completed its CPU burst [Q V P]
+time 22571ms: E performing I/O [Q V P]
+time 22584ms: V started using the CPU [Q P]
+time 22794ms: B completed I/O [Q P]
+time 22794ms: V preempted by B [Q V P]
+time 22807ms: B started using the CPU [Q V P]
+time 23012ms: B completed its CPU burst [Q V P]
+time 23012ms: B performing I/O [Q V P]
+time 23025ms: V started using the CPU [Q P]
+time 23692ms: V completed its CPU burst [Q P]
+time 23692ms: V performing I/O [Q P]
+time 23705ms: P started using the CPU [Q]
+time 23939ms: D completed I/O [Q]
+time 23939ms: P preempted by D [Q P]
+time 23952ms: D started using the CPU [Q P]
+time 24502ms: X completed I/O [Q P]
+time 24663ms: D completed its CPU burst [Q X P]
+time 24663ms: D performing I/O [Q X P]
+time 24676ms: X started using the CPU [Q P]
+time 24987ms: X terminated [Q P]
+time 25000ms: P started using the CPU [Q]
+time 25313ms: E completed I/O [Q]
+time 25503ms: V completed I/O [Q E]
+time 25735ms: P completed its CPU burst [Q E V]
+time 25735ms: P performing I/O [Q E V]
+time 25748ms: E started using the CPU [Q V]
+time 26001ms: H completed I/O [Q V]
+time 26589ms: E completed its CPU burst [Q V H]
+time 26589ms: E performing I/O [Q V H]
+time 26602ms: V started using the CPU [Q H]
+time 27241ms: B completed I/O [Q H]
+time 27241ms: V preempted by B [Q V H]
+time 27254ms: B started using the CPU [Q V H]
+time 27459ms: B completed its CPU burst [Q V H]
+time 27459ms: B performing I/O [Q V H]
+time 27472ms: V started using the CPU [Q H]
+time 27710ms: V completed its CPU burst [Q H]
+time 27710ms: V performing I/O [Q H]
+time 27723ms: H started using the CPU [Q]
+time 27938ms: D completed I/O [Q]
+time 28646ms: H completed its CPU burst [Q D]
+time 28646ms: H performing I/O [Q D]
+time 28659ms: D started using the CPU [Q]
+time 29100ms: P completed I/O [Q]
+time 29331ms: E completed I/O [Q P]
+time 29370ms: D completed its CPU burst [Q E P]
+time 29370ms: D performing I/O [Q E P]
+time 29383ms: E started using the CPU [Q P]
+time 29521ms: V completed I/O [Q P]
+time 30224ms: E completed its CPU burst [Q V P]
+time 30224ms: E performing I/O [Q V P]
+time 30237ms: V started using the CPU [Q P]
+time 31114ms: V completed its CPU burst [Q P]
+time 31114ms: V performing I/O [Q P]
+time 31127ms: P started using the CPU [Q]
+time 31688ms: B completed I/O [Q]
+time 31688ms: P preempted by B [Q P]
+time 31701ms: B started using the CPU [Q P]
+time 31906ms: B terminated [Q P]
+time 31919ms: P started using the CPU [Q]
+time 32327ms: P completed its CPU burst [Q]
+time 32327ms: P performing I/O [Q]
+time 32645ms: D completed I/O [Q]
+time 32657ms: D started using the CPU [Q]
+time 32925ms: V completed I/O [Q]
+time 32966ms: E completed I/O [Q V]
+time 33217ms: H completed I/O [Q E V]
+time 33368ms: D terminated [Q E V H]
+time 33381ms: E started using the CPU [Q V H]
+time 34222ms: E completed its CPU burst [Q V H]
+time 34222ms: E performing I/O [Q V H]
+time 34235ms: V started using the CPU [Q H]
+time 35112ms: V completed its CPU burst [Q H]
+time 35112ms: V performing I/O [Q H]
+time 35125ms: H started using the CPU [Q]
+time 35692ms: P completed I/O [Q]
+time 36048ms: H completed its CPU burst [Q P]
+time 36048ms: H performing I/O [Q P]
+time 36061ms: P started using the CPU [Q]
+time 36923ms: V completed I/O [Q]
+time 36964ms: E completed I/O [Q V]
+time 37030ms: P terminated [Q E V]
+time 37043ms: E started using the CPU [Q V]
+time 37884ms: E completed its CPU burst [Q V]
+time 37884ms: E performing I/O [Q V]
+time 37897ms: V started using the CPU [Q]
+time 38774ms: V completed its CPU burst [Q]
+time 38774ms: V performing I/O [Q]
+time 40585ms: V completed I/O [Q]
+time 40597ms: V started using the CPU [Q]
+time 40619ms: H completed I/O [Q]
+time 40626ms: E completed I/O [Q H]
+time 40626ms: V preempted by E [Q V H]
+time 40639ms: E started using the CPU [Q V H]
+time 41480ms: E completed its CPU burst [Q V H]
+time 41480ms: E performing I/O [Q V H]
+time 41493ms: V started using the CPU [Q H]
+time 42341ms: V terminated [Q H]
+time 42354ms: H started using the CPU [Q]
+time 43277ms: H completed its CPU burst [Q]
+time 43277ms: H performing I/O [Q]
+time 44222ms: E completed I/O [Q]
+time 44234ms: E started using the CPU [Q]
+time 45075ms: E terminated [Q]
+time 47848ms: H completed I/O [Q]
+time 47860ms: H started using the CPU [Q]
+time 48783ms: H completed its CPU burst [Q]
+time 48783ms: H performing I/O [Q]
+time 53354ms: H completed I/O [Q]
+time 53366ms: H started using the CPU [Q]
+time 54289ms: H terminated [Q]

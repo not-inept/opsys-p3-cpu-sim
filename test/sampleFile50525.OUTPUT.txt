@@ -11,7 +11,6 @@ MMMMMMMMMMMMMMM.................
 ................................
 ................................
 ================================
-
 time 146ms: M started using the CPU [Q]
 time 331ms: Process H added to system [Q H M]
 time 331ms: Simulated Memory:
@@ -25,8 +24,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
 ................................
 ................................
 ================================
-
-time 331ms: M preempted by PH [Q M]
+time 331ms: M preempted by H [Q M]
 time 335ms: Process Z added to system [Q H Z M]
 time 335ms: Simulated Memory:
 ================================
@@ -39,7 +37,6 @@ HHHHHHHHHHHHHHH.................
 ................................
 ................................
 ================================
-
 time 344ms: H started using the CPU [Q Z M]
 time 593ms: Process F added to system [Q F Z M]
 time 593ms: Simulated Memory:
@@ -53,7 +50,6 @@ FFFFFFFFFFFF....................
 ................................
 ................................
 ================================
-
 time 633ms: Process O added to system [Q F O Z M]
 time 633ms: Simulated Memory:
 ================================
@@ -66,7 +62,6 @@ OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
 OOOOOOOO........................
 ................................
 ================================
-
 time 666ms: H completed its CPU burst [Q F O Z M]
 time 666ms: H performing I/O [Q F O Z M]
 time 679ms: F started using the CPU [Q O Z M]
@@ -82,7 +77,6 @@ OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
 OOOOOOOOPPPPPPPPPPPPPPPPPPPPPPPP
 PPPPPPPPPPPPPPPPPP..............
 ================================
-
 time 849ms: Process T added to system [Q O Z T M P]
 time 849ms: Simulated Memory:
 ================================
@@ -95,9 +89,153 @@ OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
 OOOOOOOOPPPPPPPPPPPPPPPPPPPPPPPP
 PPPPPPPPPPPPPPPPPP..............
 ================================
-
 time 850ms: F completed its CPU burst [Q O Z T M P]
 time 850ms: F performing I/O [Q O Z T M P]
 time 863ms: O started using the CPU [Q Z T M P]
 time 915ms: V unable to be added; lack of memory [Q Z T M P]
-time 915ms: Starting defragmentation (suspending all processes) [Q Z T M P]
+time 915ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMMTTTTTT.........HH
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOPPPPPPPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPP..............
+================================
+time 969ms: Process Z added to system [Q Z Z T M P]
+time 969ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMM...............TT
+TTTTHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPP........
+================================
+time 1007ms: U unable to be added; lack of memory [Q Z Z T M P]
+time 1007ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMM...............TT
+TTTTHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPP........
+================================
+time 1022ms: Process Z added to system [Q Z Z Z T M P]
+time 1022ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMM...............TT
+TTTTHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPP........
+================================
+time 1067ms: I unable to be added; lack of memory [Q Z Z Z T M P]
+time 1067ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMM...............TT
+TTTTHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPP........
+================================
+time 1082ms: Process Z added to system [Q Z Z Z Z T M P]
+time 1082ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMM...............TT
+TTTTHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPP........
+================================
+time 1130ms: C unable to be added; lack of memory [Q Z Z Z Z T M P]
+time 1130ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMM...............TT
+TTTTHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPP........
+================================
+time 1145ms: Process Z added to system [Q Z Z Z Z Z T M P]
+time 1145ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMM...............TT
+TTTTHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPP........
+================================
+time 1194ms: D unable to be added; lack of memory [Q Z Z Z Z Z T M P]
+time 1194ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMM...............TT
+TTTTHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPP........
+================================
+time 1209ms: Process Z added to system [Q Z Z Z Z Z Z T M P]
+time 1209ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMM...............TT
+TTTTHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPP........
+================================
+time 1250ms: W unable to be added; lack of memory [Q Z Z Z Z Z Z T M P]
+time 1250ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMM...............TT
+TTTTHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPP........
+================================
+time 1265ms: Process Z added to system [Q Z Z Z Z Z Z Z T M P]
+time 1265ms: Simulated Memory:
+================================
+MMMMMMMMMMMMMMM...............TT
+TTTTHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+HHHHHHHHHHHHHHHHHHHHHFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOPPPPPPPPPPPPPPPPPP
+PPPPPPPPPPPPPPPPPPPPPPPP........
+================================
+time 1350ms: O completed its CPU burst [Q Z Z Z Z Z Z Z T M P]
+time 1350ms: O performing I/O [Q Z Z Z Z Z Z Z T M P]
+time 1363ms: Z started using the CPU [Q Z Z Z Z Z Z T M P]

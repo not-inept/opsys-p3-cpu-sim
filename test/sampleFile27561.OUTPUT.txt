@@ -11,7 +11,6 @@ SSSSSSSSSSSSSSSSSSSSSSS.........
 ................................
 ................................
 ================================
-
 time 48ms: S started using the CPU [Q]
 time 50ms: Process R added to system [Q R S]
 time 50ms: Simulated Memory:
@@ -25,8 +24,7 @@ RRRRRRRRRRRRRRRRR...............
 ................................
 ................................
 ================================
-
-time 50ms: S preempted by PR [Q S]
+time 50ms: S preempted by R [Q S]
 time 63ms: R started using the CPU [Q S]
 time 64ms: Process M added to system [Q M R S]
 time 64ms: Simulated Memory:
@@ -40,8 +38,3282 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMM..............
 ================================
-
-time 64ms: R preempted by PM [Q R S]
+time 64ms: R preempted by M [Q R S]
 time 77ms: M started using the CPU [Q R S]
 time 118ms: A unable to be added; lack of memory [Q R S]
-time 118ms: Starting defragmentation (suspending all processes) [Q R S]
+time 118ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 118ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 134ms: P unable to be added; lack of memory [Q R S]
+time 134ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 134ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 149ms: C unable to be added; lack of memory [Q R S]
+time 149ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 149ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 231ms: T unable to be added; lack of memory [Q R S]
+time 231ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 231ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 327ms: F unable to be added; lack of memory [Q R S]
+time 327ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 327ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 358ms: Process K added to system [Q K R S]
+time 358ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 425ms: U unable to be added; lack of memory [Q K R S]
+time 425ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 425ms: Z unable to be added; lack of memory and defragmentation failed [Q K R S]
+time 488ms: M completed its CPU burst [Q K R S]
+time 488ms: M performing I/O [Q K R S]
+time 501ms: K started using the CPU [Q R S]
+time 553ms: Q unable to be added; lack of memory [Q R S]
+time 553ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 553ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 597ms: L unable to be added; lack of memory [Q R S]
+time 597ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 597ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 721ms: Y unable to be added; lack of memory [Q R S]
+time 721ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 721ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 898ms: I unable to be added; lack of memory [Q R S]
+time 898ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 898ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 941ms: N unable to be added; lack of memory [Q R S]
+time 941ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 941ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 1002ms: K completed its CPU burst [Q R S]
+time 1002ms: K performing I/O [Q R S]
+time 1015ms: R started using the CPU [Q S]
+time 1118ms: Z unable to be added; lack of memory [Q S]
+time 1118ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1118ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1119ms: H unable to be added; lack of memory [Q S]
+time 1119ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1119ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1188ms: X unable to be added; lack of memory [Q S]
+time 1188ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1188ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1272ms: V unable to be added; lack of memory [Q S]
+time 1272ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1272ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1503ms: G unable to be added; lack of memory [Q S]
+time 1503ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1503ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1561ms: O unable to be added; lack of memory [Q S]
+time 1561ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1561ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1716ms: B unable to be added; lack of memory [Q S]
+time 1716ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1716ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1734ms: W unable to be added; lack of memory [Q S]
+time 1734ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1734ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1774ms: E unable to be added; lack of memory [Q S]
+time 1774ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1774ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1812ms: J unable to be added; lack of memory [Q S]
+time 1812ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1812ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1823ms: D unable to be added; lack of memory [Q S]
+time 1823ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1823ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1917ms: R completed its CPU burst [Q S]
+time 1917ms: R performing I/O [Q S]
+time 1930ms: S started using the CPU [Q]
+time 2876ms: S completed its CPU burst [Q]
+time 2876ms: S performing I/O [Q]
+time 3519ms: S completed I/O [Q]
+time 3531ms: S started using the CPU [Q]
+time 3640ms: K completed I/O [Q]
+time 3640ms: S preempted by K [Q S]
+time 3653ms: K started using the CPU [Q S]
+time 4149ms: K completed its CPU burst [Q S]
+time 4149ms: K performing I/O [Q S]
+time 4162ms: S started using the CPU [Q]
+time 5001ms: S completed its CPU burst [Q]
+time 5001ms: S performing I/O [Q]
+time 5010ms: M completed I/O [Q]
+time 5022ms: M started using the CPU [Q]
+time 5203ms: R completed I/O [Q]
+time 5427ms: M completed its CPU burst [Q R]
+time 5427ms: M performing I/O [Q R]
+time 5440ms: R started using the CPU [Q]
+time 5644ms: S completed I/O [Q]
+time 6332ms: R completed its CPU burst [Q S]
+time 6332ms: R performing I/O [Q S]
+time 6345ms: S started using the CPU [Q]
+time 6787ms: K completed I/O [Q]
+time 6787ms: S preempted by K [Q S]
+time 6800ms: K started using the CPU [Q S]
+time 7296ms: K completed its CPU burst [Q S]
+time 7296ms: K performing I/O [Q S]
+time 7309ms: S started using the CPU [Q]
+time 7815ms: S terminated [Q]
+time 9618ms: R completed I/O [Q]
+time 9630ms: R started using the CPU [Q]
+time 9934ms: K completed I/O [Q]
+time 9934ms: R preempted by K [Q R]
+time 9947ms: K started using the CPU [Q R]
+time 9949ms: M completed I/O [Q R]
+time 9949ms: K preempted by M [Q K R]
+time 9962ms: M started using the CPU [Q K R]
+time 10367ms: M completed its CPU burst [Q K R]
+time 10367ms: M performing I/O [Q K R]
+time 10380ms: K started using the CPU [Q R]
+time 10874ms: K completed its CPU burst [Q R]
+time 10874ms: K performing I/O [Q R]
+time 10887ms: R started using the CPU [Q]
+time 11475ms: R completed its CPU burst [Q]
+time 11475ms: R performing I/O [Q]
+time 13512ms: K completed I/O [Q]
+time 13524ms: K started using the CPU [Q]
+time 14020ms: K completed its CPU burst [Q]
+time 14020ms: K performing I/O [Q]
+time 14761ms: R completed I/O [Q]
+time 14773ms: R started using the CPU [Q]
+time 14889ms: M completed I/O [Q]
+time 14889ms: R preempted by M [Q R]
+time 14902ms: M started using the CPU [Q R]
+time 15307ms: M completed its CPU burst [Q R]
+time 15307ms: M performing I/O [Q R]
+time 15320ms: R started using the CPU [Q]
+time 16096ms: R completed its CPU burst [Q]
+time 16096ms: R performing I/O [Q]
+time 16658ms: K completed I/O [Q]
+time 16670ms: K started using the CPU [Q]
+time 17166ms: K terminated [Q]
+time 19382ms: R completed I/O [Q]
+time 19394ms: R started using the CPU [Q]
+time 19829ms: M completed I/O [Q]
+time 19829ms: R preempted by M [Q R]
+time 19842ms: M started using the CPU [Q R]
+time 20247ms: M completed its CPU burst [Q R]
+time 20247ms: M performing I/O [Q R]
+time 20260ms: R started using the CPU [Q]
+time 20717ms: R completed its CPU burst [Q]
+time 20717ms: R performing I/O [Q]
+time 24003ms: R completed I/O [Q]
+time 24015ms: R started using the CPU [Q]
+time 24769ms: M completed I/O [Q]
+time 24907ms: R terminated [Q M]
+time 24920ms: M started using the CPU [Q]
+time 25325ms: M completed its CPU burst [Q]
+time 25325ms: M performing I/O [Q]
+time 29847ms: M completed I/O [Q]
+time 29859ms: M started using the CPU [Q]
+time 30264ms: M completed its CPU burst [Q]
+time 30264ms: M performing I/O [Q]
+time 34786ms: M completed I/O [Q]
+time 34798ms: M started using the CPU [Q]
+time 35203ms: M terminated [Q]
+time 35203ms: Simulator for SRT ended [Q]
+
+
+time 0ms: Simulator started for SRT and Best Fit
+time 36ms: Process S added to system [Q S]
+time 36ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSS.........
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+time 48ms: S started using the CPU [Q]
+time 50ms: Process R added to system [Q R S]
+time 50ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRR...............
+................................
+................................
+................................
+================================
+time 50ms: S preempted by R [Q S]
+time 63ms: R started using the CPU [Q S]
+time 64ms: Process M added to system [Q M R S]
+time 64ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 64ms: R preempted by M [Q R S]
+time 77ms: M started using the CPU [Q R S]
+time 118ms: A unable to be added; lack of memory [Q R S]
+time 118ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 120ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 134ms: P unable to be added; lack of memory [Q R S]
+time 134ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 134ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 149ms: C unable to be added; lack of memory [Q R S]
+time 149ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 149ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 231ms: T unable to be added; lack of memory [Q R S]
+time 231ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 231ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 327ms: F unable to be added; lack of memory [Q R S]
+time 327ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 327ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 358ms: Process K added to system [Q K R S]
+time 358ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 425ms: U unable to be added; lack of memory [Q K R S]
+time 425ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 426ms: Z unable to be added; lack of memory and defragmentation failed [Q K R S]
+time 491ms: M completed its CPU burst [Q K R S]
+time 491ms: M performing I/O [Q K R S]
+time 504ms: K started using the CPU [Q R S]
+time 553ms: Q unable to be added; lack of memory [Q R S]
+time 553ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 553ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 597ms: L unable to be added; lack of memory [Q R S]
+time 597ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 597ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 721ms: Y unable to be added; lack of memory [Q R S]
+time 721ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 721ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 898ms: I unable to be added; lack of memory [Q R S]
+time 898ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 898ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 941ms: N unable to be added; lack of memory [Q R S]
+time 941ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 941ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 1005ms: K completed its CPU burst [Q R S]
+time 1005ms: K performing I/O [Q R S]
+time 1018ms: R started using the CPU [Q S]
+time 1118ms: Z unable to be added; lack of memory [Q S]
+time 1118ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1118ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1119ms: H unable to be added; lack of memory [Q S]
+time 1119ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1119ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1188ms: X unable to be added; lack of memory [Q S]
+time 1188ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1188ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1272ms: V unable to be added; lack of memory [Q S]
+time 1272ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1272ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1503ms: G unable to be added; lack of memory [Q S]
+time 1503ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1503ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1561ms: O unable to be added; lack of memory [Q S]
+time 1561ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1561ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1716ms: B unable to be added; lack of memory [Q S]
+time 1716ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1716ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1734ms: W unable to be added; lack of memory [Q S]
+time 1734ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1734ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1774ms: E unable to be added; lack of memory [Q S]
+time 1774ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1774ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1812ms: J unable to be added; lack of memory [Q S]
+time 1812ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1812ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1823ms: D unable to be added; lack of memory [Q S]
+time 1823ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1823ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1920ms: R completed its CPU burst [Q S]
+time 1920ms: R performing I/O [Q S]
+time 1933ms: S started using the CPU [Q]
+time 2879ms: S completed its CPU burst [Q]
+time 2879ms: S performing I/O [Q]
+time 3522ms: S completed I/O [Q]
+time 3534ms: S started using the CPU [Q]
+time 3643ms: K completed I/O [Q]
+time 3643ms: S preempted by K [Q S]
+time 3656ms: K started using the CPU [Q S]
+time 4152ms: K completed its CPU burst [Q S]
+time 4152ms: K performing I/O [Q S]
+time 4165ms: S started using the CPU [Q]
+time 5004ms: S completed its CPU burst [Q]
+time 5004ms: S performing I/O [Q]
+time 5013ms: M completed I/O [Q]
+time 5025ms: M started using the CPU [Q]
+time 5206ms: R completed I/O [Q]
+time 5430ms: M completed its CPU burst [Q R]
+time 5430ms: M performing I/O [Q R]
+time 5443ms: R started using the CPU [Q]
+time 5647ms: S completed I/O [Q]
+time 6335ms: R completed its CPU burst [Q S]
+time 6335ms: R performing I/O [Q S]
+time 6348ms: S started using the CPU [Q]
+time 6790ms: K completed I/O [Q]
+time 6790ms: S preempted by K [Q S]
+time 6803ms: K started using the CPU [Q S]
+time 7299ms: K completed its CPU burst [Q S]
+time 7299ms: K performing I/O [Q S]
+time 7312ms: S started using the CPU [Q]
+time 7818ms: S terminated [Q]
+time 9621ms: R completed I/O [Q]
+time 9633ms: R started using the CPU [Q]
+time 9937ms: K completed I/O [Q]
+time 9937ms: R preempted by K [Q R]
+time 9950ms: K started using the CPU [Q R]
+time 9952ms: M completed I/O [Q R]
+time 9952ms: K preempted by M [Q K R]
+time 9965ms: M started using the CPU [Q K R]
+time 10370ms: M completed its CPU burst [Q K R]
+time 10370ms: M performing I/O [Q K R]
+time 10383ms: K started using the CPU [Q R]
+time 10877ms: K completed its CPU burst [Q R]
+time 10877ms: K performing I/O [Q R]
+time 10890ms: R started using the CPU [Q]
+time 11478ms: R completed its CPU burst [Q]
+time 11478ms: R performing I/O [Q]
+time 13515ms: K completed I/O [Q]
+time 13527ms: K started using the CPU [Q]
+time 14023ms: K completed its CPU burst [Q]
+time 14023ms: K performing I/O [Q]
+time 14764ms: R completed I/O [Q]
+time 14776ms: R started using the CPU [Q]
+time 14892ms: M completed I/O [Q]
+time 14892ms: R preempted by M [Q R]
+time 14905ms: M started using the CPU [Q R]
+time 15310ms: M completed its CPU burst [Q R]
+time 15310ms: M performing I/O [Q R]
+time 15323ms: R started using the CPU [Q]
+time 16099ms: R completed its CPU burst [Q]
+time 16099ms: R performing I/O [Q]
+time 16661ms: K completed I/O [Q]
+time 16673ms: K started using the CPU [Q]
+time 17169ms: K terminated [Q]
+time 19385ms: R completed I/O [Q]
+time 19397ms: R started using the CPU [Q]
+time 19832ms: M completed I/O [Q]
+time 19832ms: R preempted by M [Q R]
+time 19845ms: M started using the CPU [Q R]
+time 20250ms: M completed its CPU burst [Q R]
+time 20250ms: M performing I/O [Q R]
+time 20263ms: R started using the CPU [Q]
+time 20720ms: R completed its CPU burst [Q]
+time 20720ms: R performing I/O [Q]
+time 24006ms: R completed I/O [Q]
+time 24018ms: R started using the CPU [Q]
+time 24772ms: M completed I/O [Q]
+time 24910ms: R terminated [Q M]
+time 24923ms: M started using the CPU [Q]
+time 25328ms: M completed its CPU burst [Q]
+time 25328ms: M performing I/O [Q]
+time 29850ms: M completed I/O [Q]
+time 29862ms: M started using the CPU [Q]
+time 30267ms: M completed its CPU burst [Q]
+time 30267ms: M performing I/O [Q]
+time 34789ms: M completed I/O [Q]
+time 34801ms: M started using the CPU [Q]
+time 35206ms: M terminated [Q]
+time 35206ms: Simulator for SRT ended [Q]
+
+
+time 0ms: Simulator started for SRT and Next Fit
+time 36ms: Process S added to system [Q S]
+time 36ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSS.........
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+time 48ms: S started using the CPU [Q]
+time 50ms: Process R added to system [Q R S]
+time 50ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRR...............
+................................
+................................
+................................
+================================
+time 50ms: S preempted by R [Q S]
+time 63ms: R started using the CPU [Q S]
+time 64ms: Process M added to system [Q M R S]
+time 64ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 64ms: R preempted by M [Q R S]
+time 77ms: M started using the CPU [Q R S]
+time 118ms: A unable to be added; lack of memory [Q R S]
+time 118ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 118ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 134ms: P unable to be added; lack of memory [Q R S]
+time 134ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 134ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 149ms: C unable to be added; lack of memory [Q R S]
+time 149ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 149ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 231ms: T unable to be added; lack of memory [Q R S]
+time 231ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 231ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 327ms: F unable to be added; lack of memory [Q R S]
+time 327ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 327ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 358ms: Process K added to system [Q K R S]
+time 358ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 425ms: U unable to be added; lack of memory [Q K R S]
+time 425ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 425ms: Z unable to be added; lack of memory and defragmentation failed [Q K R S]
+time 488ms: M completed its CPU burst [Q K R S]
+time 488ms: M performing I/O [Q K R S]
+time 501ms: K started using the CPU [Q R S]
+time 553ms: Q unable to be added; lack of memory [Q R S]
+time 553ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 553ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 597ms: L unable to be added; lack of memory [Q R S]
+time 597ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 597ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 721ms: Y unable to be added; lack of memory [Q R S]
+time 721ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 721ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 898ms: I unable to be added; lack of memory [Q R S]
+time 898ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 898ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 941ms: N unable to be added; lack of memory [Q R S]
+time 941ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 941ms: Z unable to be added; lack of memory and defragmentation failed [Q R S]
+time 1002ms: K completed its CPU burst [Q R S]
+time 1002ms: K performing I/O [Q R S]
+time 1015ms: R started using the CPU [Q S]
+time 1118ms: Z unable to be added; lack of memory [Q S]
+time 1118ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1118ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1119ms: H unable to be added; lack of memory [Q S]
+time 1119ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1119ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1188ms: X unable to be added; lack of memory [Q S]
+time 1188ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1188ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1272ms: V unable to be added; lack of memory [Q S]
+time 1272ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1272ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1503ms: G unable to be added; lack of memory [Q S]
+time 1503ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1503ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1561ms: O unable to be added; lack of memory [Q S]
+time 1561ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1561ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1716ms: B unable to be added; lack of memory [Q S]
+time 1716ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1716ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1734ms: W unable to be added; lack of memory [Q S]
+time 1734ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1734ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1774ms: E unable to be added; lack of memory [Q S]
+time 1774ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1774ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1812ms: J unable to be added; lack of memory [Q S]
+time 1812ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1812ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1823ms: D unable to be added; lack of memory [Q S]
+time 1823ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1823ms: Z unable to be added; lack of memory and defragmentation failed [Q S]
+time 1917ms: R completed its CPU burst [Q S]
+time 1917ms: R performing I/O [Q S]
+time 1930ms: S started using the CPU [Q]
+time 2876ms: S completed its CPU burst [Q]
+time 2876ms: S performing I/O [Q]
+time 3519ms: S completed I/O [Q]
+time 3531ms: S started using the CPU [Q]
+time 3640ms: K completed I/O [Q]
+time 3640ms: S preempted by K [Q S]
+time 3653ms: K started using the CPU [Q S]
+time 4149ms: K completed its CPU burst [Q S]
+time 4149ms: K performing I/O [Q S]
+time 4162ms: S started using the CPU [Q]
+time 5001ms: S completed its CPU burst [Q]
+time 5001ms: S performing I/O [Q]
+time 5010ms: M completed I/O [Q]
+time 5022ms: M started using the CPU [Q]
+time 5203ms: R completed I/O [Q]
+time 5427ms: M completed its CPU burst [Q R]
+time 5427ms: M performing I/O [Q R]
+time 5440ms: R started using the CPU [Q]
+time 5644ms: S completed I/O [Q]
+time 6332ms: R completed its CPU burst [Q S]
+time 6332ms: R performing I/O [Q S]
+time 6345ms: S started using the CPU [Q]
+time 6787ms: K completed I/O [Q]
+time 6787ms: S preempted by K [Q S]
+time 6800ms: K started using the CPU [Q S]
+time 7296ms: K completed its CPU burst [Q S]
+time 7296ms: K performing I/O [Q S]
+time 7309ms: S started using the CPU [Q]
+time 7815ms: S terminated [Q]
+time 9618ms: R completed I/O [Q]
+time 9630ms: R started using the CPU [Q]
+time 9934ms: K completed I/O [Q]
+time 9934ms: R preempted by K [Q R]
+time 9947ms: K started using the CPU [Q R]
+time 9949ms: M completed I/O [Q R]
+time 9949ms: K preempted by M [Q K R]
+time 9962ms: M started using the CPU [Q K R]
+time 10367ms: M completed its CPU burst [Q K R]
+time 10367ms: M performing I/O [Q K R]
+time 10380ms: K started using the CPU [Q R]
+time 10874ms: K completed its CPU burst [Q R]
+time 10874ms: K performing I/O [Q R]
+time 10887ms: R started using the CPU [Q]
+time 11475ms: R completed its CPU burst [Q]
+time 11475ms: R performing I/O [Q]
+time 13512ms: K completed I/O [Q]
+time 13524ms: K started using the CPU [Q]
+time 14020ms: K completed its CPU burst [Q]
+time 14020ms: K performing I/O [Q]
+time 14761ms: R completed I/O [Q]
+time 14773ms: R started using the CPU [Q]
+time 14889ms: M completed I/O [Q]
+time 14889ms: R preempted by M [Q R]
+time 14902ms: M started using the CPU [Q R]
+time 15307ms: M completed its CPU burst [Q R]
+time 15307ms: M performing I/O [Q R]
+time 15320ms: R started using the CPU [Q]
+time 16096ms: R completed its CPU burst [Q]
+time 16096ms: R performing I/O [Q]
+time 16658ms: K completed I/O [Q]
+time 16670ms: K started using the CPU [Q]
+time 17166ms: K terminated [Q]
+time 19382ms: R completed I/O [Q]
+time 19394ms: R started using the CPU [Q]
+time 19829ms: M completed I/O [Q]
+time 19829ms: R preempted by M [Q R]
+time 19842ms: M started using the CPU [Q R]
+time 20247ms: M completed its CPU burst [Q R]
+time 20247ms: M performing I/O [Q R]
+time 20260ms: R started using the CPU [Q]
+time 20717ms: R completed its CPU burst [Q]
+time 20717ms: R performing I/O [Q]
+time 24003ms: R completed I/O [Q]
+time 24015ms: R started using the CPU [Q]
+time 24769ms: M completed I/O [Q]
+time 24907ms: R terminated [Q M]
+time 24920ms: M started using the CPU [Q]
+time 25325ms: M completed its CPU burst [Q]
+time 25325ms: M performing I/O [Q]
+time 29847ms: M completed I/O [Q]
+time 29859ms: M started using the CPU [Q]
+time 30264ms: M completed its CPU burst [Q]
+time 30264ms: M performing I/O [Q]
+time 34786ms: M completed I/O [Q]
+time 34798ms: M started using the CPU [Q]
+time 35203ms: M terminated [Q]
+time 35203ms: Simulator for SRT ended [Q]
+
+
+time 0ms: Simulator started for RR (t_slice 80) and First Fit
+time 36ms: Process S added to system [Q S]
+time 36ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSS.........
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+time 48ms: S started using the CPU [Q]
+time 50ms: Process R added to system [Q R]
+time 50ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRR...............
+................................
+................................
+................................
+================================
+time 64ms: Process M added to system [Q R M]
+time 64ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 118ms: A unable to be added; lack of memory [Q R M]
+time 118ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 118ms: Z unable to be added; lack of memory and defragmentation failed [Q R M]
+time 129ms: S preempted due to time slice expiration [Q R M]
+time 134ms: P unable to be added; lack of memory [Q R M S]
+time 134ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 134ms: Z unable to be added; lack of memory and defragmentation failed [Q R M S]
+time 143ms: R started using the CPU [Q M S]
+time 149ms: C unable to be added; lack of memory [Q M S]
+time 149ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 149ms: Z unable to be added; lack of memory and defragmentation failed [Q M S]
+time 224ms: R preempted due to time slice expiration [Q M S]
+time 231ms: T unable to be added; lack of memory [Q M S R]
+time 231ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 231ms: Z unable to be added; lack of memory and defragmentation failed [Q M S R]
+time 238ms: M started using the CPU [Q S R]
+time 318ms: M preempted due to time slice expiration [Q S R]
+time 327ms: F unable to be added; lack of memory [Q S R M]
+time 327ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 327ms: Z unable to be added; lack of memory and defragmentation failed [Q S R M]
+time 332ms: S started using the CPU [Q R M]
+time 358ms: Process K added to system [Q R M K]
+time 358ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 412ms: S preempted due to time slice expiration [Q R M K]
+time 425ms: U unable to be added; lack of memory [Q R M K S]
+time 425ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 425ms: Z unable to be added; lack of memory and defragmentation failed [Q R M K S]
+time 426ms: R started using the CPU [Q M K S]
+time 506ms: R preempted due to time slice expiration [Q M K S]
+time 519ms: M started using the CPU [Q K S R]
+time 553ms: Q unable to be added; lack of memory [Q K S R]
+time 553ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 553ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 597ms: L unable to be added; lack of memory [Q K S R]
+time 597ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 597ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 601ms: M preempted due to time slice expiration [Q K S R]
+time 614ms: K started using the CPU [Q S R M]
+time 694ms: K preempted due to time slice expiration [Q S R M]
+time 707ms: S started using the CPU [Q R M K]
+time 721ms: Y unable to be added; lack of memory [Q R M K]
+time 721ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 721ms: Z unable to be added; lack of memory and defragmentation failed [Q R M K]
+time 788ms: S preempted due to time slice expiration [Q R M K]
+time 801ms: R started using the CPU [Q M K S]
+time 881ms: R preempted due to time slice expiration [Q M K S]
+time 894ms: M started using the CPU [Q K S R]
+time 898ms: I unable to be added; lack of memory [Q K S R]
+time 898ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 898ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 941ms: N unable to be added; lack of memory [Q K S R]
+time 941ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 941ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 976ms: M preempted due to time slice expiration [Q K S R]
+time 989ms: K started using the CPU [Q S R M]
+time 1069ms: K preempted due to time slice expiration [Q S R M]
+time 1082ms: S started using the CPU [Q R M K]
+time 1118ms: Z unable to be added; lack of memory [Q R M K]
+time 1118ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1118ms: Z unable to be added; lack of memory and defragmentation failed [Q R M K]
+time 1119ms: H unable to be added; lack of memory [Q R M K]
+time 1119ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1119ms: Z unable to be added; lack of memory and defragmentation failed [Q R M K]
+time 1164ms: S preempted due to time slice expiration [Q R M K]
+time 1177ms: R started using the CPU [Q M K S]
+time 1188ms: X unable to be added; lack of memory [Q M K S]
+time 1188ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1188ms: Z unable to be added; lack of memory and defragmentation failed [Q M K S]
+time 1258ms: R preempted due to time slice expiration [Q M K S]
+time 1271ms: M started using the CPU [Q K S R]
+time 1272ms: V unable to be added; lack of memory [Q K S R]
+time 1272ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1272ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 1352ms: M preempted due to time slice expiration [Q K S R]
+time 1365ms: K started using the CPU [Q S R M]
+time 1445ms: K preempted due to time slice expiration [Q S R M]
+time 1458ms: S started using the CPU [Q R M K]
+time 1503ms: G unable to be added; lack of memory [Q R M K]
+time 1503ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1503ms: Z unable to be added; lack of memory and defragmentation failed [Q R M K]
+time 1539ms: S preempted due to time slice expiration [Q R M K]
+time 1552ms: R started using the CPU [Q M K S]
+time 1561ms: O unable to be added; lack of memory [Q M K S]
+time 1561ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1561ms: Z unable to be added; lack of memory and defragmentation failed [Q M K S]
+time 1633ms: R preempted due to time slice expiration [Q M K S]
+time 1646ms: M started using the CPU [Q K S R]
+time 1716ms: B unable to be added; lack of memory [Q K S R]
+time 1716ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1716ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 1727ms: M preempted due to time slice expiration [Q K S R]
+time 1734ms: W unable to be added; lack of memory [Q K S R M]
+time 1734ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1734ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R M]
+time 1741ms: K started using the CPU [Q S R M]
+time 1774ms: E unable to be added; lack of memory [Q S R M]
+time 1774ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1774ms: Z unable to be added; lack of memory and defragmentation failed [Q S R M]
+time 1812ms: J unable to be added; lack of memory [Q S R M]
+time 1812ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1812ms: Z unable to be added; lack of memory and defragmentation failed [Q S R M]
+time 1823ms: D unable to be added; lack of memory [Q S R M]
+time 1823ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1823ms: Z unable to be added; lack of memory and defragmentation failed [Q S R M]
+time 1824ms: K preempted due to time slice expiration [Q S R M]
+time 1837ms: S started using the CPU [Q R M K]
+time 1917ms: S preempted due to time slice expiration [Q R M K]
+time 1930ms: R started using the CPU [Q M K S]
+time 2010ms: R preempted due to time slice expiration [Q M K S]
+time 2023ms: M started using the CPU [Q K S R]
+time 2028ms: M completed its CPU burst [Q K S R]
+time 2028ms: M performing I/O [Q K S R]
+time 2041ms: K started using the CPU [Q S R]
+time 2121ms: K preempted due to time slice expiration [Q S R]
+time 2134ms: S started using the CPU [Q R K]
+time 2214ms: S preempted due to time slice expiration [Q R K]
+time 2227ms: R started using the CPU [Q K S]
+time 2307ms: R preempted due to time slice expiration [Q K S]
+time 2320ms: K started using the CPU [Q S R]
+time 2400ms: K preempted due to time slice expiration [Q S R]
+time 2413ms: S started using the CPU [Q R K]
+time 2493ms: S preempted due to time slice expiration [Q R K]
+time 2506ms: R started using the CPU [Q K S]
+time 2586ms: R preempted due to time slice expiration [Q K S]
+time 2599ms: K started using the CPU [Q S R]
+time 2615ms: K completed its CPU burst [Q S R]
+time 2615ms: K performing I/O [Q S R]
+time 2628ms: S started using the CPU [Q R]
+time 2708ms: S preempted due to time slice expiration [Q R]
+time 2721ms: R started using the CPU [Q S]
+time 2801ms: R preempted due to time slice expiration [Q S]
+time 2814ms: S started using the CPU [Q R]
+time 2894ms: S preempted due to time slice expiration [Q R]
+time 2907ms: R started using the CPU [Q S]
+time 2987ms: R preempted due to time slice expiration [Q S]
+time 3000ms: S started using the CPU [Q R]
+time 3080ms: S preempted due to time slice expiration [Q R]
+time 3093ms: R started using the CPU [Q S]
+time 3173ms: R preempted due to time slice expiration [Q S]
+time 3186ms: S started using the CPU [Q R]
+time 3254ms: S completed its CPU burst [Q R]
+time 3254ms: S performing I/O [Q R]
+time 3267ms: R started using the CPU [Q]
+time 3279ms: R completed its CPU burst [Q]
+time 3279ms: R performing I/O [Q]
+time 3897ms: S completed I/O [Q]
+time 3909ms: S started using the CPU [Q]
+time 3989ms: S preempted due to time slice expiration [Q]
+time 4069ms: S preempted due to time slice expiration [Q]
+time 4149ms: S preempted due to time slice expiration [Q]
+time 4229ms: S preempted due to time slice expiration [Q]
+time 4309ms: S preempted due to time slice expiration [Q]
+time 4389ms: S preempted due to time slice expiration [Q]
+time 4469ms: S preempted due to time slice expiration [Q]
+time 4549ms: S preempted due to time slice expiration [Q]
+time 4629ms: S preempted due to time slice expiration [Q]
+time 4709ms: S preempted due to time slice expiration [Q]
+time 4789ms: S preempted due to time slice expiration [Q]
+time 4857ms: S completed its CPU burst [Q]
+time 4857ms: S performing I/O [Q]
+time 5253ms: K completed I/O [Q]
+time 5265ms: K started using the CPU [Q]
+time 5345ms: K preempted due to time slice expiration [Q]
+time 5425ms: K preempted due to time slice expiration [Q]
+time 5500ms: S completed I/O [Q]
+time 5505ms: K preempted due to time slice expiration [Q S]
+time 5518ms: S started using the CPU [Q K]
+time 5598ms: S preempted due to time slice expiration [Q K]
+time 5611ms: K started using the CPU [Q S]
+time 5691ms: K preempted due to time slice expiration [Q S]
+time 5704ms: S started using the CPU [Q K]
+time 5784ms: S preempted due to time slice expiration [Q K]
+time 5797ms: K started using the CPU [Q S]
+time 5877ms: K preempted due to time slice expiration [Q S]
+time 5890ms: S started using the CPU [Q K]
+time 5970ms: S preempted due to time slice expiration [Q K]
+time 5983ms: K started using the CPU [Q S]
+time 6063ms: K preempted due to time slice expiration [Q S]
+time 6076ms: S started using the CPU [Q K]
+time 6156ms: S preempted due to time slice expiration [Q K]
+time 6169ms: K started using the CPU [Q S]
+time 6185ms: K completed its CPU burst [Q S]
+time 6185ms: K performing I/O [Q S]
+time 6198ms: S started using the CPU [Q]
+time 6278ms: S preempted due to time slice expiration [Q]
+time 6358ms: S preempted due to time slice expiration [Q]
+time 6438ms: S preempted due to time slice expiration [Q]
+time 6518ms: S preempted due to time slice expiration [Q]
+time 6550ms: M completed I/O [Q]
+time 6565ms: R completed I/O [Q M]
+time 6598ms: S preempted due to time slice expiration [Q M R]
+time 6611ms: M started using the CPU [Q R S]
+time 6691ms: M preempted due to time slice expiration [Q R S]
+time 6704ms: R started using the CPU [Q S M]
+time 6784ms: R preempted due to time slice expiration [Q S M]
+time 6797ms: S started using the CPU [Q M R]
+time 6877ms: S preempted due to time slice expiration [Q M R]
+time 6890ms: M started using the CPU [Q R S]
+time 6970ms: M preempted due to time slice expiration [Q R S]
+time 6983ms: R started using the CPU [Q S M]
+time 7063ms: R preempted due to time slice expiration [Q S M]
+time 7076ms: S started using the CPU [Q M R]
+time 7156ms: S preempted due to time slice expiration [Q M R]
+time 7169ms: M started using the CPU [Q R S]
+time 7249ms: M preempted due to time slice expiration [Q R S]
+time 7262ms: R started using the CPU [Q S M]
+time 7342ms: R preempted due to time slice expiration [Q S M]
+time 7355ms: S started using the CPU [Q M R]
+time 7423ms: S terminated [Q M R]
+time 7436ms: M started using the CPU [Q R]
+time 7516ms: M preempted due to time slice expiration [Q R]
+time 7529ms: R started using the CPU [Q M]
+time 7609ms: R preempted due to time slice expiration [Q M]
+time 7622ms: M started using the CPU [Q R]
+time 7702ms: M preempted due to time slice expiration [Q R]
+time 7715ms: R started using the CPU [Q M]
+time 7795ms: R preempted due to time slice expiration [Q M]
+time 7808ms: M started using the CPU [Q R]
+time 7813ms: M completed its CPU burst [Q R]
+time 7813ms: M performing I/O [Q R]
+time 7826ms: R started using the CPU [Q]
+time 7906ms: R preempted due to time slice expiration [Q]
+time 7986ms: R preempted due to time slice expiration [Q]
+time 8066ms: R preempted due to time slice expiration [Q]
+time 8146ms: R preempted due to time slice expiration [Q]
+time 8226ms: R preempted due to time slice expiration [Q]
+time 8306ms: R preempted due to time slice expiration [Q]
+time 8318ms: R completed its CPU burst [Q]
+time 8318ms: R performing I/O [Q]
+time 8823ms: K completed I/O [Q]
+time 8835ms: K started using the CPU [Q]
+time 8915ms: K preempted due to time slice expiration [Q]
+time 8995ms: K preempted due to time slice expiration [Q]
+time 9075ms: K preempted due to time slice expiration [Q]
+time 9155ms: K preempted due to time slice expiration [Q]
+time 9235ms: K preempted due to time slice expiration [Q]
+time 9315ms: K preempted due to time slice expiration [Q]
+time 9331ms: K completed its CPU burst [Q]
+time 9331ms: K performing I/O [Q]
+time 11604ms: R completed I/O [Q]
+time 11616ms: R started using the CPU [Q]
+time 11696ms: R preempted due to time slice expiration [Q]
+time 11776ms: R preempted due to time slice expiration [Q]
+time 11856ms: R preempted due to time slice expiration [Q]
+time 11936ms: R preempted due to time slice expiration [Q]
+time 11969ms: K completed I/O [Q]
+time 12016ms: R preempted due to time slice expiration [Q K]
+time 12029ms: K started using the CPU [Q R]
+time 12109ms: K preempted due to time slice expiration [Q R]
+time 12122ms: R started using the CPU [Q K]
+time 12202ms: R preempted due to time slice expiration [Q K]
+time 12215ms: K started using the CPU [Q R]
+time 12295ms: K preempted due to time slice expiration [Q R]
+time 12308ms: R started using the CPU [Q K]
+time 12335ms: M completed I/O [Q K]
+time 12388ms: R preempted due to time slice expiration [Q K M]
+time 12401ms: K started using the CPU [Q M R]
+time 12481ms: K preempted due to time slice expiration [Q M R]
+time 12494ms: M started using the CPU [Q R K]
+time 12574ms: M preempted due to time slice expiration [Q R K]
+time 12587ms: R started using the CPU [Q K M]
+time 12667ms: R preempted due to time slice expiration [Q K M]
+time 12680ms: K started using the CPU [Q M R]
+time 12760ms: K preempted due to time slice expiration [Q M R]
+time 12773ms: M started using the CPU [Q R K]
+time 12853ms: M preempted due to time slice expiration [Q R K]
+time 12866ms: R started using the CPU [Q K M]
+time 12946ms: R preempted due to time slice expiration [Q K M]
+time 12959ms: K started using the CPU [Q M R]
+time 13039ms: K preempted due to time slice expiration [Q M R]
+time 13052ms: M started using the CPU [Q R K]
+time 13132ms: M preempted due to time slice expiration [Q R K]
+time 13145ms: R started using the CPU [Q K M]
+time 13225ms: R preempted due to time slice expiration [Q K M]
+time 13238ms: K started using the CPU [Q M R]
+time 13318ms: K preempted due to time slice expiration [Q M R]
+time 13331ms: M started using the CPU [Q R K]
+time 13411ms: M preempted due to time slice expiration [Q R K]
+time 13424ms: R started using the CPU [Q K M]
+time 13504ms: R preempted due to time slice expiration [Q K M]
+time 13517ms: K started using the CPU [Q M R]
+time 13533ms: K completed its CPU burst [Q M R]
+time 13533ms: K performing I/O [Q M R]
+time 13546ms: M started using the CPU [Q R]
+time 13626ms: M preempted due to time slice expiration [Q R]
+time 13639ms: R started using the CPU [Q M]
+time 13651ms: R completed its CPU burst [Q M]
+time 13651ms: R performing I/O [Q M]
+time 13664ms: M started using the CPU [Q]
+time 13669ms: M completed its CPU burst [Q]
+time 13669ms: M performing I/O [Q]
+time 16171ms: K completed I/O [Q]
+time 16183ms: K started using the CPU [Q]
+time 16263ms: K preempted due to time slice expiration [Q]
+time 16343ms: K preempted due to time slice expiration [Q]
+time 16423ms: K preempted due to time slice expiration [Q]
+time 16503ms: K preempted due to time slice expiration [Q]
+time 16583ms: K preempted due to time slice expiration [Q]
+time 16663ms: K preempted due to time slice expiration [Q]
+time 16679ms: K completed its CPU burst [Q]
+time 16679ms: K performing I/O [Q]
+time 16937ms: R completed I/O [Q]
+time 16949ms: R started using the CPU [Q]
+time 17029ms: R preempted due to time slice expiration [Q]
+time 17109ms: R preempted due to time slice expiration [Q]
+time 17189ms: R preempted due to time slice expiration [Q]
+time 17269ms: R preempted due to time slice expiration [Q]
+time 17349ms: R preempted due to time slice expiration [Q]
+time 17429ms: R preempted due to time slice expiration [Q]
+time 17509ms: R preempted due to time slice expiration [Q]
+time 17589ms: R preempted due to time slice expiration [Q]
+time 17669ms: R preempted due to time slice expiration [Q]
+time 17749ms: R preempted due to time slice expiration [Q]
+time 17829ms: R preempted due to time slice expiration [Q]
+time 17841ms: R completed its CPU burst [Q]
+time 17841ms: R performing I/O [Q]
+time 18191ms: M completed I/O [Q]
+time 18203ms: M started using the CPU [Q]
+time 18283ms: M preempted due to time slice expiration [Q]
+time 18363ms: M preempted due to time slice expiration [Q]
+time 18443ms: M preempted due to time slice expiration [Q]
+time 18523ms: M preempted due to time slice expiration [Q]
+time 18603ms: M preempted due to time slice expiration [Q]
+time 18608ms: M completed its CPU burst [Q]
+time 18608ms: M performing I/O [Q]
+time 19317ms: K completed I/O [Q]
+time 19329ms: K started using the CPU [Q]
+time 19409ms: K preempted due to time slice expiration [Q]
+time 19489ms: K preempted due to time slice expiration [Q]
+time 19569ms: K preempted due to time slice expiration [Q]
+time 19649ms: K preempted due to time slice expiration [Q]
+time 19729ms: K preempted due to time slice expiration [Q]
+time 19809ms: K preempted due to time slice expiration [Q]
+time 19825ms: K terminated [Q]
+time 21127ms: R completed I/O [Q]
+time 21139ms: R started using the CPU [Q]
+time 21219ms: R preempted due to time slice expiration [Q]
+time 21299ms: R preempted due to time slice expiration [Q]
+time 21379ms: R preempted due to time slice expiration [Q]
+time 21459ms: R preempted due to time slice expiration [Q]
+time 21539ms: R preempted due to time slice expiration [Q]
+time 21619ms: R preempted due to time slice expiration [Q]
+time 21699ms: R preempted due to time slice expiration [Q]
+time 21779ms: R preempted due to time slice expiration [Q]
+time 21859ms: R preempted due to time slice expiration [Q]
+time 21939ms: R preempted due to time slice expiration [Q]
+time 22019ms: R preempted due to time slice expiration [Q]
+time 22031ms: R completed its CPU burst [Q]
+time 22031ms: R performing I/O [Q]
+time 23130ms: M completed I/O [Q]
+time 23142ms: M started using the CPU [Q]
+time 23222ms: M preempted due to time slice expiration [Q]
+time 23302ms: M preempted due to time slice expiration [Q]
+time 23382ms: M preempted due to time slice expiration [Q]
+time 23462ms: M preempted due to time slice expiration [Q]
+time 23542ms: M preempted due to time slice expiration [Q]
+time 23547ms: M completed its CPU burst [Q]
+time 23547ms: M performing I/O [Q]
+time 25317ms: R completed I/O [Q]
+time 25329ms: R started using the CPU [Q]
+time 25409ms: R preempted due to time slice expiration [Q]
+time 25489ms: R preempted due to time slice expiration [Q]
+time 25569ms: R preempted due to time slice expiration [Q]
+time 25649ms: R preempted due to time slice expiration [Q]
+time 25729ms: R preempted due to time slice expiration [Q]
+time 25809ms: R preempted due to time slice expiration [Q]
+time 25889ms: R preempted due to time slice expiration [Q]
+time 25969ms: R preempted due to time slice expiration [Q]
+time 26049ms: R preempted due to time slice expiration [Q]
+time 26129ms: R preempted due to time slice expiration [Q]
+time 26209ms: R preempted due to time slice expiration [Q]
+time 26221ms: R terminated [Q]
+time 28069ms: M completed I/O [Q]
+time 28081ms: M started using the CPU [Q]
+time 28161ms: M preempted due to time slice expiration [Q]
+time 28241ms: M preempted due to time slice expiration [Q]
+time 28321ms: M preempted due to time slice expiration [Q]
+time 28401ms: M preempted due to time slice expiration [Q]
+time 28481ms: M preempted due to time slice expiration [Q]
+time 28486ms: M completed its CPU burst [Q]
+time 28486ms: M performing I/O [Q]
+time 33008ms: M completed I/O [Q]
+time 33020ms: M started using the CPU [Q]
+time 33100ms: M preempted due to time slice expiration [Q]
+time 33180ms: M preempted due to time slice expiration [Q]
+time 33260ms: M preempted due to time slice expiration [Q]
+time 33340ms: M preempted due to time slice expiration [Q]
+time 33420ms: M preempted due to time slice expiration [Q]
+time 33425ms: M completed its CPU burst [Q]
+time 33425ms: M performing I/O [Q]
+time 37947ms: M completed I/O [Q]
+time 37959ms: M started using the CPU [Q]
+time 38039ms: M preempted due to time slice expiration [Q]
+time 38119ms: M preempted due to time slice expiration [Q]
+time 38199ms: M preempted due to time slice expiration [Q]
+time 38279ms: M preempted due to time slice expiration [Q]
+time 38359ms: M preempted due to time slice expiration [Q]
+time 38364ms: M terminated [Q]
+time 38364ms: Simulator for RR ended [Q]
+
+
+time 0ms: Simulator started for RR (t_slice 80) and Best Fit
+time 36ms: Process S added to system [Q S]
+time 36ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSS.........
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+time 48ms: S started using the CPU [Q]
+time 50ms: Process R added to system [Q R]
+time 50ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRR...............
+................................
+................................
+................................
+================================
+time 64ms: Process M added to system [Q R M]
+time 64ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 118ms: A unable to be added; lack of memory [Q R M]
+time 118ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 120ms: Z unable to be added; lack of memory and defragmentation failed [Q R M]
+time 131ms: S preempted due to time slice expiration [Q R M]
+time 134ms: P unable to be added; lack of memory [Q R M S]
+time 134ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 134ms: Z unable to be added; lack of memory and defragmentation failed [Q R M S]
+time 145ms: R started using the CPU [Q M S]
+time 149ms: C unable to be added; lack of memory [Q M S]
+time 149ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 149ms: Z unable to be added; lack of memory and defragmentation failed [Q M S]
+time 226ms: R preempted due to time slice expiration [Q M S]
+time 231ms: T unable to be added; lack of memory [Q M S R]
+time 231ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 231ms: Z unable to be added; lack of memory and defragmentation failed [Q M S R]
+time 240ms: M started using the CPU [Q S R]
+time 320ms: M preempted due to time slice expiration [Q S R]
+time 327ms: F unable to be added; lack of memory [Q S R M]
+time 327ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 327ms: Z unable to be added; lack of memory and defragmentation failed [Q S R M]
+time 334ms: S started using the CPU [Q R M]
+time 358ms: Process K added to system [Q R M K]
+time 358ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 414ms: S preempted due to time slice expiration [Q R M K]
+time 425ms: U unable to be added; lack of memory [Q R M K S]
+time 425ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 426ms: Z unable to be added; lack of memory and defragmentation failed [Q R M K S]
+time 429ms: R started using the CPU [Q M K S]
+time 509ms: R preempted due to time slice expiration [Q M K S]
+time 522ms: M started using the CPU [Q K S R]
+time 553ms: Q unable to be added; lack of memory [Q K S R]
+time 553ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 553ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 597ms: L unable to be added; lack of memory [Q K S R]
+time 597ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 597ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 604ms: M preempted due to time slice expiration [Q K S R]
+time 617ms: K started using the CPU [Q S R M]
+time 697ms: K preempted due to time slice expiration [Q S R M]
+time 710ms: S started using the CPU [Q R M K]
+time 721ms: Y unable to be added; lack of memory [Q R M K]
+time 721ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 721ms: Z unable to be added; lack of memory and defragmentation failed [Q R M K]
+time 791ms: S preempted due to time slice expiration [Q R M K]
+time 804ms: R started using the CPU [Q M K S]
+time 884ms: R preempted due to time slice expiration [Q M K S]
+time 897ms: M started using the CPU [Q K S R]
+time 898ms: I unable to be added; lack of memory [Q K S R]
+time 898ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 898ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 941ms: N unable to be added; lack of memory [Q K S R]
+time 941ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 941ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 979ms: M preempted due to time slice expiration [Q K S R]
+time 992ms: K started using the CPU [Q S R M]
+time 1072ms: K preempted due to time slice expiration [Q S R M]
+time 1085ms: S started using the CPU [Q R M K]
+time 1118ms: Z unable to be added; lack of memory [Q R M K]
+time 1118ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1118ms: Z unable to be added; lack of memory and defragmentation failed [Q R M K]
+time 1119ms: H unable to be added; lack of memory [Q R M K]
+time 1119ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1119ms: Z unable to be added; lack of memory and defragmentation failed [Q R M K]
+time 1167ms: S preempted due to time slice expiration [Q R M K]
+time 1180ms: R started using the CPU [Q M K S]
+time 1188ms: X unable to be added; lack of memory [Q M K S]
+time 1188ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1188ms: Z unable to be added; lack of memory and defragmentation failed [Q M K S]
+time 1261ms: R preempted due to time slice expiration [Q M K S]
+time 1272ms: V unable to be added; lack of memory [Q M K S R]
+time 1272ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1272ms: Z unable to be added; lack of memory and defragmentation failed [Q M K S R]
+time 1275ms: M started using the CPU [Q K S R]
+time 1355ms: M preempted due to time slice expiration [Q K S R]
+time 1368ms: K started using the CPU [Q S R M]
+time 1448ms: K preempted due to time slice expiration [Q S R M]
+time 1461ms: S started using the CPU [Q R M K]
+time 1503ms: G unable to be added; lack of memory [Q R M K]
+time 1503ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1503ms: Z unable to be added; lack of memory and defragmentation failed [Q R M K]
+time 1542ms: S preempted due to time slice expiration [Q R M K]
+time 1555ms: R started using the CPU [Q M K S]
+time 1561ms: O unable to be added; lack of memory [Q M K S]
+time 1561ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1561ms: Z unable to be added; lack of memory and defragmentation failed [Q M K S]
+time 1636ms: R preempted due to time slice expiration [Q M K S]
+time 1649ms: M started using the CPU [Q K S R]
+time 1716ms: B unable to be added; lack of memory [Q K S R]
+time 1716ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1716ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 1730ms: M preempted due to time slice expiration [Q K S R]
+time 1734ms: W unable to be added; lack of memory [Q K S R M]
+time 1734ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1734ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R M]
+time 1744ms: K started using the CPU [Q S R M]
+time 1774ms: E unable to be added; lack of memory [Q S R M]
+time 1774ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1774ms: Z unable to be added; lack of memory and defragmentation failed [Q S R M]
+time 1812ms: J unable to be added; lack of memory [Q S R M]
+time 1812ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1812ms: Z unable to be added; lack of memory and defragmentation failed [Q S R M]
+time 1823ms: D unable to be added; lack of memory [Q S R M]
+time 1823ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1823ms: Z unable to be added; lack of memory and defragmentation failed [Q S R M]
+time 1827ms: K preempted due to time slice expiration [Q S R M]
+time 1840ms: S started using the CPU [Q R M K]
+time 1920ms: S preempted due to time slice expiration [Q R M K]
+time 1933ms: R started using the CPU [Q M K S]
+time 2013ms: R preempted due to time slice expiration [Q M K S]
+time 2026ms: M started using the CPU [Q K S R]
+time 2031ms: M completed its CPU burst [Q K S R]
+time 2031ms: M performing I/O [Q K S R]
+time 2044ms: K started using the CPU [Q S R]
+time 2124ms: K preempted due to time slice expiration [Q S R]
+time 2137ms: S started using the CPU [Q R K]
+time 2217ms: S preempted due to time slice expiration [Q R K]
+time 2230ms: R started using the CPU [Q K S]
+time 2310ms: R preempted due to time slice expiration [Q K S]
+time 2323ms: K started using the CPU [Q S R]
+time 2403ms: K preempted due to time slice expiration [Q S R]
+time 2416ms: S started using the CPU [Q R K]
+time 2496ms: S preempted due to time slice expiration [Q R K]
+time 2509ms: R started using the CPU [Q K S]
+time 2589ms: R preempted due to time slice expiration [Q K S]
+time 2602ms: K started using the CPU [Q S R]
+time 2618ms: K completed its CPU burst [Q S R]
+time 2618ms: K performing I/O [Q S R]
+time 2631ms: S started using the CPU [Q R]
+time 2711ms: S preempted due to time slice expiration [Q R]
+time 2724ms: R started using the CPU [Q S]
+time 2804ms: R preempted due to time slice expiration [Q S]
+time 2817ms: S started using the CPU [Q R]
+time 2897ms: S preempted due to time slice expiration [Q R]
+time 2910ms: R started using the CPU [Q S]
+time 2990ms: R preempted due to time slice expiration [Q S]
+time 3003ms: S started using the CPU [Q R]
+time 3083ms: S preempted due to time slice expiration [Q R]
+time 3096ms: R started using the CPU [Q S]
+time 3176ms: R preempted due to time slice expiration [Q S]
+time 3189ms: S started using the CPU [Q R]
+time 3257ms: S completed its CPU burst [Q R]
+time 3257ms: S performing I/O [Q R]
+time 3270ms: R started using the CPU [Q]
+time 3282ms: R completed its CPU burst [Q]
+time 3282ms: R performing I/O [Q]
+time 3900ms: S completed I/O [Q]
+time 3912ms: S started using the CPU [Q]
+time 3992ms: S preempted due to time slice expiration [Q]
+time 4072ms: S preempted due to time slice expiration [Q]
+time 4152ms: S preempted due to time slice expiration [Q]
+time 4232ms: S preempted due to time slice expiration [Q]
+time 4312ms: S preempted due to time slice expiration [Q]
+time 4392ms: S preempted due to time slice expiration [Q]
+time 4472ms: S preempted due to time slice expiration [Q]
+time 4552ms: S preempted due to time slice expiration [Q]
+time 4632ms: S preempted due to time slice expiration [Q]
+time 4712ms: S preempted due to time slice expiration [Q]
+time 4792ms: S preempted due to time slice expiration [Q]
+time 4860ms: S completed its CPU burst [Q]
+time 4860ms: S performing I/O [Q]
+time 5256ms: K completed I/O [Q]
+time 5268ms: K started using the CPU [Q]
+time 5348ms: K preempted due to time slice expiration [Q]
+time 5428ms: K preempted due to time slice expiration [Q]
+time 5503ms: S completed I/O [Q]
+time 5508ms: K preempted due to time slice expiration [Q S]
+time 5521ms: S started using the CPU [Q K]
+time 5601ms: S preempted due to time slice expiration [Q K]
+time 5614ms: K started using the CPU [Q S]
+time 5694ms: K preempted due to time slice expiration [Q S]
+time 5707ms: S started using the CPU [Q K]
+time 5787ms: S preempted due to time slice expiration [Q K]
+time 5800ms: K started using the CPU [Q S]
+time 5880ms: K preempted due to time slice expiration [Q S]
+time 5893ms: S started using the CPU [Q K]
+time 5973ms: S preempted due to time slice expiration [Q K]
+time 5986ms: K started using the CPU [Q S]
+time 6066ms: K preempted due to time slice expiration [Q S]
+time 6079ms: S started using the CPU [Q K]
+time 6159ms: S preempted due to time slice expiration [Q K]
+time 6172ms: K started using the CPU [Q S]
+time 6188ms: K completed its CPU burst [Q S]
+time 6188ms: K performing I/O [Q S]
+time 6201ms: S started using the CPU [Q]
+time 6281ms: S preempted due to time slice expiration [Q]
+time 6361ms: S preempted due to time slice expiration [Q]
+time 6441ms: S preempted due to time slice expiration [Q]
+time 6521ms: S preempted due to time slice expiration [Q]
+time 6553ms: M completed I/O [Q]
+time 6568ms: R completed I/O [Q M]
+time 6601ms: S preempted due to time slice expiration [Q M R]
+time 6614ms: M started using the CPU [Q R S]
+time 6694ms: M preempted due to time slice expiration [Q R S]
+time 6707ms: R started using the CPU [Q S M]
+time 6787ms: R preempted due to time slice expiration [Q S M]
+time 6800ms: S started using the CPU [Q M R]
+time 6880ms: S preempted due to time slice expiration [Q M R]
+time 6893ms: M started using the CPU [Q R S]
+time 6973ms: M preempted due to time slice expiration [Q R S]
+time 6986ms: R started using the CPU [Q S M]
+time 7066ms: R preempted due to time slice expiration [Q S M]
+time 7079ms: S started using the CPU [Q M R]
+time 7159ms: S preempted due to time slice expiration [Q M R]
+time 7172ms: M started using the CPU [Q R S]
+time 7252ms: M preempted due to time slice expiration [Q R S]
+time 7265ms: R started using the CPU [Q S M]
+time 7345ms: R preempted due to time slice expiration [Q S M]
+time 7358ms: S started using the CPU [Q M R]
+time 7426ms: S terminated [Q M R]
+time 7439ms: M started using the CPU [Q R]
+time 7519ms: M preempted due to time slice expiration [Q R]
+time 7532ms: R started using the CPU [Q M]
+time 7612ms: R preempted due to time slice expiration [Q M]
+time 7625ms: M started using the CPU [Q R]
+time 7705ms: M preempted due to time slice expiration [Q R]
+time 7718ms: R started using the CPU [Q M]
+time 7798ms: R preempted due to time slice expiration [Q M]
+time 7811ms: M started using the CPU [Q R]
+time 7816ms: M completed its CPU burst [Q R]
+time 7816ms: M performing I/O [Q R]
+time 7829ms: R started using the CPU [Q]
+time 7909ms: R preempted due to time slice expiration [Q]
+time 7989ms: R preempted due to time slice expiration [Q]
+time 8069ms: R preempted due to time slice expiration [Q]
+time 8149ms: R preempted due to time slice expiration [Q]
+time 8229ms: R preempted due to time slice expiration [Q]
+time 8309ms: R preempted due to time slice expiration [Q]
+time 8321ms: R completed its CPU burst [Q]
+time 8321ms: R performing I/O [Q]
+time 8826ms: K completed I/O [Q]
+time 8838ms: K started using the CPU [Q]
+time 8918ms: K preempted due to time slice expiration [Q]
+time 8998ms: K preempted due to time slice expiration [Q]
+time 9078ms: K preempted due to time slice expiration [Q]
+time 9158ms: K preempted due to time slice expiration [Q]
+time 9238ms: K preempted due to time slice expiration [Q]
+time 9318ms: K preempted due to time slice expiration [Q]
+time 9334ms: K completed its CPU burst [Q]
+time 9334ms: K performing I/O [Q]
+time 11607ms: R completed I/O [Q]
+time 11619ms: R started using the CPU [Q]
+time 11699ms: R preempted due to time slice expiration [Q]
+time 11779ms: R preempted due to time slice expiration [Q]
+time 11859ms: R preempted due to time slice expiration [Q]
+time 11939ms: R preempted due to time slice expiration [Q]
+time 11972ms: K completed I/O [Q]
+time 12019ms: R preempted due to time slice expiration [Q K]
+time 12032ms: K started using the CPU [Q R]
+time 12112ms: K preempted due to time slice expiration [Q R]
+time 12125ms: R started using the CPU [Q K]
+time 12205ms: R preempted due to time slice expiration [Q K]
+time 12218ms: K started using the CPU [Q R]
+time 12298ms: K preempted due to time slice expiration [Q R]
+time 12311ms: R started using the CPU [Q K]
+time 12338ms: M completed I/O [Q K]
+time 12391ms: R preempted due to time slice expiration [Q K M]
+time 12404ms: K started using the CPU [Q M R]
+time 12484ms: K preempted due to time slice expiration [Q M R]
+time 12497ms: M started using the CPU [Q R K]
+time 12577ms: M preempted due to time slice expiration [Q R K]
+time 12590ms: R started using the CPU [Q K M]
+time 12670ms: R preempted due to time slice expiration [Q K M]
+time 12683ms: K started using the CPU [Q M R]
+time 12763ms: K preempted due to time slice expiration [Q M R]
+time 12776ms: M started using the CPU [Q R K]
+time 12856ms: M preempted due to time slice expiration [Q R K]
+time 12869ms: R started using the CPU [Q K M]
+time 12949ms: R preempted due to time slice expiration [Q K M]
+time 12962ms: K started using the CPU [Q M R]
+time 13042ms: K preempted due to time slice expiration [Q M R]
+time 13055ms: M started using the CPU [Q R K]
+time 13135ms: M preempted due to time slice expiration [Q R K]
+time 13148ms: R started using the CPU [Q K M]
+time 13228ms: R preempted due to time slice expiration [Q K M]
+time 13241ms: K started using the CPU [Q M R]
+time 13321ms: K preempted due to time slice expiration [Q M R]
+time 13334ms: M started using the CPU [Q R K]
+time 13414ms: M preempted due to time slice expiration [Q R K]
+time 13427ms: R started using the CPU [Q K M]
+time 13507ms: R preempted due to time slice expiration [Q K M]
+time 13520ms: K started using the CPU [Q M R]
+time 13536ms: K completed its CPU burst [Q M R]
+time 13536ms: K performing I/O [Q M R]
+time 13549ms: M started using the CPU [Q R]
+time 13629ms: M preempted due to time slice expiration [Q R]
+time 13642ms: R started using the CPU [Q M]
+time 13654ms: R completed its CPU burst [Q M]
+time 13654ms: R performing I/O [Q M]
+time 13667ms: M started using the CPU [Q]
+time 13672ms: M completed its CPU burst [Q]
+time 13672ms: M performing I/O [Q]
+time 16174ms: K completed I/O [Q]
+time 16186ms: K started using the CPU [Q]
+time 16266ms: K preempted due to time slice expiration [Q]
+time 16346ms: K preempted due to time slice expiration [Q]
+time 16426ms: K preempted due to time slice expiration [Q]
+time 16506ms: K preempted due to time slice expiration [Q]
+time 16586ms: K preempted due to time slice expiration [Q]
+time 16666ms: K preempted due to time slice expiration [Q]
+time 16682ms: K completed its CPU burst [Q]
+time 16682ms: K performing I/O [Q]
+time 16940ms: R completed I/O [Q]
+time 16952ms: R started using the CPU [Q]
+time 17032ms: R preempted due to time slice expiration [Q]
+time 17112ms: R preempted due to time slice expiration [Q]
+time 17192ms: R preempted due to time slice expiration [Q]
+time 17272ms: R preempted due to time slice expiration [Q]
+time 17352ms: R preempted due to time slice expiration [Q]
+time 17432ms: R preempted due to time slice expiration [Q]
+time 17512ms: R preempted due to time slice expiration [Q]
+time 17592ms: R preempted due to time slice expiration [Q]
+time 17672ms: R preempted due to time slice expiration [Q]
+time 17752ms: R preempted due to time slice expiration [Q]
+time 17832ms: R preempted due to time slice expiration [Q]
+time 17844ms: R completed its CPU burst [Q]
+time 17844ms: R performing I/O [Q]
+time 18194ms: M completed I/O [Q]
+time 18206ms: M started using the CPU [Q]
+time 18286ms: M preempted due to time slice expiration [Q]
+time 18366ms: M preempted due to time slice expiration [Q]
+time 18446ms: M preempted due to time slice expiration [Q]
+time 18526ms: M preempted due to time slice expiration [Q]
+time 18606ms: M preempted due to time slice expiration [Q]
+time 18611ms: M completed its CPU burst [Q]
+time 18611ms: M performing I/O [Q]
+time 19320ms: K completed I/O [Q]
+time 19332ms: K started using the CPU [Q]
+time 19412ms: K preempted due to time slice expiration [Q]
+time 19492ms: K preempted due to time slice expiration [Q]
+time 19572ms: K preempted due to time slice expiration [Q]
+time 19652ms: K preempted due to time slice expiration [Q]
+time 19732ms: K preempted due to time slice expiration [Q]
+time 19812ms: K preempted due to time slice expiration [Q]
+time 19828ms: K terminated [Q]
+time 21130ms: R completed I/O [Q]
+time 21142ms: R started using the CPU [Q]
+time 21222ms: R preempted due to time slice expiration [Q]
+time 21302ms: R preempted due to time slice expiration [Q]
+time 21382ms: R preempted due to time slice expiration [Q]
+time 21462ms: R preempted due to time slice expiration [Q]
+time 21542ms: R preempted due to time slice expiration [Q]
+time 21622ms: R preempted due to time slice expiration [Q]
+time 21702ms: R preempted due to time slice expiration [Q]
+time 21782ms: R preempted due to time slice expiration [Q]
+time 21862ms: R preempted due to time slice expiration [Q]
+time 21942ms: R preempted due to time slice expiration [Q]
+time 22022ms: R preempted due to time slice expiration [Q]
+time 22034ms: R completed its CPU burst [Q]
+time 22034ms: R performing I/O [Q]
+time 23133ms: M completed I/O [Q]
+time 23145ms: M started using the CPU [Q]
+time 23225ms: M preempted due to time slice expiration [Q]
+time 23305ms: M preempted due to time slice expiration [Q]
+time 23385ms: M preempted due to time slice expiration [Q]
+time 23465ms: M preempted due to time slice expiration [Q]
+time 23545ms: M preempted due to time slice expiration [Q]
+time 23550ms: M completed its CPU burst [Q]
+time 23550ms: M performing I/O [Q]
+time 25320ms: R completed I/O [Q]
+time 25332ms: R started using the CPU [Q]
+time 25412ms: R preempted due to time slice expiration [Q]
+time 25492ms: R preempted due to time slice expiration [Q]
+time 25572ms: R preempted due to time slice expiration [Q]
+time 25652ms: R preempted due to time slice expiration [Q]
+time 25732ms: R preempted due to time slice expiration [Q]
+time 25812ms: R preempted due to time slice expiration [Q]
+time 25892ms: R preempted due to time slice expiration [Q]
+time 25972ms: R preempted due to time slice expiration [Q]
+time 26052ms: R preempted due to time slice expiration [Q]
+time 26132ms: R preempted due to time slice expiration [Q]
+time 26212ms: R preempted due to time slice expiration [Q]
+time 26224ms: R terminated [Q]
+time 28072ms: M completed I/O [Q]
+time 28084ms: M started using the CPU [Q]
+time 28164ms: M preempted due to time slice expiration [Q]
+time 28244ms: M preempted due to time slice expiration [Q]
+time 28324ms: M preempted due to time slice expiration [Q]
+time 28404ms: M preempted due to time slice expiration [Q]
+time 28484ms: M preempted due to time slice expiration [Q]
+time 28489ms: M completed its CPU burst [Q]
+time 28489ms: M performing I/O [Q]
+time 33011ms: M completed I/O [Q]
+time 33023ms: M started using the CPU [Q]
+time 33103ms: M preempted due to time slice expiration [Q]
+time 33183ms: M preempted due to time slice expiration [Q]
+time 33263ms: M preempted due to time slice expiration [Q]
+time 33343ms: M preempted due to time slice expiration [Q]
+time 33423ms: M preempted due to time slice expiration [Q]
+time 33428ms: M completed its CPU burst [Q]
+time 33428ms: M performing I/O [Q]
+time 37950ms: M completed I/O [Q]
+time 37962ms: M started using the CPU [Q]
+time 38042ms: M preempted due to time slice expiration [Q]
+time 38122ms: M preempted due to time slice expiration [Q]
+time 38202ms: M preempted due to time slice expiration [Q]
+time 38282ms: M preempted due to time slice expiration [Q]
+time 38362ms: M preempted due to time slice expiration [Q]
+time 38367ms: M terminated [Q]
+time 38367ms: Simulator for RR ended [Q]
+
+
+time 0ms: Simulator started for RR (t_slice 80) and Next Fit
+time 36ms: Process S added to system [Q S]
+time 36ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSS.........
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+time 48ms: S started using the CPU [Q]
+time 50ms: Process R added to system [Q R]
+time 50ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRR...............
+................................
+................................
+................................
+================================
+time 64ms: Process M added to system [Q R M]
+time 64ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 118ms: A unable to be added; lack of memory [Q R M]
+time 118ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 118ms: Z unable to be added; lack of memory and defragmentation failed [Q R M]
+time 129ms: S preempted due to time slice expiration [Q R M]
+time 134ms: P unable to be added; lack of memory [Q R M S]
+time 134ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 134ms: Z unable to be added; lack of memory and defragmentation failed [Q R M S]
+time 143ms: R started using the CPU [Q M S]
+time 149ms: C unable to be added; lack of memory [Q M S]
+time 149ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 149ms: Z unable to be added; lack of memory and defragmentation failed [Q M S]
+time 224ms: R preempted due to time slice expiration [Q M S]
+time 231ms: T unable to be added; lack of memory [Q M S R]
+time 231ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 231ms: Z unable to be added; lack of memory and defragmentation failed [Q M S R]
+time 238ms: M started using the CPU [Q S R]
+time 318ms: M preempted due to time slice expiration [Q S R]
+time 327ms: F unable to be added; lack of memory [Q S R M]
+time 327ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM..............
+================================
+time 327ms: Z unable to be added; lack of memory and defragmentation failed [Q S R M]
+time 332ms: S started using the CPU [Q R M]
+time 358ms: Process K added to system [Q R M K]
+time 358ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 412ms: S preempted due to time slice expiration [Q R M K]
+time 425ms: U unable to be added; lack of memory [Q R M K S]
+time 425ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 425ms: Z unable to be added; lack of memory and defragmentation failed [Q R M K S]
+time 426ms: R started using the CPU [Q M K S]
+time 506ms: R preempted due to time slice expiration [Q M K S]
+time 519ms: M started using the CPU [Q K S R]
+time 553ms: Q unable to be added; lack of memory [Q K S R]
+time 553ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 553ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 597ms: L unable to be added; lack of memory [Q K S R]
+time 597ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 597ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 601ms: M preempted due to time slice expiration [Q K S R]
+time 614ms: K started using the CPU [Q S R M]
+time 694ms: K preempted due to time slice expiration [Q S R M]
+time 707ms: S started using the CPU [Q R M K]
+time 721ms: Y unable to be added; lack of memory [Q R M K]
+time 721ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 721ms: Z unable to be added; lack of memory and defragmentation failed [Q R M K]
+time 788ms: S preempted due to time slice expiration [Q R M K]
+time 801ms: R started using the CPU [Q M K S]
+time 881ms: R preempted due to time slice expiration [Q M K S]
+time 894ms: M started using the CPU [Q K S R]
+time 898ms: I unable to be added; lack of memory [Q K S R]
+time 898ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 898ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 941ms: N unable to be added; lack of memory [Q K S R]
+time 941ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 941ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 976ms: M preempted due to time slice expiration [Q K S R]
+time 989ms: K started using the CPU [Q S R M]
+time 1069ms: K preempted due to time slice expiration [Q S R M]
+time 1082ms: S started using the CPU [Q R M K]
+time 1118ms: Z unable to be added; lack of memory [Q R M K]
+time 1118ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1118ms: Z unable to be added; lack of memory and defragmentation failed [Q R M K]
+time 1119ms: H unable to be added; lack of memory [Q R M K]
+time 1119ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1119ms: Z unable to be added; lack of memory and defragmentation failed [Q R M K]
+time 1164ms: S preempted due to time slice expiration [Q R M K]
+time 1177ms: R started using the CPU [Q M K S]
+time 1188ms: X unable to be added; lack of memory [Q M K S]
+time 1188ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1188ms: Z unable to be added; lack of memory and defragmentation failed [Q M K S]
+time 1258ms: R preempted due to time slice expiration [Q M K S]
+time 1271ms: M started using the CPU [Q K S R]
+time 1272ms: V unable to be added; lack of memory [Q K S R]
+time 1272ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1272ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 1352ms: M preempted due to time slice expiration [Q K S R]
+time 1365ms: K started using the CPU [Q S R M]
+time 1445ms: K preempted due to time slice expiration [Q S R M]
+time 1458ms: S started using the CPU [Q R M K]
+time 1503ms: G unable to be added; lack of memory [Q R M K]
+time 1503ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1503ms: Z unable to be added; lack of memory and defragmentation failed [Q R M K]
+time 1539ms: S preempted due to time slice expiration [Q R M K]
+time 1552ms: R started using the CPU [Q M K S]
+time 1561ms: O unable to be added; lack of memory [Q M K S]
+time 1561ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1561ms: Z unable to be added; lack of memory and defragmentation failed [Q M K S]
+time 1633ms: R preempted due to time slice expiration [Q M K S]
+time 1646ms: M started using the CPU [Q K S R]
+time 1716ms: B unable to be added; lack of memory [Q K S R]
+time 1716ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1716ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R]
+time 1727ms: M preempted due to time slice expiration [Q K S R]
+time 1734ms: W unable to be added; lack of memory [Q K S R M]
+time 1734ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1734ms: Z unable to be added; lack of memory and defragmentation failed [Q K S R M]
+time 1741ms: K started using the CPU [Q S R M]
+time 1774ms: E unable to be added; lack of memory [Q S R M]
+time 1774ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1774ms: Z unable to be added; lack of memory and defragmentation failed [Q S R M]
+time 1812ms: J unable to be added; lack of memory [Q S R M]
+time 1812ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1812ms: Z unable to be added; lack of memory and defragmentation failed [Q S R M]
+time 1823ms: D unable to be added; lack of memory [Q S R M]
+time 1823ms: Simulated Memory:
+================================
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SSSSSSSSSSSSSSSSSSSSSSSRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+RRRRRRRRRRRRRRRRRMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMKKKKKKKKKKK...
+================================
+time 1823ms: Z unable to be added; lack of memory and defragmentation failed [Q S R M]
+time 1824ms: K preempted due to time slice expiration [Q S R M]
+time 1837ms: S started using the CPU [Q R M K]
+time 1917ms: S preempted due to time slice expiration [Q R M K]
+time 1930ms: R started using the CPU [Q M K S]
+time 2010ms: R preempted due to time slice expiration [Q M K S]
+time 2023ms: M started using the CPU [Q K S R]
+time 2028ms: M completed its CPU burst [Q K S R]
+time 2028ms: M performing I/O [Q K S R]
+time 2041ms: K started using the CPU [Q S R]
+time 2121ms: K preempted due to time slice expiration [Q S R]
+time 2134ms: S started using the CPU [Q R K]
+time 2214ms: S preempted due to time slice expiration [Q R K]
+time 2227ms: R started using the CPU [Q K S]
+time 2307ms: R preempted due to time slice expiration [Q K S]
+time 2320ms: K started using the CPU [Q S R]
+time 2400ms: K preempted due to time slice expiration [Q S R]
+time 2413ms: S started using the CPU [Q R K]
+time 2493ms: S preempted due to time slice expiration [Q R K]
+time 2506ms: R started using the CPU [Q K S]
+time 2586ms: R preempted due to time slice expiration [Q K S]
+time 2599ms: K started using the CPU [Q S R]
+time 2615ms: K completed its CPU burst [Q S R]
+time 2615ms: K performing I/O [Q S R]
+time 2628ms: S started using the CPU [Q R]
+time 2708ms: S preempted due to time slice expiration [Q R]
+time 2721ms: R started using the CPU [Q S]
+time 2801ms: R preempted due to time slice expiration [Q S]
+time 2814ms: S started using the CPU [Q R]
+time 2894ms: S preempted due to time slice expiration [Q R]
+time 2907ms: R started using the CPU [Q S]
+time 2987ms: R preempted due to time slice expiration [Q S]
+time 3000ms: S started using the CPU [Q R]
+time 3080ms: S preempted due to time slice expiration [Q R]
+time 3093ms: R started using the CPU [Q S]
+time 3173ms: R preempted due to time slice expiration [Q S]
+time 3186ms: S started using the CPU [Q R]
+time 3254ms: S completed its CPU burst [Q R]
+time 3254ms: S performing I/O [Q R]
+time 3267ms: R started using the CPU [Q]
+time 3279ms: R completed its CPU burst [Q]
+time 3279ms: R performing I/O [Q]
+time 3897ms: S completed I/O [Q]
+time 3909ms: S started using the CPU [Q]
+time 3989ms: S preempted due to time slice expiration [Q]
+time 4069ms: S preempted due to time slice expiration [Q]
+time 4149ms: S preempted due to time slice expiration [Q]
+time 4229ms: S preempted due to time slice expiration [Q]
+time 4309ms: S preempted due to time slice expiration [Q]
+time 4389ms: S preempted due to time slice expiration [Q]
+time 4469ms: S preempted due to time slice expiration [Q]
+time 4549ms: S preempted due to time slice expiration [Q]
+time 4629ms: S preempted due to time slice expiration [Q]
+time 4709ms: S preempted due to time slice expiration [Q]
+time 4789ms: S preempted due to time slice expiration [Q]
+time 4857ms: S completed its CPU burst [Q]
+time 4857ms: S performing I/O [Q]
+time 5253ms: K completed I/O [Q]
+time 5265ms: K started using the CPU [Q]
+time 5345ms: K preempted due to time slice expiration [Q]
+time 5425ms: K preempted due to time slice expiration [Q]
+time 5500ms: S completed I/O [Q]
+time 5505ms: K preempted due to time slice expiration [Q S]
+time 5518ms: S started using the CPU [Q K]
+time 5598ms: S preempted due to time slice expiration [Q K]
+time 5611ms: K started using the CPU [Q S]
+time 5691ms: K preempted due to time slice expiration [Q S]
+time 5704ms: S started using the CPU [Q K]
+time 5784ms: S preempted due to time slice expiration [Q K]
+time 5797ms: K started using the CPU [Q S]
+time 5877ms: K preempted due to time slice expiration [Q S]
+time 5890ms: S started using the CPU [Q K]
+time 5970ms: S preempted due to time slice expiration [Q K]
+time 5983ms: K started using the CPU [Q S]
+time 6063ms: K preempted due to time slice expiration [Q S]
+time 6076ms: S started using the CPU [Q K]
+time 6156ms: S preempted due to time slice expiration [Q K]
+time 6169ms: K started using the CPU [Q S]
+time 6185ms: K completed its CPU burst [Q S]
+time 6185ms: K performing I/O [Q S]
+time 6198ms: S started using the CPU [Q]
+time 6278ms: S preempted due to time slice expiration [Q]
+time 6358ms: S preempted due to time slice expiration [Q]
+time 6438ms: S preempted due to time slice expiration [Q]
+time 6518ms: S preempted due to time slice expiration [Q]
+time 6550ms: M completed I/O [Q]
+time 6565ms: R completed I/O [Q M]
+time 6598ms: S preempted due to time slice expiration [Q M R]
+time 6611ms: M started using the CPU [Q R S]
+time 6691ms: M preempted due to time slice expiration [Q R S]
+time 6704ms: R started using the CPU [Q S M]
+time 6784ms: R preempted due to time slice expiration [Q S M]
+time 6797ms: S started using the CPU [Q M R]
+time 6877ms: S preempted due to time slice expiration [Q M R]
+time 6890ms: M started using the CPU [Q R S]
+time 6970ms: M preempted due to time slice expiration [Q R S]
+time 6983ms: R started using the CPU [Q S M]
+time 7063ms: R preempted due to time slice expiration [Q S M]
+time 7076ms: S started using the CPU [Q M R]
+time 7156ms: S preempted due to time slice expiration [Q M R]
+time 7169ms: M started using the CPU [Q R S]
+time 7249ms: M preempted due to time slice expiration [Q R S]
+time 7262ms: R started using the CPU [Q S M]
+time 7342ms: R preempted due to time slice expiration [Q S M]
+time 7355ms: S started using the CPU [Q M R]
+time 7423ms: S terminated [Q M R]
+time 7436ms: M started using the CPU [Q R]
+time 7516ms: M preempted due to time slice expiration [Q R]
+time 7529ms: R started using the CPU [Q M]
+time 7609ms: R preempted due to time slice expiration [Q M]
+time 7622ms: M started using the CPU [Q R]
+time 7702ms: M preempted due to time slice expiration [Q R]
+time 7715ms: R started using the CPU [Q M]
+time 7795ms: R preempted due to time slice expiration [Q M]
+time 7808ms: M started using the CPU [Q R]
+time 7813ms: M completed its CPU burst [Q R]
+time 7813ms: M performing I/O [Q R]
+time 7826ms: R started using the CPU [Q]
+time 7906ms: R preempted due to time slice expiration [Q]
+time 7986ms: R preempted due to time slice expiration [Q]
+time 8066ms: R preempted due to time slice expiration [Q]
+time 8146ms: R preempted due to time slice expiration [Q]
+time 8226ms: R preempted due to time slice expiration [Q]
+time 8306ms: R preempted due to time slice expiration [Q]
+time 8318ms: R completed its CPU burst [Q]
+time 8318ms: R performing I/O [Q]
+time 8823ms: K completed I/O [Q]
+time 8835ms: K started using the CPU [Q]
+time 8915ms: K preempted due to time slice expiration [Q]
+time 8995ms: K preempted due to time slice expiration [Q]
+time 9075ms: K preempted due to time slice expiration [Q]
+time 9155ms: K preempted due to time slice expiration [Q]
+time 9235ms: K preempted due to time slice expiration [Q]
+time 9315ms: K preempted due to time slice expiration [Q]
+time 9331ms: K completed its CPU burst [Q]
+time 9331ms: K performing I/O [Q]
+time 11604ms: R completed I/O [Q]
+time 11616ms: R started using the CPU [Q]
+time 11696ms: R preempted due to time slice expiration [Q]
+time 11776ms: R preempted due to time slice expiration [Q]
+time 11856ms: R preempted due to time slice expiration [Q]
+time 11936ms: R preempted due to time slice expiration [Q]
+time 11969ms: K completed I/O [Q]
+time 12016ms: R preempted due to time slice expiration [Q K]
+time 12029ms: K started using the CPU [Q R]
+time 12109ms: K preempted due to time slice expiration [Q R]
+time 12122ms: R started using the CPU [Q K]
+time 12202ms: R preempted due to time slice expiration [Q K]
+time 12215ms: K started using the CPU [Q R]
+time 12295ms: K preempted due to time slice expiration [Q R]
+time 12308ms: R started using the CPU [Q K]
+time 12335ms: M completed I/O [Q K]
+time 12388ms: R preempted due to time slice expiration [Q K M]
+time 12401ms: K started using the CPU [Q M R]
+time 12481ms: K preempted due to time slice expiration [Q M R]
+time 12494ms: M started using the CPU [Q R K]
+time 12574ms: M preempted due to time slice expiration [Q R K]
+time 12587ms: R started using the CPU [Q K M]
+time 12667ms: R preempted due to time slice expiration [Q K M]
+time 12680ms: K started using the CPU [Q M R]
+time 12760ms: K preempted due to time slice expiration [Q M R]
+time 12773ms: M started using the CPU [Q R K]
+time 12853ms: M preempted due to time slice expiration [Q R K]
+time 12866ms: R started using the CPU [Q K M]
+time 12946ms: R preempted due to time slice expiration [Q K M]
+time 12959ms: K started using the CPU [Q M R]
+time 13039ms: K preempted due to time slice expiration [Q M R]
+time 13052ms: M started using the CPU [Q R K]
+time 13132ms: M preempted due to time slice expiration [Q R K]
+time 13145ms: R started using the CPU [Q K M]
+time 13225ms: R preempted due to time slice expiration [Q K M]
+time 13238ms: K started using the CPU [Q M R]
+time 13318ms: K preempted due to time slice expiration [Q M R]
+time 13331ms: M started using the CPU [Q R K]
+time 13411ms: M preempted due to time slice expiration [Q R K]
+time 13424ms: R started using the CPU [Q K M]
+time 13504ms: R preempted due to time slice expiration [Q K M]
+time 13517ms: K started using the CPU [Q M R]
+time 13533ms: K completed its CPU burst [Q M R]
+time 13533ms: K performing I/O [Q M R]
+time 13546ms: M started using the CPU [Q R]
+time 13626ms: M preempted due to time slice expiration [Q R]
+time 13639ms: R started using the CPU [Q M]
+time 13651ms: R completed its CPU burst [Q M]
+time 13651ms: R performing I/O [Q M]
+time 13664ms: M started using the CPU [Q]
+time 13669ms: M completed its CPU burst [Q]
+time 13669ms: M performing I/O [Q]
+time 16171ms: K completed I/O [Q]
+time 16183ms: K started using the CPU [Q]
+time 16263ms: K preempted due to time slice expiration [Q]
+time 16343ms: K preempted due to time slice expiration [Q]
+time 16423ms: K preempted due to time slice expiration [Q]
+time 16503ms: K preempted due to time slice expiration [Q]
+time 16583ms: K preempted due to time slice expiration [Q]
+time 16663ms: K preempted due to time slice expiration [Q]
+time 16679ms: K completed its CPU burst [Q]
+time 16679ms: K performing I/O [Q]
+time 16937ms: R completed I/O [Q]
+time 16949ms: R started using the CPU [Q]
+time 17029ms: R preempted due to time slice expiration [Q]
+time 17109ms: R preempted due to time slice expiration [Q]
+time 17189ms: R preempted due to time slice expiration [Q]
+time 17269ms: R preempted due to time slice expiration [Q]
+time 17349ms: R preempted due to time slice expiration [Q]
+time 17429ms: R preempted due to time slice expiration [Q]
+time 17509ms: R preempted due to time slice expiration [Q]
+time 17589ms: R preempted due to time slice expiration [Q]
+time 17669ms: R preempted due to time slice expiration [Q]
+time 17749ms: R preempted due to time slice expiration [Q]
+time 17829ms: R preempted due to time slice expiration [Q]
+time 17841ms: R completed its CPU burst [Q]
+time 17841ms: R performing I/O [Q]
+time 18191ms: M completed I/O [Q]
+time 18203ms: M started using the CPU [Q]
+time 18283ms: M preempted due to time slice expiration [Q]
+time 18363ms: M preempted due to time slice expiration [Q]
+time 18443ms: M preempted due to time slice expiration [Q]
+time 18523ms: M preempted due to time slice expiration [Q]
+time 18603ms: M preempted due to time slice expiration [Q]
+time 18608ms: M completed its CPU burst [Q]
+time 18608ms: M performing I/O [Q]
+time 19317ms: K completed I/O [Q]
+time 19329ms: K started using the CPU [Q]
+time 19409ms: K preempted due to time slice expiration [Q]
+time 19489ms: K preempted due to time slice expiration [Q]
+time 19569ms: K preempted due to time slice expiration [Q]
+time 19649ms: K preempted due to time slice expiration [Q]
+time 19729ms: K preempted due to time slice expiration [Q]
+time 19809ms: K preempted due to time slice expiration [Q]
+time 19825ms: K terminated [Q]
+time 21127ms: R completed I/O [Q]
+time 21139ms: R started using the CPU [Q]
+time 21219ms: R preempted due to time slice expiration [Q]
+time 21299ms: R preempted due to time slice expiration [Q]
+time 21379ms: R preempted due to time slice expiration [Q]
+time 21459ms: R preempted due to time slice expiration [Q]
+time 21539ms: R preempted due to time slice expiration [Q]
+time 21619ms: R preempted due to time slice expiration [Q]
+time 21699ms: R preempted due to time slice expiration [Q]
+time 21779ms: R preempted due to time slice expiration [Q]
+time 21859ms: R preempted due to time slice expiration [Q]
+time 21939ms: R preempted due to time slice expiration [Q]
+time 22019ms: R preempted due to time slice expiration [Q]
+time 22031ms: R completed its CPU burst [Q]
+time 22031ms: R performing I/O [Q]
+time 23130ms: M completed I/O [Q]
+time 23142ms: M started using the CPU [Q]
+time 23222ms: M preempted due to time slice expiration [Q]
+time 23302ms: M preempted due to time slice expiration [Q]
+time 23382ms: M preempted due to time slice expiration [Q]
+time 23462ms: M preempted due to time slice expiration [Q]
+time 23542ms: M preempted due to time slice expiration [Q]
+time 23547ms: M completed its CPU burst [Q]
+time 23547ms: M performing I/O [Q]
+time 25317ms: R completed I/O [Q]
+time 25329ms: R started using the CPU [Q]
+time 25409ms: R preempted due to time slice expiration [Q]
+time 25489ms: R preempted due to time slice expiration [Q]
+time 25569ms: R preempted due to time slice expiration [Q]
+time 25649ms: R preempted due to time slice expiration [Q]
+time 25729ms: R preempted due to time slice expiration [Q]
+time 25809ms: R preempted due to time slice expiration [Q]
+time 25889ms: R preempted due to time slice expiration [Q]
+time 25969ms: R preempted due to time slice expiration [Q]
+time 26049ms: R preempted due to time slice expiration [Q]
+time 26129ms: R preempted due to time slice expiration [Q]
+time 26209ms: R preempted due to time slice expiration [Q]
+time 26221ms: R terminated [Q]
+time 28069ms: M completed I/O [Q]
+time 28081ms: M started using the CPU [Q]
+time 28161ms: M preempted due to time slice expiration [Q]
+time 28241ms: M preempted due to time slice expiration [Q]
+time 28321ms: M preempted due to time slice expiration [Q]
+time 28401ms: M preempted due to time slice expiration [Q]
+time 28481ms: M preempted due to time slice expiration [Q]
+time 28486ms: M completed its CPU burst [Q]
+time 28486ms: M performing I/O [Q]
+time 33008ms: M completed I/O [Q]
+time 33020ms: M started using the CPU [Q]
+time 33100ms: M preempted due to time slice expiration [Q]
+time 33180ms: M preempted due to time slice expiration [Q]
+time 33260ms: M preempted due to time slice expiration [Q]
+time 33340ms: M preempted due to time slice expiration [Q]
+time 33420ms: M preempted due to time slice expiration [Q]
+time 33425ms: M completed its CPU burst [Q]
+time 33425ms: M performing I/O [Q]
+time 37947ms: M completed I/O [Q]
+time 37959ms: M started using the CPU [Q]
+time 38039ms: M preempted due to time slice expiration [Q]
+time 38119ms: M preempted due to time slice expiration [Q]
+time 38199ms: M preempted due to time slice expiration [Q]
+time 38279ms: M preempted due to time slice expiration [Q]
+time 38359ms: M preempted due to time slice expiration [Q]
+time 38364ms: M terminated [Q]
+time 38364ms: Simulator for RR ended [Q]

@@ -9,8 +9,8 @@ do
     count=$(bc<<<"$count+1")
     echo "--------"
     echo "Running: $filename"
-    python ../BananaComqautPeachApplePinenut.py ${filename} > ${filename:0:${#filename}-3}"OUTPUT.txt"
-    mv -f simout.txt ${filename:0:${#filename}-3}"SIMOUT.txt"
+    python ../BananaComquatPeachApplePinenut.py ${filename} > ${filename:0:${#filename}-3}"OUTPUT.txt"
+    mv -f simout.txt ${filename:0:${#filename}-4}"SIMOUT.txt"
     echo "--------"
     echo
 done
