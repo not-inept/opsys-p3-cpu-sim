@@ -201,7 +201,7 @@ def printStatusMessage(message, queue=None):
         print "time {0}ms: {1}".format(currentTime, message)
 
 
-def calculateStats(processes, cpu, f):
+def calculateStats(processes, cpu, f, totalTime):
     totalburst = 0
     totalwait = 0
     totalturnaround = 0
@@ -221,6 +221,7 @@ def calculateStats(processes, cpu, f):
     f.write("-- average wait time: {0:.2f} ms".format(totalwait/float(totalbursts))+"\n")
     f.write("-- average turnaround time: {0:.2f} ms".format(totalturnaround/float(totalbursts))+"\n")
     f.write("-- total number of context switches: {0}".format(cpu.contextSwitches)+"\n")
+    f.write("-- total time spend on defragmentation: {0} ms {1:.2f}%".format(cpu.totalDefragTime, cpu.totalDefragTime/float(totalTime))+"\n")
     #DEBUG3 print waittimes
 
 
@@ -280,7 +281,6 @@ for algorithm in ["rr", "srt"]:
         iosys.cpu = cpu
         cpu.algorithm = algorithm
         cpu.mem_algorithm = mem_algorithm
-
 
         #Start the simulation.
         currentTime = 0
@@ -350,6 +350,9 @@ for algorithm in ["rr", "srt"]:
                             cpu.addProcessToQueue(process)
                             printStatusMessage("Process '{0}' added to system".format(process.id), cpu.processQueue)
                             printStatusMessage("Simulated Memory:\n{0}".format(mem))
+                            if (cpu.currentProcess == process):
+                                cpu.contextTime -= 1#Need to ignore the context switch increment when we look at the process we just added.
+                                                    #Only is a problem when we add something directly into the cpu.
                             currentTime -= 1
                             addMoreProcs = True
                             break
@@ -359,7 +362,7 @@ for algorithm in ["rr", "srt"]:
             if (cpu.status == "defragging"):
                 if (cpu.memCooldown > 0):
                     cpu.memCooldown -= 1
-                    cpu.totalDefragTime += 1
+                    cpu.totalDefragTime  = cpu.totalDefragTime + 1
                     #sys.stderr.write("MEMCOOLDOWN: "+str(cpu.memCooldown)+"\n")
 
                 else:
@@ -535,13 +538,13 @@ for algorithm in ["rr", "srt"]:
 
             #When all processes have finished.
             if (len([ x for x in processes if x.status == "terminated"]) == n):
-                print "time {0}ms: Simulator for {1} ended [Q]".format(currentTime, cpu.algorithm.upper()+" "+mem_algorithms[mem_algorithm])
+                print "time {0}ms: Simulator for {1} ended [Q]".format(currentTime, cpu.algorithm.upper()+" and "+mem_algorithms[mem_algorithm])
                 break
 
             if (cpu.isReady()):
                 cpu.loadNextProcess()
 
-        calculateStats(processes, cpu, outputfile)
+        calculateStats(processes, cpu, outputfile, currentTime)
         
         #Don't print the three lines if we are done with output.
         if not (cpu.algorithm == "srt" and mem_algorithm == "bf"):

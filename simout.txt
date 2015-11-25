@@ -1,30 +1,36 @@
-Algorithm RR
--- average CPU burst time: 398.61 ms
--- average wait time: 1759.89 ms
--- average turnaround time: 2211.22 ms
--- total number of context switches: 73
-Algorithm RR
--- average CPU burst time: 399.41 ms
--- average wait time: 1602.59 ms
--- average turnaround time: 2055.53 ms
--- total number of context switches: 70
-Algorithm RR
--- average CPU burst time: 398.61 ms
--- average wait time: 1766.56 ms
--- average turnaround time: 2217.89 ms
--- total number of context switches: 73
-Algorithm SRT
--- average CPU burst time: 397.89 ms
--- average wait time: 487.47 ms
--- average turnaround time: 902.47 ms
--- total number of context switches: 25
-Algorithm SRT
--- average CPU burst time: 398.61 ms
--- average wait time: 684.22 ms
--- average turnaround time: 1099.44 ms
--- total number of context switches: 25
-Algorithm SRT
--- average CPU burst time: 397.89 ms
--- average wait time: 487.47 ms
--- average turnaround time: 902.47 ms
--- total number of context switches: 25
+Algorithm RR and FF
+-- average CPU burst time: 403.85 ms
+-- average wait time: 357.54 ms
+-- average turnaround time: 807.38 ms
+-- total number of context switches: 46
+-- total time spend on defragmentation: 0 ms 0.00%
+Algorithm RR and NF
+-- average CPU burst time: 403.85 ms
+-- average wait time: 357.54 ms
+-- average turnaround time: 807.38 ms
+-- total number of context switches: 46
+-- total time spend on defragmentation: 0 ms 0.00%
+Algorithm RR and BF
+-- average CPU burst time: 403.85 ms
+-- average wait time: 357.54 ms
+-- average turnaround time: 807.38 ms
+-- total number of context switches: 46
+-- total time spend on defragmentation: 0 ms 0.00%
+Algorithm SRT and FF
+-- average CPU burst time: 403.85 ms
+-- average wait time: 149.31 ms
+-- average turnaround time: 572.15 ms
+-- total number of context switches: 19
+-- total time spend on defragmentation: 0 ms 0.00%
+Algorithm SRT and NF
+-- average CPU burst time: 403.85 ms
+-- average wait time: 149.31 ms
+-- average turnaround time: 572.15 ms
+-- total number of context switches: 19
+-- total time spend on defragmentation: 0 ms 0.00%
+Algorithm SRT and BF
+-- average CPU burst time: 403.85 ms
+-- average wait time: 149.31 ms
+-- average turnaround time: 572.15 ms
+-- total number of context switches: 19
+-- total time spend on defragmentation: 0 ms 0.00%
