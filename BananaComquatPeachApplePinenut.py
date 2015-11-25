@@ -216,7 +216,7 @@ def calculateStats(processes, cpu, f):
     
         #DEBUG3 waittimes[process.id] = process.wait
 
-    f.write("Algorithm {0}".format(cpu.algorithm.upper())+"\n")
+    f.write("Algorithm {0} and {1}".format(cpu.algorithm.upper(), cpu.mem_algorithm.upper())+"\n")
     f.write("-- average CPU burst time: {0:.2f} ms".format(totalburst/float(totalbursts))+"\n")
     f.write("-- average wait time: {0:.2f} ms".format(totalwait/float(totalbursts))+"\n")
     f.write("-- average turnaround time: {0:.2f} ms".format(totalturnaround/float(totalbursts))+"\n")
@@ -279,6 +279,7 @@ for algorithm in ["rr", "srt"]:
         cpu.mem = mem
         iosys.cpu = cpu
         cpu.algorithm = algorithm
+        cpu.mem_algorithm = mem_algorithm
 
 
         #Start the simulation.
@@ -304,7 +305,7 @@ for algorithm in ["rr", "srt"]:
                 else:
                     cpu.processQueue.append(process) #Append instead of cpu.addProcessToQueue to avoid unnecessary preemption at time 0.
                     printStatusMessage("Process '{0}' added to system".format(process.id), cpu.processQueue)
-                    print "time "+str(currentTime)+"ms: Simulated Memory:\n"+str(mem)
+                    printStatusMessage("Simulated Memory:\n"+str(mem))
 
         #Initial sort.
         if (algorithm == "srt"):
@@ -321,6 +322,7 @@ for algorithm in ["rr", "srt"]:
 
 
         #Process main loop.
+        addMoreProcs = False
         while True:
             currentTime += 1
             terminatedProcesses = 0
@@ -336,6 +338,9 @@ for algorithm in ["rr", "srt"]:
                             printStatusMessage("Simulated Memory:\n{0}".format(mem))
                             cpu.memCooldown, cpu.units_defragged = mem.defragment()
 
+                            #if (cpu.memCooldown):
+                            #    cpu.memCooldown -= 1
+
                             #sys.stderr.write("MEMDEFRAGMENTCOOLDOWN: "+str(cpu.memCooldown)+"\n")
                             cpu.status = "defragging"
                             cpu.tryaddingProcess = process
@@ -344,33 +349,44 @@ for algorithm in ["rr", "srt"]:
                         else:
                             cpu.addProcessToQueue(process)
                             printStatusMessage("Process '{0}' added to system".format(process.id), cpu.processQueue)
+                            printStatusMessage("Simulated Memory:\n{0}".format(mem))
+                            currentTime -= 1
+                            addMoreProcs = True
+                            break
 
-                        print "time "+str(currentTime)+"ms: Simulated Memory:\n"+str(mem)
-
-            #Defragmentation.
+            #Defragmentation. Needs to be here to avoid loss of time when not defragging.
+            #When do we add new processes back into the queue????
             if (cpu.status == "defragging"):
                 if (cpu.memCooldown > 0):
                     cpu.memCooldown -= 1
                     cpu.totalDefragTime += 1
                     #sys.stderr.write("MEMCOOLDOWN: "+str(cpu.memCooldown)+"\n")
+
                 else:
                     assert(cpu.memCooldown == 0)
                     printStatusMessage("Completed defragmentation (moved "+str(cpu.units_defragged)+" memory units)")
                     printStatusMessage("Simulated Memory:\n"+str(mem))
-                    process=cpu.tryaddingProcess
+                    process=cpu.tryaddingProcess #IMPORTANT
                     if (cpu.tryaddingProcess):
-                        if (not mem.allocate(process.id, process.memsize)):
-                            printStatusMessage("Process '{0}' unable to be added; lack of memory and defragmentation failed".format(process.id))
+                        if (not mem.allocate(cpu.tryaddingProcess.id, cpu.tryaddingProcess.memsize)):
+                            printStatusMessage("Process '{0}' unable to be added; lack of memory and defragmentation failed".format(cpu.tryaddingProcess.id))
                             cpu.tryaddingProcess.status = "terminated"
+                            currentTime -= 1 #Repeat if we have something to add.
+                            cpu.tryaddingProcess = None
+                            addMoreProcs = True
                     
                         else:
                             cpu.addProcessToQueue(process)
                             printStatusMessage("Process '{0}' added to system".format(process.id), cpu.processQueue)
-                            print "time "+str(currentTime)+"ms: Simulated Memory:\n"+str(mem)
+                            printStatusMessage("Simulated Memory:\n{0}".format(mem))
+                            cpu.tryaddingProcess = None
 
-                        cpu.tryaddingProcess = None
                     cpu.status = "normal"
 
+             #Keep adding more processes to the queue if necessary.
+            if addMoreProcs:
+                addMoreProcs = False
+                continue
 
             #Main tick for all processes.
             for process in processes:
@@ -513,7 +529,9 @@ for algorithm in ["rr", "srt"]:
                         #We should be able to just ignore the start of the queue. (Context switch.)
                     if (cpu.algorithm != "rr"):
                         printStatusMessage("Process '"+str(process.id)+"' preempted by Process '" + str(process.preemptedByProcess.id) + "'", cpu.processQueue[1:])
-                    process.status = "waiting"
+                    process.status = "waiting"    
+
+
 
             #When all processes have finished.
             if (len([ x for x in processes if x.status == "terminated"]) == n):

@@ -1,0 +1,30 @@
+Algorithm RR and FF
+-- average CPU burst time: 684.90 ms
+-- average wait time: 873.63 ms
+-- average turnaround time: 1629.17 ms
+-- total number of context switches: 163
+Algorithm RR and NF
+-- average CPU burst time: 684.90 ms
+-- average wait time: 873.63 ms
+-- average turnaround time: 1629.17 ms
+-- total number of context switches: 163
+Algorithm RR and BF
+-- average CPU burst time: 684.90 ms
+-- average wait time: 873.63 ms
+-- average turnaround time: 1629.17 ms
+-- total number of context switches: 163
+Algorithm SRT and FF
+-- average CPU burst time: 559.98 ms
+-- average wait time: 943.65 ms
+-- average turnaround time: 1518.53 ms
+-- total number of context switches: 46
+Algorithm SRT and NF
+-- average CPU burst time: 559.98 ms
+-- average wait time: 943.65 ms
+-- average turnaround time: 1518.53 ms
+-- total number of context switches: 46
+Algorithm SRT and BF
+-- average CPU burst time: 559.98 ms
+-- average wait time: 943.65 ms
+-- average turnaround time: 1518.53 ms
+-- total number of context switches: 46
